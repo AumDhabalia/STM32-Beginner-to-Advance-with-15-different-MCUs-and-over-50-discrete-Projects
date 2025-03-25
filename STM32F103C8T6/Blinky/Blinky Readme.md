@@ -3,7 +3,7 @@
 List of Blinky Programs...
 1. [Simple Blinking](STM32F103C8T6/Blinky/simple_blinking.c)
 2. [LightHouse Blinking](STM32F103C8T6/Blinky/lighthouse_blinking.c)
-3. Alternate Blinking
+3. [Alternate Blinking](STM32F103C8T6/Blinky/alternate_blinking.c)
 4. 2-Bit Counter
 5. N-Bit Counter
 6. Moving LEDs (One Way)
