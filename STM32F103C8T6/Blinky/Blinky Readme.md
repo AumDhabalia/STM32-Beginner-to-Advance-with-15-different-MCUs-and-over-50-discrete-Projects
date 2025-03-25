@@ -6,4 +6,5 @@ List of Blinky Programs...
 3. Alternate Blinking
 4. 2-Bit Counter
 5. N-Bit Counter
-6. Moving LEDs
+6. Moving LEDs (One Way)
+7. Moving LEDs (Back and Forth)
