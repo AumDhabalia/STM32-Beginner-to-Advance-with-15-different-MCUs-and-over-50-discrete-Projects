@@ -9,7 +9,6 @@ Refer to RM0008 reference manual as well as STM32F103C8T6 datasheet.
 | PB6 OFF  PB7 ON |
 | Delay 500 ms    |
 -------------------
-
 */
 #include "stm32f10x.h"
 
