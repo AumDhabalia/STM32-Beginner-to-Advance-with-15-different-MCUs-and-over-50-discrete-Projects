@@ -2,7 +2,7 @@
 <br>It has *main.c* files renamed after the name of the program.
 List of Blinky Programs...
 1. [Simple Blinking](STM32F103C8T6/Blinky/simple_blinking.c)
-2. LightHouse Blinking
+2. [LightHouse Blinking](STM32F103C8T6/Blinky/lighthouse_blinking.c)
 3. Alternate Blinking
 4. 2-Bit Counter
 5. N-Bit Counter
