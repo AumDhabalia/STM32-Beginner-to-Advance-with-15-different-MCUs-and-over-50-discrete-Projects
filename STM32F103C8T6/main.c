@@ -33,17 +33,7 @@ int main(void)
 	
 	//Update System Core Clock variable
 	SystemCoreClock = 72000000;
-		
-	//Enable Clock for GPIOB
-	RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;
-
-	//Configure PB6 and PB7 as General-Purpose Output Push-Pull (2 MHz)
-	GPIOB->CRL &= ~(0x0F00); // Clear bits for PB2
-	GPIOB->CRL |= 0x0200; // Set as Output (2 MHz, Push-Pull)
 	
-	//Turn off PB2 initially
-	GPIOB->BSRR |= GPIO_BSRR_BR2;
-
 	while(1)
 	{
     
