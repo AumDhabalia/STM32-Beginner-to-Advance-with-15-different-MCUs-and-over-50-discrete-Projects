@@ -45,6 +45,6 @@ int main(void)
 		
 		GPIOB->BSRR |= GPIO_BSRR_BR6; //Reset PB6 (LED OFF)
 		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7   (LED ON)
-		for(volatile int i = 0;i < 500000;i++);
+		for(volatile int i = 0;i < 500000;i++); // 500 ms = 500,000 us
 	}
 }
