@@ -1,5 +1,5 @@
 /*
-Initial procedure before starting user code.
+Initial steps before starting user code.
 */
 
 #include "stm32f10x.h"
@@ -34,8 +34,9 @@ int main(void)
 	//Update System Core Clock variable
 	SystemCoreClock = 72000000;
 	
+	//User Code initialization...
 	while(1)
 	{
-    
-  }
+		
+	}
 }
