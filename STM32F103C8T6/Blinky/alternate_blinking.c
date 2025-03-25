@@ -1,3 +1,16 @@
+/*
+This program is for blinking two LEDs alternately at constant delay.
+Two LEDs at PB6 and PB7 are taken with 220ohm resistor between LED and pin.
+Refer to RM0008 reference manual as well as STM32F103C8T6 datasheet.
+
+-------------------
+| PB6 ON  PB7 OFF |
+| Delay 500 ms    |
+| PB6 OFF  PB7 ON |
+| Delay 500 ms    |
+-------------------
+
+*/
 #include "stm32f10x.h"
 
 int main(void)
