@@ -35,7 +35,7 @@ int main(void)
 
 	//Configure PB6 and PB7 as General-Purpose Output Push-Pull (2 MHz)
 	GPIOB->CRL &= ~(0x0F000000 | 0xF0000000); // Clear bits
-	GPIOB->CRL |= 0x22000000; // Set as Output (2 MHz, Push-Pull)
+	GPIOB->CRL |= (0x02000000 | 0x20000000); // Set as Output (2 MHz, Push-Pull)
 
 	while(1)
 	{
