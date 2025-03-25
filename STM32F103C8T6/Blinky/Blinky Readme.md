@@ -1,5 +1,5 @@
 **This Folder contains various LED Blinking programs from scratch (Bare Metal Programming).**
-<br>It Has one main.h file and rest main.c files renamed after the name of the program.
+<br>It has *main.c* files renamed after the name of the program.
 List of Blinky Programs...
 1. Simple Blinking
 2. LightHouse Blinking
