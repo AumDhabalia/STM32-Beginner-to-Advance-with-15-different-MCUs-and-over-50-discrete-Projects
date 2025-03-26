@@ -55,23 +55,23 @@ int main(void)
 	while(1)
 	{
 		//Logic 00
-		GPIOB->BSRR |= GPIO_BSRR_BR6; //Set PB6   (LED ON)
-		GPIOB->BSRR |= GPIO_BSRR_BR7; //Reset PB7 (LED OFF)
-		for(volatile int i = 0; i < 1000000; i++); // 500 ms = 500,000 us
+		GPIOB->BSRR |= GPIO_BSRR_BR6; //Reset PB6   (LED OFF)
+		GPIOB->BSRR |= GPIO_BSRR_BR7; //Reset PB7   (LED OFF)
+		for(volatile int i = 0;i < 2000000; i++); // 2000 ms = 2,000,000 us
 		
 		//Logic 01
-		GPIOB->BSRR |= GPIO_BSRR_BS6; //Reset PB6 (LED OFF)
-		GPIOB->BSRR |= GPIO_BSRR_BR7; //Set PB7   (LED ON)
-		for(volatile int i = 0;i < 1000000;i++);
+		GPIOB->BSRR |= GPIO_BSRR_BS6; //Set PB6     (LED ON)
+		GPIOB->BSRR |= GPIO_BSRR_BR7; //Reset PB7   (LED OFF)
+		for(volatile int i = 0;i < 2000000;i++); //2000 ms = 2,000,000 us
 
 		//Logic 10
-		GPIOB->BSRR |= GPIO_BSRR_BR6; //Reset PB6 (LED OFF)
-		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7   (LED ON)
-		for(volatile int i = 0;i < 1000000;i++);
+		GPIOB->BSRR |= GPIO_BSRR_BR6; //Reset PB6   (LED OFF)
+		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7     (LED ON)
+		for(volatile int i = 0;i < 1000000;i++); //2000 ms = 2,000,000 us
 
 		//Logic 11
-		GPIOB->BSRR |= GPIO_BSRR_BS6; //Reset PB6 (LED OFF)
-		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7   (LED ON)
-		for(volatile int i = 0;i < 1000000;i++);
+		GPIOB->BSRR |= GPIO_BSRR_BS6; //Set PB6     (LED ON)
+		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7     (LED ON)
+		for(volatile int i = 0;i < 1000000;i++); //2000 ms = 2,000,000 us
 	}
 }
