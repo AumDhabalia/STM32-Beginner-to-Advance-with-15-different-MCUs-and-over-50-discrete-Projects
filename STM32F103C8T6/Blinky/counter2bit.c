@@ -67,11 +67,11 @@ int main(void)
 		//Logic 10
 		GPIOB->BSRR |= GPIO_BSRR_BR6; //Reset PB6   (LED OFF)
 		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7     (LED ON)
-		for(volatile int i = 0;i < 1000000;i++); //2000 ms = 2,000,000 us
+		for(volatile int i = 0;i < 2000000;i++); //2000 ms = 2,000,000 us
 
 		//Logic 11
 		GPIOB->BSRR |= GPIO_BSRR_BS6; //Set PB6     (LED ON)
 		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7     (LED ON)
-		for(volatile int i = 0;i < 1000000;i++); //2000 ms = 2,000,000 us
+		for(volatile int i = 0;i < 2000000;i++); //2000 ms = 2,000,000 us
 	}
 }
