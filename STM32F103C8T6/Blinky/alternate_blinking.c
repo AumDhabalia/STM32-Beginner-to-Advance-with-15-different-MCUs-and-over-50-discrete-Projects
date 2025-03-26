@@ -36,8 +36,8 @@ int main(void)
 	
 	//Configure AHB, APB1, APB2 Prescaler
 	RCC->CFGR |= RCC_CFGR_HPRE_DIV1;   // AHB Prescaler = 1 (72 MHz)
-  	RCC->CFGR |= RCC_CFGR_PPRE1_DIV2;  // APB1 Prescaler = 2 (36 MHz max)
-  	RCC->CFGR |= RCC_CFGR_PPRE2_DIV1;  // APB2 Prescaler = 1 (72 MHz)
+	RCC->CFGR |= RCC_CFGR_PPRE1_DIV2;  // APB1 Prescaler = 2 (36 MHz max)
+	RCC->CFGR |= RCC_CFGR_PPRE2_DIV1;  // APB2 Prescaler = 1 (72 MHz)
 	
 	//Update System Core Clock variable
 	SystemCoreClock = 72000000;
@@ -51,12 +51,10 @@ int main(void)
 
 	while(1)
 	{
-		GPIOB->BSRR |= GPIO_BSRR_BS6; //Set PB6   (LED ON)
-		GPIOB->BSRR |= GPIO_BSRR_BR7; //Reset PB7 (LED OFF)
+		GPIOB->BSRR |= (GPIO_BSRR_BS6 | GPIO_BSRR_BR7); //Set PB6 (LED ON) & Reset PB7 (LED OFF)
 		for(volatile int i = 0; i < 500000; i++); // 500 ms = 500,000 us
 		
-		GPIOB->BSRR |= GPIO_BSRR_BR6; //Reset PB6 (LED OFF)
-		GPIOB->BSRR |= GPIO_BSRR_BS7; //Set PB7   (LED ON)
+		GPIOB->BSRR |= (GPIO_BSRR_BR6 | GPIO_BSRR_BS7); //Reset PB6 (LED OFF) & Set PB7 (LED ON)
 		for(volatile int i = 0;i < 500000;i++); // 500 ms = 500,000 us
 	}
 }
