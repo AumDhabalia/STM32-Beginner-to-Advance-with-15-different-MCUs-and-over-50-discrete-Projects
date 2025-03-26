@@ -2,6 +2,7 @@
 This program is for blinking an LED at time period of 0.5 seconds.
 LED built-in on the BluePill board is taken (LED Pin may vary on different BluePill Supplier).
 Refer to RM0008 reference manual as well as STM32F103C8T6 datasheet.
+Refer to stm32f10x.h file for macros used.
 */
 
 #include "stm32f10x.h"
