@@ -2,6 +2,7 @@
 This program is for blinking an LED in lighthouse pattern.
 LED built-in on the BluePill board is taken (LED Pin may vary on different BluePill Supplier).
 Refer to RM0008 reference manual as well as STM32F103C8T6 datasheet.
+Refer to stm32f10x.h file for macros used.
 ----------------------
 | LED ON for 200 ms  |
 | LED OFF for 100 ms |
