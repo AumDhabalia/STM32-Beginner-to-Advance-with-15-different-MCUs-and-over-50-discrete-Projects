@@ -39,9 +39,9 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br>Once project is created, copy [main.c](STM32F103C8T6/main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
 <br>
 ## 1. Blinky
-In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.
+In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
 1.1 Simple Blink
-1.2 
+1.2 Light
 ## 2. ADC (Analog to Digital Converter)
 ## 3. Interrupt
 ## 4. Timer
