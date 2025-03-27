@@ -24,4 +24,4 @@
 15. STM32L552ZE-Q *NUCLEO-144* *(Pending)*
 16. STM32U031R8 *NUCLEO-64* *(Pending)*
 17. STM32U385RG-Q *NUCLEO-64* *(Pending)*
-<font color="red">This is red text</font>
+18. <span style="color: red;">This is red text</span>
