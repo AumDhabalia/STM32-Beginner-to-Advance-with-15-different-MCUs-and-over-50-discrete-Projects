@@ -47,5 +47,6 @@
 <br>![Screenshot 2025-03-27 195257](https://github.com/user-attachments/assets/05eb6bbc-3019-45a8-99cc-441c1be32a2b)
 5. In Manage Run Time Enviroment select on CMSIS->Core and Device->Startup. Make sure to install stable version of the pack otherwise the Startup file won't appear. Once done click on OK.
 <br>![Screenshot 2025-03-27 195341](https://github.com/user-attachments/assets/72cb737d-e1fd-4a79-9e0c-69389350f3e2)
-6. On Left panel navigate to Target_1->Device. Three files should be displayed.
+6. On Left panel navigate to Target_1->Device. Startup files should be displayed.
 <br>![image](https://github.com/user-attachments/assets/987327d4-c52e-4ece-9fae-2ba354068a4a)
+7. Create new text file by pressing Ctrl+N or by navigating to File->New. Save this file as main.c and add it to Source Group 1. Double click on Source Group 1 and search for main.c and then click Add. Its done.
