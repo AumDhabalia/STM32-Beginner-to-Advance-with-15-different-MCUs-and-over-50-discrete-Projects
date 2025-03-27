@@ -26,6 +26,14 @@
 17. STM32U385RG-Q *NUCLEO-64*............................**(Pending)**
 ## Keil Installation Procedure
 1. Download [Keil](https://www.keil.com/demo/eval/arm.htm)
+![image](https://github.com/user-attachments/assets/43740124-5409-403b-9577-ed97e7dc00d0)
+<br/>
 2. Right click on the file and run as administrator
-3. Fill-up the details
-4. 
+![Screenshot (1)](https://github.com/user-attachments/assets/114dc0e0-f193-4384-a384-ff8b5b53835e)
+<br/>
+3. Click Next, Click on I Agree, Change Directories if required
+<br/>
+4. Fillup the details
+![image](https://github.com/user-attachments/assets/391b2c45-c876-4e2a-88ec-a3e38a11e280)
+<br/>
+5. Wait for installation to complete
