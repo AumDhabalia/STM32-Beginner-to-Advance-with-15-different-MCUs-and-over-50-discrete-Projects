@@ -29,7 +29,6 @@
 ![image](https://github.com/user-attachments/assets/43740124-5409-403b-9577-ed97e7dc00d0)
 <br/>
 2. Right click on the file and run as administrator
-![Step 2](https://github.com/user-attachments/assets/b216b3b8-cba5-4cbd-b11b-4e99ab7fa036)
 
 3. Click Next, Click on I Agree, Change Directories if required
 <br/>
