@@ -36,7 +36,8 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br><br>On installation, popup for STLink Debugger will appear. Install it.
 <br>
 <br>**To create project click [here](https://github.com/AumDhabalia/STM32-Projects/blob/main/README.md#project-creation-on-keil)**
-<br>Once project is created, copy [main.c]() file and paste it in your main.c file
+<br>Once project is created, copy [main.c](STM32F103C8T6/main.c) file and paste it in your main.c file
+<br>
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON and OFF based projects will be performed. Given below is the list of the projects associated to this chapter.
 ## 2. ADC (Analog to Digital Converter)
