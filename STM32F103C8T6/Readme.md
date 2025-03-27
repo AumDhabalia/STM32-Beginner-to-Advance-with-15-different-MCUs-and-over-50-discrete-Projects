@@ -40,18 +40,18 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br>
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
-   1. Simple Blink
-   2. Lighthouse Blinking
-   3. Alternate Blinking
-   4. 2-Bit Counter
-   5. N-Bit Counter
-   6. Moving LEDs (One Way)
-   7. Moving LEDs (Back & Forth)
-   8. Random LED FLashing
-   9. LED & Pushbutton
-   10. Up-Down Counter with Pushbutton
-   11. 7-Segment Display
-   12. 4 digit 7-Segment Display
+   1. [Simple Blink](STM32F103C8T6/Blinky/simple_blinking.c)
+   2. [Lighthouse Blinking](STM32F103C8T6/Blinky/lighthouse_blinking.c)
+   3. [Alternate Blinking](STM32F103C8T6/Blinky/alternate_blinking.c)
+   4. [2-Bit Counter](STM32F103C8T6/Blinky/counter2bit.c)
+   5. [N-Bit Counter]()
+   6. [Moving LEDs (One Way)]()
+   7. [Moving LEDs (Back & Forth)]()
+   8. [Random LED(s) FLashing]()
+   9. [LED & Pushbutton](STM32F103C8T6/Blinky/pushbutton_blink.c)
+   10. [Up-Down Counter with Pushbutton]()
+   11. [7-Segment Display]()
+   12. [4 digit 7-Segment Display]()
 ## 2. ADC (Analog to Digital Converter)
    1.
 ## 3. Interrupt
