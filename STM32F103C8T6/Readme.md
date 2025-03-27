@@ -146,12 +146,16 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    1. SPI Setup
    2. RFID Interfacing
    3. Master-Slave Configuration (wired)
-   4. Wireless Communication with RF Transceiver
+   4. Memory Interfacing
 ## 8. I2C
    1. I2C Setup
    2. I2C LCD Interfacing
+   3. Multiple LCD Interfacing
 ## 9. CAN
 ## 10. USB
+   1. USB Setup
+   2. USB HID
+   3. USB 2.0 Device Driver
 ## 11. Advanced Projects
    1. Motor Speed Control using user input
    2. Multiple event execution simultaneously
@@ -161,4 +165,4 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    6. LED Positioning using Pot
    7. USB based Xbox Game Controller
    8. FFB Steering Wheel
-   9. Spectrum Analyzer
+   9. Memory Interfacing
