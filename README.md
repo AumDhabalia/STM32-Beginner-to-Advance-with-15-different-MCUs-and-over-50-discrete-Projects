@@ -1,7 +1,9 @@
 # STM32 Based Projects
 **Projects based on STM32 Boards
 <br>This repository contains all the programs related to STM32 based bare-metal programming using *STM32 Boards*.**
-
+<br>
+<br>**Pre-Requisites**
+<br>Install Keil MDK_ARM from [here]() and install on your system.
 <br>List of *STM32 Boards*...
 1. STM32C0
 2. STM32F051R8T6 *Discovery*
