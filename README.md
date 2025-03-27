@@ -7,7 +7,7 @@
 <br>Open Pack Installer and install package for necesssary MCU from the list. ***Make sure to install the pack that contains the startup files.<br/>Generally base version contains the Startup file for the required MCU.***
 <br>
 ## *List of STM32 Boards*...
-1. STM32C031C6 *(Pending)*
+1. STM32C031C6 *NUCLEO-64* *(Pending)*
 2. STM32F051R8T6 *Discovery* *(Pending)*
 3. [STM32F103C8T6 *BluePill*](STM32F103C8T6) *(In Progress)*
 4. STM32F207ZG *NUCLEO* *(Pending)*
