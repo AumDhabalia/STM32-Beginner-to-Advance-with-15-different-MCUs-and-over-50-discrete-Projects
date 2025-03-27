@@ -131,10 +131,13 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
 ## 5. PWM
    1. PWM Setup
    2. LED Intensity Control
-   3. Motor Speed Control
-   4. PWM Signal Generation
-   5. Multi-channel PWM
-   6. RGB using PWM
+   3. DC Motor Speed Control
+   4. Servo Motor Control
+   5. PWM Signal Generation
+   6. Multi-channel PWM
+   7. Moving LEDs (One Way)
+   8. Moving LEDs (Back Forth)
+   9. RGB using PWM
 ## 6. USART
 ## 7. SPI
 ## 8. I2C
