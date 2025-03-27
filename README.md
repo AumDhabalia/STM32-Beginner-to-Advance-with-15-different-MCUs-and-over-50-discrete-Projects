@@ -36,3 +36,16 @@
 <br/>![image](https://github.com/user-attachments/assets/391b2c45-c876-4e2a-88ec-a3e38a11e280)
 
 5. Wait for installation to complete
+6. Installation Complete
+## Project Creation on Keil
+1. Start Keil uVision.
+2. Go to Projects->New uVision Projects
+<br>![image](https://github.com/user-attachments/assets/99590765-830d-410a-b37f-0eeaba7828a1)
+
+3. Write name of the project (*Change directory or folder if needed*).<br>
+4. In Target search for the MCU. Select the MCU. Click on Next.
+<br>![Screenshot 2025-03-27 195257](https://github.com/user-attachments/assets/05eb6bbc-3019-45a8-99cc-441c1be32a2b)
+5. In Manage Run Time Enviroment select on CMSIS->Core and Device->Startup. Make sure to install stable version of the pack otherwise the Startup file won't appear. Once done click on OK.
+<br>![Screenshot 2025-03-27 195341](https://github.com/user-attachments/assets/72cb737d-e1fd-4a79-9e0c-69389350f3e2)
+6. On Left panel navigate to Target_1->Device. Three files should be displayed.
+<br>![image](https://github.com/user-attachments/assets/987327d4-c52e-4ece-9fae-2ba354068a4a)
