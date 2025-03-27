@@ -30,13 +30,13 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br/>On the right side specific packages will be displayed. Install DFP, CMSIS
 #### 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON and OFF based projects will be performed. Given below is the list of the projects associated to this chapter.
-#### 2. Blinky
-#### 3. Blinky
-#### 4. Blinky
-#### 5. Blinky
-#### 6. Blinky
-#### 7. Blinky
-#### 8. Blinky
-#### 9. Blinky
-#### 10. Blinky
+#### 2. ADC (Analog to Digital Converter)
+#### 3. Interrupt
+#### 4. Timer
+#### 5. PWM
+#### 6. USART
+#### 7. SPI
+#### 8. I2C
+#### 9. CAN
+#### 10. USB
 #### 11. Blinky
