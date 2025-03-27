@@ -8,7 +8,6 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 ## BluePill Pinout Diagram
 ![image](https://github.com/user-attachments/assets/d8f85397-d5e6-4402-8ca8-7de60f78d5b5)
 ***Note : The general built-in LED connection is at PC13. However, it may change based on BluePill board manufacturers. For WaveShare STM32-BluePill built-in LED is at PB2.***
-## STM32F103C8T6 Pin Plannar
 ## STM32F103C8T6 PIN PLANNER
 
 | Pins | Name | Main Function | Default | Remap |
