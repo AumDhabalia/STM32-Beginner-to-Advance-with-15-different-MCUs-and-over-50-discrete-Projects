@@ -10,7 +10,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 <br>
 <br>In this readme, individual documentation for each of the tutorial is provided.
 ## Index
-***Pre Setups and configurations***
+***Pre Setups and Configurations***
 1. Blinky
 2. ADC
 3. Interrupt
@@ -23,7 +23,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 10. USB
 11. Other Projects
 
-### Pre Setup and configurations
+### *Pre Setup and Configurations*
 Before starting, ensure Keil is installed. If not, refer here to install Keil MDK_ARM.
 <br>
 <br/>Open Pack Installer.
@@ -37,6 +37,7 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br>
 <br>**To create project click [here](https://github.com/AumDhabalia/STM32-Projects/blob/main/README.md#project-creation-on-keil)**
 <br>Once project is created, copy [main.c](STM32F103C8T6/main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
+<br>
 <br>
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
