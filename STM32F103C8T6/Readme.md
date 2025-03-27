@@ -164,5 +164,5 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    5. Battery Charger
    6. LED Positioning using Pot
    7. USB based Xbox Game Controller
-   8. FFB Steering Wheel
-   9. Memory Interfacing
+   8. Memory Interfacing
+   9. Rotary Encoder and LCD interfacing
