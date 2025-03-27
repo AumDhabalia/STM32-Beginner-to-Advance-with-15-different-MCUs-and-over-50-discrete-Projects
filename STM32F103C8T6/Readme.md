@@ -127,8 +127,13 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    3. Input Capture
    4. Multiple sensor reading using timer
    5. Real-Time Clock
-   6. Multi-channel timer
+   6. Multi-channel signal generation
 ## 5. PWM
+   1. PWM Setup
+   2. LED Intensity Control
+   3. Motor Speed Control
+   4. PWM Signal Generation
+   5. Multi-channel PWM
 ## 6. USART
 ## 7. SPI
 ## 8. I2C
