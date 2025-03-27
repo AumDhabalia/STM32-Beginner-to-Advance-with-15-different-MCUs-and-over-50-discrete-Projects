@@ -22,7 +22,10 @@ Pre Setups and configurations
 11. Other Projects
 
 ### Pre Setup and configurations
-Before starting, install Keil MDK-ARM IDE. Once installed open Pack Installer and install 
+Before starting, ensure Keil is installed. If not, refer here to install Keil MDK_ARM.
+<br/>Open Pack Installer.
+<br/>Search for STM32F103C8.
+<br/>On the right side specific packages will be displayed. Install DFP, CMSIS
 #### 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON and OFF based projects will be performed. Given below is the list of the projects associated to this chapter.
 #### 2. Blinky
