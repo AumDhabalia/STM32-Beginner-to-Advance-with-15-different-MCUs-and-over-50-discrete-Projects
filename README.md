@@ -3,7 +3,8 @@
 <br>This repository contains all the programs related to STM32 based bare-metal programming using *STM32 Boards*.**
 <br>
 <br>**Pre-Requisites**
-<br>Install Keil MDK_ARM from [here]() and install on your system.
+<br>Install Keil MDK_ARM from [here](https://www.keil.com/demo/eval/arm.htm) and install on your system. This will install non-commercial version of MDK_ARM.
+<br>Open Pack Installer and install package for necesssary MCU from the list.***Make sure to install the pack that contains the startup files. Generally base version contains the Startup file for the required MCU.***
 <br>List of *STM32 Boards*...
 1. STM32C0
 2. STM32F051R8T6 *Discovery*
