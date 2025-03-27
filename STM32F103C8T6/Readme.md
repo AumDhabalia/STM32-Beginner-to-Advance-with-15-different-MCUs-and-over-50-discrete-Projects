@@ -12,17 +12,16 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 ## Index
 ***Pre Setups and configurations***
 1. Blinky
-   1. ABC  
-3. ADC
-4. Interrupt
-5. Timer
-6. PWM
-7. USART
-8. SPI
-9. I2C
-10. CAN
-11. USB
-12. Other Projects
+2. ADC
+3. Interrupt
+4. Timer
+5. PWM
+6. USART
+7. SPI
+8. I2C
+9. CAN
+10. USB
+11. Other Projects
 
 ### Pre Setup and configurations
 Before starting, ensure Keil is installed. If not, refer here to install Keil MDK_ARM.
@@ -41,9 +40,20 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br>
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
-1.1 Simple Blink
-1.2 Light
+   1. Simple Blink
+   2. Lighthouse Blinking
+   3. Alternate Blinking
+   4. 2-Bit Counter
+   5. N-Bit Counter
+   6. Moving LEDs (One Way)
+   7. Moving LEDs (Back & Forth)
+   8. Random LED FLashing
+   9. LED & Pushbutton
+   10. Up-Down Counter with Pushbutton
+   11. 7-Segment Display
+   12. 4 digit 7-Segment Display
 ## 2. ADC (Analog to Digital Converter)
+   1.
 ## 3. Interrupt
 ## 4. Timer
 ## 5. PWM
