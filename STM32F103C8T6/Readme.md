@@ -109,11 +109,11 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    12. [4 digit 7-Segment Display]()
 ## 2. ADC (Analog to Digital Converter)
    1. Basic ADC setup
-   2. Read value 10kohm Pot
-   3. Dual Axis Pot
+   2. Read 10kohm Potentiometer
+   3. Dual Axis Potentiometer
    4. Signal Processing
    5. Temperature & Humidity Sensing
-   6. Battery Capacity Sensing
+   6. Voltage Sensing
    7. Dual Channel ADC
    8. N-Channel ADC
 ## 3. Interrupt
@@ -139,8 +139,26 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    8. Moving LEDs (Back Forth)
    9. RGB using PWM
 ## 6. USART
+   1. USART Setup
+   2. Message Transmission
+   3. Message Reception
 ## 7. SPI
+   1. SPI Setup
+   2. RFID Interfacing
+   3. Master-Slave Configuration (wired)
+   4. Wireless Communication with RF Transceiver
 ## 8. I2C
+   1. I2C Setup
+   2. I2C LCD Interfacing
 ## 9. CAN
 ## 10. USB
-## 11. Blinky
+## 11. Advanced Projects
+   1. Motor Speed Control using user input
+   2. Multiple event execution simultaneously
+   3. Battery Monitoring System
+   4. Solar based battery charger
+   5. Battery Charger
+   6. LED Positioning using Pot
+   7. USB based Xbox Game Controller
+   8. FFB Steering Wheel
+   9. Spectrum Analyzer
