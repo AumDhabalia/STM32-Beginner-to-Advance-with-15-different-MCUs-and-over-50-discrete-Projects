@@ -6,7 +6,7 @@
 <br>Download and install Keil MDK_ARM from [here](https://www.keil.com/demo/eval/arm.htm) on your system. This will install non-commercial version of MDK_ARM.
 <br>Open Pack Installer and install package for necesssary MCU from the list. ***Make sure to install the pack that contains the startup files.<br/>Generally base version contains the Startup file for the required MCU.***
 <br>
-<br>List of *STM32 Boards*...
+## *List of STM32 Boards*...
 1. STM32C0 *(Pending)*
 2. STM32F051R8T6 *Discovery* *(Pending)*
 3. [STM32F103C8T6 *BluePill*](STM32F103C8T6) *(In Progress)*
