@@ -24,3 +24,8 @@
 15. STM32L552ZE-Q *NUCLEO-144* *(Pending)*
 16. STM32U031R8 *NUCLEO-64* *(Pending)*
 17. STM32U385RG-Q *NUCLEO-64* *(Pending)*
+## Keil Installation Procedure
+1. Download Keil
+2. Right click on the file and run as administrator
+3. Fill-up the details
+4. 
