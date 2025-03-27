@@ -60,7 +60,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 | 46 | PB9 | PB9 | TIM4_CH4 | I2C1_SDA / CANTx |
 | 47 | VSS_3 | VSS_3 | - | - |
 | 48 | VDD_3 | VDD_3 | - | - |
-<br>In this readme, individual documentation for each of the tutorial is provided.
+<br><br>In this readme, individual documentation for each of the tutorial is provided.
 ## Index
 ***Pre Setups and Configurations***
 1. Blinky
