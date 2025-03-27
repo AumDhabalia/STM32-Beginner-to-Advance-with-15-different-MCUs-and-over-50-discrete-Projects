@@ -31,6 +31,8 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br/><br>On the right side specific packages will be displayed. Install DFP, CMSIS
 <br/>![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
 <br><br>On installation, popup for STLink Debugger will appear. Install it.
+<br>
+<br>**To create project click [here](https://github.com/AumDhabalia/STM32-Projects/blob/main/README.md#project-creation-on-keil)**
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON and OFF based projects will be performed. Given below is the list of the projects associated to this chapter.
 ## 2. ADC (Analog to Digital Converter)
