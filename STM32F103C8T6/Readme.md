@@ -30,15 +30,16 @@ Before starting, ensure Keil is installed. If not, refer here to install Keil MD
 <br/>![Screenshot 2025-03-27 193005](https://github.com/user-attachments/assets/2252c3cb-cc2b-43f0-bcc9-1cc7f4d02cc1)
 <br/>On the right side specific packages will be displayed. Install DFP, CMSIS
 <br/>![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
-#### 1. Blinky
+<br>On installation, popup for STLink Debugger will appear. Install it.
+## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON and OFF based projects will be performed. Given below is the list of the projects associated to this chapter.
-#### 2. ADC (Analog to Digital Converter)
-#### 3. Interrupt
-#### 4. Timer
-#### 5. PWM
-#### 6. USART
-#### 7. SPI
-#### 8. I2C
-#### 9. CAN
-#### 10. USB
-#### 11. Blinky
+## 2. ADC (Analog to Digital Converter)
+## 3. Interrupt
+## 4. Timer
+## 5. PWM
+## 6. USART
+## 7. SPI
+## 8. I2C
+## 9. CAN
+## 10. USB
+## 11. Blinky
