@@ -108,9 +108,26 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    11. [7-Segment Display]()
    12. [4 digit 7-Segment Display]()
 ## 2. ADC (Analog to Digital Converter)
-   1.
+   1. Basic ADC setup
+   2. Read value 10kohm Pot
+   3. Dual Axis Pot
+   4. Signal Processing
+   5. Temperature & Humidity Sensing
+   6. Battery Capacity Sensing
+   7. Dual Channel ADC
+   8. N-Channel ADC
 ## 3. Interrupt
+   1. LED & Interrupt Pushbutton
+   2. N-Bit Counter using Pushbutton
+   3. ADC channel control using Pushbutton
+   4. Sensor based interrupt generation
 ## 4. Timer
+   1. Blinky with Timer
+   2. Signal Generation using timer
+   3. Input Capture
+   4. Multiple sensor reading using timer
+   5. Real-Time Clock
+   6. Multi-channel timer
 ## 5. PWM
 ## 6. USART
 ## 7. SPI
