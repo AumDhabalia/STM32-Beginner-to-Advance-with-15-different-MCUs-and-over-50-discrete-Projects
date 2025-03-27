@@ -4,10 +4,63 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 <br>The microntroller has ARM 32-Bit Cortex-M3 core with **clock speed** of *72Mhz* max, memory of *64kB* on chip **flash** and ***20KB* SRAM** and **operating voltage of 2.0v to 3.6V**. It has *seven channel* DMA controller (with supported peripherals Timer, ADC, I2Cs, SPIs and USARTs). Two 12 bit (upto 16 channels) ADC with conversion range **0 to 3.6v**. Upto *five GPIO ports* from A to E. **Three** 16-bit timers, a 16-bit motor PWM, **two** watchdog timers and **one** 24-bit SysTick downcounter timer. **Nine** communication interfaces (two I2Cs, two SPIs, three USARTs, USB, CAN).
 <br/>
 <br/>Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) Reference Manual and STM32F103C8T6 [datasheet](https://www.st.com/resource/en/datasheet/cd00161566.pdf)
+
 ## BluePill Pinout Diagram
 ![image](https://github.com/user-attachments/assets/d8f85397-d5e6-4402-8ca8-7de60f78d5b5)
 ***Note : The general built-in LED connection is at PC13. However, it may change based on BluePill board manufacturers. For WaveShare STM32-BluePill built-in LED is at PB2.***
-<br>
+## STM32F103C8T6 Pin Plannar
+## STM32F103C8T6 PIN PLANNER
+
+| Pins | Name | Main Function | Default | Remap |
+|:------:|:------:|:--------------:|:---------:|:-------:|
+| 1 | VBat | VBat | VBat | - |
+| 2 | PC13-Tamper RTC | PC13 | TAMPER-RTC | - |
+| 3 | PC14-OSC32_IN | PC14 | OSC32_IN | - |
+| 4 | PC15-OSC32_OUT | PC15 | OSC32_OUT | - |
+| 5 | OSC_IN | OSC_IN | - | PD0 |
+| 6 | OSC_OUT | OSC_OUT | - | PD1 |
+| 7 | NRST | NRST | - | - |
+| 8 | VSS_A | VSS_A | - | - |
+| 9 | VDD_A | VDD_A | - | - |
+| 10 | PA0-WKUP | PA0 | WKUP/USART2_CTS/ADC12_IN0/TIM2_CH1_ETR | - |
+| 11 | PA1 | PA1 | USART2_RTS/ADC12_IN1/TIM2_CH2 | - |
+| 12 | PA2 | PA2 | USART2_Tx / ADC12_IN2 / TIM2_CH3 | - |
+| 13 | PA3 | PA3 | USART2_Rx / ADC12_IN3 / TIM2_CH4 | - |
+| 14 | PA4 | PA4 | SPI1_NSS / USART2_CK / ADC12_IN4 | - |
+| 15 | PA5 | PA5 | SPI1_SCK / ADC12_IN5 | - |
+| 16 | PA6 | PA6 | SPI1_MISO / ADC12_IN6 / TIM3_CH1 | TIM1_BKIN |
+| 17 | PA7 | PA7 | SPI1_MOSI / ADC12_IN7 / TIM3_CH2 | TIM1_CH1N |
+| 18 | PB0 | PB0 | ADC12_IN8 / TIM3_CH3 | TIM1_CH2N |
+| 19 | PB1 | PB1 | ADC12_IN9 / TIM3_CH4 | TIM1_CH3N |
+| 20 | PB2 | PB2/BOOT1/LD2 | - | - |
+| 21 | PB10 | PB10 | I2C2_SCL / USART3_Tx | TIM2_CH3 |
+| 22 | PB11 | PB11 | I2C2_SDA / USART3_Rx | TIM2_CH4 |
+| 23 | VSS_1 | VSS_1 | - | - |
+| 24 | VDD_1 | VDD_1 | - | - |
+| 25 | PB12 | PB12 | SPI2_NSS / I2C2_SMBAI / USART3_CK / TIM1_BKIN | - |
+| 26 | PB13 | PB13 | SPI2_SCK / USART3_CTS / TIM1_CH1N | - |
+| 27 | PB14 | PB14 | SPI2_MISO / USART3_RTS / TIM2_CH2N | - |
+| 28 | PB15 | PB15 | SPI2_MOSI / TIM1_CH3N | - |
+| 29 | PA8 | PA8 | USART1_CK / TIM1_CH1 / MCO | - |
+| 30 | PA9 | PA9 | USART1_Tx / TIM1_CH2 | - |
+| 31 | PA10 | PA10 | USART1_Rx / TIM1_CH3 | - |
+| 32 | PA11 | PA11 | USART1_CTS / CANRx / USBDM / TIM1_CH4 | - |
+| 33 | PA12 | PA12 | USART1_RTS / CANtX / USBDP / TIM1_CH5 | - |
+| 34 | PA13 | PA13 | - | PA13 |
+| 35 | VSS_2 | VSS_2 | - | - |
+| 36 | VDD_2 | VDD_2 | - | - |
+| 37 | PA14 | JTCLK/SWCLK | - | PA14 |
+| 38 | PA15 | JTDI | - | TIM2_CH1_ETR / PA15 / SPI1_NSS |
+| 39 | PB3 | JTDO | - | TIM2_CH2 / PB3 / TRACESWO / SPI1_SCK |
+| 40 | PB4 | JNTRST | - | TIM3_CH1 / PB4 / SPI1_MISO |
+| 41 | PB5 | PB5 | I2C1_SMBAI | TIM3_CH2 / SPI1_MOSI |
+| 42 | PB6 | PB6 | I2C1_SCK/TIM4_CH1 | USART1_Tx |
+| 43 | PB7 | PB7 | I2C1_SDA/TIM4_CH2 | USART1_Rx |
+| 44 | BOOT0 | BOOT0 | - | - |
+| 45 | PB8 | PB8 | TIM4_CH3 | I2C1_SCL / CANRx |
+| 46 | PB9 | PB9 | TIM4_CH4 | I2C1_SDA / CANTx |
+| 47 | VSS_3 | VSS_3 | - | - |
+| 48 | VDD_3 | VDD_3 | - | - |
 <br>In this readme, individual documentation for each of the tutorial is provided.
 ## Index
 ***Pre Setups and Configurations***
