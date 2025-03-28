@@ -5,7 +5,7 @@ It includes introductory section of different MCU families to simultaneous opera
 <br>
 ## Index
 1. Introduction
-2. Keil Installation
+2. Keil IDE
 3. STM32C031C6
 4. STM32F051R8T6
 5. STM32F103C8T6
