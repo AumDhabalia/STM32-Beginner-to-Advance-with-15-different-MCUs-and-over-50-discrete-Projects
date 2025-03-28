@@ -1,7 +1,6 @@
 # STM32 Bare Metal Programming
-## From Beginner to Advance on 15 different MCUs and over 50 Different Projects
-**Projects based on STM32 Boards
-<br>This repository contains all the programs related to STM32 based bare-metal programming using *STM32 Boards*.**
+## From Beginner to Advance on 15 different MCUs and over 50 Dedicated Projects
+**In this repository, ARM Keil based STM32 microcontroller programming is  contains all the programs related to STM32 based bare-metal programming using *STM32 Boards*.**
 <br>
 <br>**Pre-Requisites**
 <br>Download and install Keil MDK_ARM from [here](https://www.keil.com/demo/eval/arm.htm) on your system. This will install non-commercial version of MDK_ARM.
