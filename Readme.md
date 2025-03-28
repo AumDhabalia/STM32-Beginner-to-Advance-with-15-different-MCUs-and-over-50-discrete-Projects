@@ -1,6 +1,6 @@
 # STM32 Bare Metal Programming using Keil uVision-5 IDE
 ## From Beginner to Advance on 17 different MCUs and over 50 Dedicated Projects
-**In this repository, bare metal programmming for STM32 microcontrollers performed using ARM Keil uVision-5 IDE. It contains all the programs related to STM32 based bare-metal programming using *STM32 Boards*.**
+**In this repository, STM32 microcontrollers are programmed using ARM Keil uVision-5 IDE. It contains all the bare-metal programs for STM32 microcontrollers written from scratch using ARM Keil uVision-5 IDE.**
 It includes introductory section of different MCU families to simultaneous operation of multiple blocks to dedicated project. Each of the program contains dedicated procedure including step-by-step process, components used, pin assignment & circuit diagram.
 <br>
 ## Index
