@@ -25,7 +25,7 @@
 15. STM32L552ZE-Q *NUCLEO-144*...........................**(Pending)**
 16. STM32U031R8 *NUCLEO-64*..............................**(Pending)**
 17. STM32U385RG-Q *NUCLEO-64*............................**(Pending)**
-<br/>
+<br>
 ## Keil Installation Procedure
 1. Download [Keil](https://www.keil.com/demo/eval/arm.htm)
 <br/>![image](https://github.com/user-attachments/assets/43740124-5409-403b-9577-ed97e7dc00d0)
