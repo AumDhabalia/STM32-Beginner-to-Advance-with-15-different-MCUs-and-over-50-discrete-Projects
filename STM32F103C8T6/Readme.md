@@ -11,6 +11,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
   - **Three** 16-bit timers, a 16-bit motor PWM, **two** watchdog timers and **one** 24-bit SysTick downcounter timer.
 - **Nine** communication interfaces (two I2Cs, two SPIs, three USARTs, USB, CAN).
 
+### Block Diagram
 <br>Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) Reference Manual and STM32F103C8T6 [datasheet](https://www.st.com/resource/en/datasheet/cd00161566.pdf). Refer to ***BluePill Pinout Diagram*** as well as ***STM32F103C8T6 PIN PLANNER***.
 
 ## BluePill Pinout Diagram
