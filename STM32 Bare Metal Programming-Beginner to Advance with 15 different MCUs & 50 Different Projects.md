@@ -11,7 +11,7 @@
 1. STM32C031C6 *NUCLEO-64*...............................**(Pending)** <br>
 2. STM32F051R8T6 *Discovery*.............................**(Pending)** <br>
 3. [STM32F103C8T6 *BluePill*](STM32F103C8T6).............*(In Progress)* <br>
-4. STM32F207ZG *NUCLEO*..................................**(Pending)** <br>
+4. STM32F207ZG *NUCLEO-144*..................................**(Pending)** <br>
 5. STM32F334C8T6 *Discovery*.............................**(Pending)** <br>
 6. STM32F411CEU6 *BlackPill*.............................**(Pending)** <br>
 7. STM32F722ZE *NUCLEO-144*..............................**(Pending)** <br>
