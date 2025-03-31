@@ -53,9 +53,9 @@ int main(void)
 	while(1)
 	{
 		GPIOB->BSRR |= GPIO_BSRR_BS2; //Set PB6   (LED ON)
-		for(volatile int i = 0; i < 500000; i++); // 500 ms = 500,000 us
+		for(volatile int i = 0;i < 500000;i++); // 500 ms = 500,000 us
 		//Delay can be changed as per user requirement...
 		GPIOB->BSRR |= GPIO_BSRR_BR2; //Reset PB6 (LED OFF)
-		for(volatile int i = 0;i < 500000;i++);*/
+		for(volatile int i = 0;i < 500000;i++); // 500 ms = 500,000 us
 	}
 }
