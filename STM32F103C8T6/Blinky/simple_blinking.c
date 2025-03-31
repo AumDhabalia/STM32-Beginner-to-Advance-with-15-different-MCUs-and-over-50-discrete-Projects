@@ -1,4 +1,7 @@
 /*
+Project Title : Simple Blinking
+Author : Aum Dhabalia
+Date : 25/03/2025
 This program is for blinking an LED at time period of 0.5 seconds.
 LED built-in on the BluePill board is taken (LED Pin may vary on different BluePill Supplier).
 Refer to RM0008 reference manual as well as STM32F103C8T6 datasheet.
