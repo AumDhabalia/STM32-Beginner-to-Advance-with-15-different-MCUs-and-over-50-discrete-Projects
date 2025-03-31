@@ -46,7 +46,7 @@ It includes introductory section of different MCU families to simultaneous opera
 * Accelerator (AI and ML Accelerators)
 * Graphics Accelerators
 
-<br/>and much more.
+and much more.
 
 ## *List of STM32 Boards...*
 
