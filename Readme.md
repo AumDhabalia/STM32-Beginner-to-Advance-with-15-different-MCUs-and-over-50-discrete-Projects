@@ -5,8 +5,8 @@ It includes introductory section of different MCU families to simultaneous opera
 <br>
 ## Index
 1. Introduction
-  1. Introduction to STM32 MCUs
-  2. List of STM32 Boards
+   1. Introduction to STM32 MCUs
+   2. List of STM32 Boards
 2. Keil IDE
   1. Introduction
   2. Installation
