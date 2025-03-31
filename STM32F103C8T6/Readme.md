@@ -88,7 +88,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 11. Other Projects
 
 ### *Pre Setup and Configurations*
-Before starting, ensure Keil is installed. If not, refer here to install Keil MDK_ARM.
+Before starting, ensure Keil is installed. If not, refer [here](main/Readme.md#2-keil-ide) to install Keil MDK_ARM.
 <br>
 <br/>Open Pack Installer.
 <br/>
