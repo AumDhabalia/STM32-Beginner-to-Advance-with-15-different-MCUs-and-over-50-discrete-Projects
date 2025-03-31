@@ -47,6 +47,7 @@ It includes introductory section of different MCU families to simultaneous opera
 * Graphics Accelerators
 
 and much more.
+<br>There are 17 microcontrollers used in this repository listed below. Each of these mcus is provided with basic hands-on to intern=mediate experiments to advanced dedicated projects.
 
 ## *List of STM32 Boards...*
 
