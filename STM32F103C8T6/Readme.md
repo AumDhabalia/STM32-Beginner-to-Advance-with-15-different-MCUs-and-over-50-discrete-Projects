@@ -113,7 +113,7 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    6. [Moving LEDs (One Way)]()
    7. [Moving LEDs (Back & Forth)]()
    8. [Random LED(s) FLashing]()
-   9. [LED & Pushbutton](STM32F103C8T6/Blinky/pushbutton_blink.c)
+   9. [Pushbutton Blinking](STM32F103C8T6/Blinky/pushbutton_blink.c)
    10. [Up-Down Counter with Pushbutton]()
    11. [7-Segment Display]()
    12. [4 digit 7-Segment Display]()
