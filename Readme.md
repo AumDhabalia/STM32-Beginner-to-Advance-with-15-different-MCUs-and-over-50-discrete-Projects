@@ -26,10 +26,22 @@ It includes introductory section of different MCU families to simultaneous opera
 
 # 1. Introduction
 **arm** previously written as **ARM** (*Advanced RISC Machines*), is a family of processors based on RISC (Reduced Intruction Set Computer) architecture which requires less transistors compared to CISC (*Complex Instruction Set Computer*) architecture. This resulted in low cost, reduced power consumption and desirable use of battery-operated devices for the processors. Presently, the whole embedded systems use RISC processors among which **arm** processors are used for most of the systems like mobile phones, automation systems, Internet of Things, Smart Systems, ADAS, etc. Many companies like NXP, STMicroelectronics, Qualcomm, Texas Instruments, Microchip, Cypress (Infineon), Nordic Semiconductors, Samsung, Apple, MediaTek, Nvidia, Amazon, etc. use **arm** processors. arm processors include Cortex, Neoverse and SecurCore series.
-<br>In this repo, STMicroelectronics based 32-Bit arm Cortex-M family based MCUs will be studied and experimented along with different projects using these MCUs. In this repo, a total of 17 microcontrollers are taken one from each family, sub-family, sub-sub-family etc. for studying and each of the micronctroller is provided with its *'own hand-on guide'*. This repo contains over 50 projects dedicated to these 17 MCUs.
+<brThis repository focuses on studying and experimenting on **32-bit ARM Cortex-M family of microcontrollers by *STMicroelectronics*** through various projects. A total of 17 microcontrollers, each representing a different family, sub-family, or sub-sub-family, have been selected for in-depth exploration. Each microcontroller is provided its own dedicated hands-on guide, and the repository includes over 50 projects designed to demonstrate their capabilities.
 ## *Introduction to STM32 Family*
 ***STM32*** is a family of 32 bit ARM Cortex processors developed by **STMicroelectronics** widely used for embedded systems for their high performance, low power, high peripheral set and extremely scalable across different platforms.
-
+<br>These microcontrollers include
+* High frequency clock speed (*Generally in **MHz***)
+* Power Modes (*Standby Mode, Sleep Mode, Shutdown Mode, etc.*)
+* Rich peripheral set known as GPIO (*General Purpose Input/Output*) registers,
+* Timers (*General purpose, PWM based, Input Capture, WatchDogs, RealTime Clock*)
+* Analog features like *ADC* and *DAC*
+* UART/USART
+* I2C, SPI, CAN features
+* Ethernet, USB features
+* Direct Memory Access (*DMA*) Controller
+* Memory Protection Units
+* Accelerator (AI and ML Accelerators)
+* Graphic Accelerators
 
 ## *List of STM32 Boards...*
 
