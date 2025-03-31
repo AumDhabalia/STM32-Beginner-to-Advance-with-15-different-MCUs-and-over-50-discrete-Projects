@@ -10,7 +10,7 @@ It includes introductory section of different MCU families to simultaneous opera
 2. Keil IDE
    1. Introduction
    2. Installation
-   3. Project Creation
+   3. Project Setup
 3. STM32 Projects
    1. Force Feedback Steering Wheel and Paddles
    2. Electromagentic Coil Gun
