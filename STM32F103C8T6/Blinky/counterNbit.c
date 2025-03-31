@@ -59,7 +59,7 @@ int main(void)
 	GPIOA->CRL |= 0x22222222; // Set as Output (2 MHz, Push-Pull)
 
 	//Set PA0 to PA7 to 0
-	GPIOA->BSRR |= (0xFF);
+	GPIOA->ODR &= (0xFF00);
 	while(1)
 	{
 		for(uint8_t count = 0;count <256;count++)
