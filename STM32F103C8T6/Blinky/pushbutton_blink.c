@@ -1,4 +1,7 @@
 /*
+Project Title : Pushbutton Blinking
+Author : Aum Dhabalia
+Date : 26/03/2025
 This program is for blinking LED using a pushbutton.
 LED built-in on the BluePill board is taken (LED Pin may vary on different BluePill supplier).
 Refer RM0008 reference manual and STM32F103C8T6 datasheet.
