@@ -1,4 +1,7 @@
 /*
+Project Title : Alternate Blinking
+Author : Aum Dhabalia
+Date : 26/03/2025
 This program is for blinking two LEDs alternately at constant delay.
 Two LEDs at PB6 and PB7 are taken with 220ohm resistor between LED and pin.
 Refer to RM0008 reference manual as well as STM32F103C8T6 datasheet.
