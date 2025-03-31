@@ -50,7 +50,9 @@ It includes introductory section of different MCU families to simultaneous opera
 17. STM32U385RG-Q *NUCLEO-64*............................**(Pending)** <br>
 <br>
 
-## Keil Installation Procedure
+# Keil IDE
+## Introduction
+## Keil Installation
 1. Download [Keil](https://www.keil.com/demo/eval/arm.htm)
 <br/>![image](https://github.com/user-attachments/assets/43740124-5409-403b-9577-ed97e7dc00d0)
 
@@ -63,7 +65,8 @@ It includes introductory section of different MCU families to simultaneous opera
 
 5. Wait for installation to complete
 6. Installation Complete
-## Project Creation on Keil
+
+## Project Setup
 1. Start Keil uVision.
 2. Go to Projects->New uVision Projects
 <br>![image](https://github.com/user-attachments/assets/99590765-830d-410a-b37f-0eeaba7828a1)
