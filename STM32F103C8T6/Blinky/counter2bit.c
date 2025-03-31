@@ -1,4 +1,7 @@
 /*
+Project Title : 2-Bit Counter
+Author : Aum Dhabalia
+Date : 26/03/2025
 This program is for blinking LEDs in pattern of 2-Bit up Counter.
 Two LEDs at PB6 and PB7 are connected with 220ohm resistor between LED and pin.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
