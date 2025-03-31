@@ -50,7 +50,7 @@ It includes introductory section of different MCU families to simultaneous opera
 17. STM32U385RG-Q *NUCLEO-64*............................**(Pending)** <br>
 <br>
 
-# Keil IDE
+# 2. Keil IDE
 ## Introduction
 ## Keil Installation
 1. Download [Keil](https://www.keil.com/demo/eval/arm.htm)
