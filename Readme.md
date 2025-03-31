@@ -8,21 +8,21 @@ It includes introductory section of different MCU families to simultaneous opera
    1. Introduction to STM32 MCUs
    2. List of STM32 Boards
 2. Keil IDE
-  1. Introduction
-  2. Installation
-  3. Project Creation
+   1. Introduction
+   2. Installation
+   3. Project Creation
 3. STM32 Projects
-  1. Force Feedback Steering Wheel and Paddles
-  2. Electromagentic Coil Gun
-  3. Audio Spectrum Analyzer
-  4. Signal Generator
-  5. Anti Air Defence System
-  6. Smart Home Automation
-  7. Oscilloscope
-  8. Remote Controlled Drone
-  9. Plasma Boosted Drone
-  10. Unmanned Marine vehicle
-  11. Unmanned Combat Ground Vehicle (RC Battle Tank)
+   1. Force Feedback Steering Wheel and Paddles
+   2. Electromagentic Coil Gun
+   3. Audio Spectrum Analyzer
+   4. Signal Generator
+   5. Anti Air Defence System
+   6. Smart Home Automation
+   7. Oscilloscope
+   8. Remote Controlled Drone
+   9. Plasma Boosted Drone
+   10. Unmanned Marine vehicle
+   11. Unmanned Combat Ground Vehicle (RC Battle Tank)
 <br>**Pre-Requisites**
 <br>Download and install Keil MDK_ARM from [here](https://www.keil.com/demo/eval/arm.htm) on your system. This will install non-commercial version of MDK_ARM.
 <br>Open Pack Installer and install package for necesssary MCU from the list. ***Make sure to install the pack that contains the startup files.<br/>Generally base version contains the Startup file for the required MCU.***
