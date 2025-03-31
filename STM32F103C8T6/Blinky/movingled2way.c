@@ -6,6 +6,7 @@ This program makes LEDs move from right to left and then left to right repeatedl
 Connect 8 LEDs with 220-ohm resistors from PA0 to PA7.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer to stm32f10x.h file for macros used.
+
 */
 #include "stm32f10x.h"
 
