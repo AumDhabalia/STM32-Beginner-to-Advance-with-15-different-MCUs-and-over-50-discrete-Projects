@@ -8,7 +8,10 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 - Two 12 bit (upto 16 channels) ADC with conversion range **0 to 3.6v**.
 - Upto *five GPIO ports* from A to E.
 - **Seven** timers
-  - **Three** 16-bit timers, a 16-bit motor PWM, **two** watchdog timers and **one** 24-bit SysTick downcounter timer.
+  - **Three** 16-bit timers
+  - **One** 16-bit motor PWM
+  - **Two** watchdog timers
+  - **One** 24-bit SysTick downcounter timer.
 - **Nine** communication interfaces (two I2Cs, two SPIs, three USARTs, USB, CAN).
 
 ### Block Diagram
