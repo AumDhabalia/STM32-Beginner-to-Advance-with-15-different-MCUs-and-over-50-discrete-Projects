@@ -110,7 +110,7 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    3. [Alternate Blinking](STM32F103C8T6/Blinky/alternate_blinking.c)
    4. [2-Bit Counter](STM32F103C8T6/Blinky/counter2bit.c)
    5. [N-Bit Counter](STM32F103C8T6/Blinky/counterNbit.c)
-   6. [Moving LEDs (One Way)]()
+   6. [Moving LEDs (One Way)](STM32F103C8T6/Blinky/movingled.c)
    7. [Moving LEDs (Back & Forth)]()
    8. [Random LED(s) FLashing]()
    9. [Pushbutton Blinking](STM32F103C8T6/Blinky/pushbutton_blink.c)
