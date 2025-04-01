@@ -54,7 +54,17 @@ and much more.
 <br>There are 17 microcontrollers used in this repository listed below. Each of these mcus is provided with basic hands-on to intermediate experiments to advanced dedicated projects.
 <br>
 <br>STM32 MCUs are bifurcated based on the nomenclature provided by STMicroelectronics.
+<br>STM32xLvvpYzz
+| x | L |
+|:---:|:---:|
+| C | 0 |
+| F | 0,1,2,3,4,7 |
+| G | 0,4 |
+| H | 5,7 |
+| L | 0,1,4,4+,5 |
+| U | 0,3,5 |
 
+vv ->
 
 ## *List of STM32 Boards...*
 
