@@ -189,7 +189,8 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    5. Write a program for generating three different signals using multi-channel timers
    6. Write a program for RGB light control using PWM
    7. Write a program for controlling voltage ranging from 10v to 220v. Use PWM
-   8. Write a program to transmit messages with time period based on user selection
-   9. Design a Daisy-Chain setup for SPI communication interface
+   8. Write a program to transmit messages with time period based on user selection.
+   9. Design a Daisy-Chain setup for SPI communication interface.
    10. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
-   11. Write a program for data transmission from Bluepill memory to System using USB
+   11. Write a program for data transmission from Bluepill memory to System using USB.
+   12. Write a program for CAN based Memory interfacing with multiple memory ICs.
