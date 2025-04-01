@@ -52,6 +52,7 @@ It includes introductory section of different MCU families to simultaneous opera
 
 and much more.
 <br>There are 17 microcontrollers used in this repository listed below. Each of these mcus is provided with basic hands-on to intermediate experiments to advanced dedicated projects.
+<br>
 <br>STM32 MCUs are bifurcated based on the nomenclature provided by STMicroelectronics.
 
 
