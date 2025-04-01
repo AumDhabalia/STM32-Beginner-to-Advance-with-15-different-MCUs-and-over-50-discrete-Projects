@@ -103,7 +103,7 @@ Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-k
 <br/>![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
 <br><br>On installation, popup for STLink Debugger will appear. Install it.
 <br>
-<br>**To create project click [here](../README.md#project-creation-on-keil)**
+<br>**To create project click [here](../README.md#project-setup)**
 <br>Once project is created, copy [main.c](main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
 <br>
 <br>
