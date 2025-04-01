@@ -55,13 +55,13 @@ and much more.
 <br>
 <br>STM32 MCUs are bifurcated based on the nomenclature provided by STMicroelectronics.
 <br>STM32xLvvpYzz
-STM32 ➡ 32-Bit MCU Division
-x ➡ Family
-L ➡ Family Line
-vv ➡ Line Specification
-p ➡ Package/Pin Count
-Y ➡ Flash Specification
-zz ➡ Other Features
+* STM32 ➡ 32-Bit MCU Division
+* x ➡ Family
+* L ➡ Family Line
+* vv ➡ Line Specification
+* p ➡ Package/Pin Count
+* Y ➡ Flash Specification
+* zz ➡ Other Features
 | x | L |
 |:---:|:---:|
 | C | 0 |
