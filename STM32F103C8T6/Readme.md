@@ -111,28 +111,34 @@ Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-k
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
    1. [Simple Blink](Blinky/simple_blinking.c)<br>
-This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms. For this firstly create a new &#181;vision project from Project->New &#181;vision project.
-   2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
+This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms. For this firstly create a new &#181;vision project from Project->New &#181;vision project. Select STM32F103C8 Device, select CMSIS->Core, select Device->Startup and click OK.
+<br>
+<br>Create a new text file and save as main.c.
+<br>Add main.c in Source Group 1
+<br>Goto Target_1 Options and navigate to Debugger select STLINK-Debugger and goto its Settings
+<br>Tick on Sharable STLINK
+<br>Navigate to Flash. Tick on 
+   3. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
    
-   3. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
+   4. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
    
-   4. [2-Bit Counter](Blinky/counter2bit.c)<br>
+   5. [2-Bit Counter](Blinky/counter2bit.c)<br>
    
-   5. [N-Bit Counter](Blinky/counterNbit.c)<br>
+   6. [N-Bit Counter](Blinky/counterNbit.c)<br>
    
-   6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
+   7. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
    
-   7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
+   8. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
    
-   8. [Random LED(s) FLashing](Blinky/randomflashing.c)
+   9. [Random LED(s) FLashing](Blinky/randomflashing.c)
    
-   9. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
+   10. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
    
-   10. [Up-Down Counter with Pushbutton]()
+   11. [Up-Down Counter with Pushbutton]()
    
-   11. [7-Segment Display]()
+   12. [7-Segment Display]()
    
-   12. [4 digit 7-Segment Display]()
+   13. [4 digit 7-Segment Display]()
 
 ## 2. ADC (Analog to Digital Converter)
    1. Basic ADC setup
