@@ -92,7 +92,7 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 11. Other Projects
 
 ### *Pre Setup and Configurations*
-Before starting, ensure Keil is installed. If not, refer [here](main/Readme.md#2-keil-ide) to install Keil MDK_ARM.
+Before starting, ensure Keil is installed. If not, refer [here](Readme.md#2-keil-ide) to install Keil MDK_ARM.
 <br>
 <br/>Open Pack Installer.
 <br/>
