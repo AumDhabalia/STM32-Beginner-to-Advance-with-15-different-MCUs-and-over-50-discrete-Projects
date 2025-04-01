@@ -89,7 +89,8 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 8. I2C
 9. CAN
 10. USB
-11. Other Projects
+11. Projects
+12. Exercise
 
 ### *Pre Setup and Configurations*
 Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-keil-ide) to install Keil MDK_ARM.
@@ -180,3 +181,15 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    7. USB based Xbox Game Controller
    8. Memory Interfacing
    9. Rotary Encoder and LCD interfacing
+## 12. Exercise
+   1. Write a program for moving leds bidirectionally (back 7 forth)
+   2. Write a program for moving digits unidirectionally using 8 7-segment display module
+   3. Write a program reading 4 ADC inputs. Use multiple channel ADC
+   4. Write a program that for blinking 60 second counter and reading ADC input
+   5. Write a program for generating three different signals using multi-channel timers
+   6. Write a program for RGB light control using PWM
+   7. Write a program for controlling voltage ranging from 10v to 220v. Use PWM
+   8. Write a program to transmit messages with time period based on user selection
+   9. Design a Daisy-Chain setup for SPI communication interface
+   10. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
+   11. Write a program for data transmission from Bluepill memory to System using USB
