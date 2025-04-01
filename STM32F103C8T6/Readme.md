@@ -182,7 +182,7 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
    8. Memory Interfacing
    9. Rotary Encoder and LCD interfacing
 ## 12. Exercise
-   1. Write a program for moving leds bidirectionally (back 7 forth)
+   1. Write a program for moving leds bidirectionally (Back & Forth)
    2. Write a program for moving digits unidirectionally using 8 7-segment display module
    3. Write a program reading 4 ADC inputs. Use multiple channel ADC
    4. Write a program that for blinking 60 second counter and reading ADC input
