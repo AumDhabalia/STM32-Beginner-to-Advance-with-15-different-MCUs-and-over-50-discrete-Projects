@@ -4,7 +4,7 @@
 It includes introductory section of different MCU families to simultaneous operation of multiple blocks to dedicated project. Each of the program contains dedicated procedure including step-by-step process, components used, pin assignment & circuit diagram.
 <br>
 ## Index
-1. Introduction
+1. [Introduction](Readme.md/#1-Introduction)
    1. Introduction to STM32 MCUs
    2. List of STM32 Boards
 2. Keil IDE
