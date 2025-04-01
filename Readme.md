@@ -95,7 +95,20 @@ and much more.
 
 # 2. Keil IDE
 ## Introduction
-Keil &#181;vision 5 is powerfull Integrated Development Enviroment (IDE) and debugger tool widely used for ARM Cortex family processors but also supports 8051 and other microcontrollers
+Keil &#181;vision 5 is powerfull Integrated Development Enviroment (IDE) and debugger tool widely used for ARM Cortex family processors but also supports 8051 and other microcontrollers.
+<br>Features included
+* Integrated Development Enviroment
+* Targeted for embedded Systems
+* Supports multiple architectures
+* Build 7 Debug Mode
+* Run-Time Enviroment
+* Debugging Capabilities
+* Souce Code Editor
+* Project Management
+* Software Packs
+* Simulation
+* Flash Programming
+* Community Edition
 
 ## Keil Installation
 1. Download [Keil](https://www.keil.com/demo/eval/arm.htm)
