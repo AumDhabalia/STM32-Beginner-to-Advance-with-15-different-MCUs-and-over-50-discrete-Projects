@@ -8,9 +8,9 @@ It includes introductory section of different MCU families to simultaneous opera
    1. Introduction to STM32 MCUs
    2. [List of STM32 Boards](Readme.md/#List-of-STM32-Boards)
 2. Keil IDE
-   1. Introduction
-   2. Installation
-   3. Project Setup
+   1. [Introduction](Readme.md/#Introduction)
+   2. [Installation](Readme.md/#Installation)
+   3. [Project Setup](readme.md/#Project-Setup)
 3. STM32 Projects
    1. Force Feedback Steering Wheel and Paddles
    2. Electromagentic Coil Gun
