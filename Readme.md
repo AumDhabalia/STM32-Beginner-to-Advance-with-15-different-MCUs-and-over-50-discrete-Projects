@@ -62,6 +62,7 @@ and much more.
 * p ➡ Package/Pin Count
 * Y ➡ Flash Specification
 * zz ➡ Other Features
+
 | x | L |
 |:---:|:---:|
 | C | 0 |
