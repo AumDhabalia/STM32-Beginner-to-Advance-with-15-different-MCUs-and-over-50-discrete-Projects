@@ -138,3 +138,10 @@ Keil &#181;vision 5 is powerfull Integrated Development Enviroment (IDE) and deb
 <br>![image](https://github.com/user-attachments/assets/987327d4-c52e-4ece-9fae-2ba354068a4a)
 <br>
 7. Create new text file by pressing Ctrl+N or by navigating to File->New. Save this file as main.c and add it to Source Group 1. Double click on Source Group 1 and search for main.c and then click Add. Its done.
+8. Right click on Target_1 and select **Options for Target 'Target_1'**. Navigate to Debug and select STLINK Debugger. Go to its Setings and Tick on Sharable STLINK.
+9. Navigate to Flash and Tick on Reset and Run.
+10. Navigate to Trace. Click Okk.
+11. Build the target by pressing F7 or clicking on the Build icon.
+12. Press F8 for flashing/donloading the program to the microcontroller.
+13. Goto to Debug->Start/Stop Debug Session or Press Ctrl+F5 for starting debug session.
+14. Press F5 for running the program.
