@@ -33,7 +33,16 @@ int main(void)
 	
 	//Update System Core Clock variable
 	SystemCoreClock = 72000000;
-	
+
+	//Enable ADC1, PA0, AFIO
+	RCC->APB2ENR |= RCC_APB2ENR_ADC1EN | RCC_APB2ENR_IOPAEN | RCC_APB2ENR_AFIOEN;
+
+	//Configure ADC1
+	RCC->CFGR |= RCC_CFGR_ADCPRE_DIV6;
+
+	//Configure GPIOA
+	GPIOA->CRL |= GPIO_CRL_CNF0_1;
+	GPIOA->CRL &= GPIO_CRL_CNF0_0;
 	//User Code initialization...
 	while(1)
 	{
