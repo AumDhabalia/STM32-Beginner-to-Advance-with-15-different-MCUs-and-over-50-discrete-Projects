@@ -37,12 +37,14 @@ int main(void)
 	//Enable ADC1, PA0, AFIO
 	RCC->APB2ENR |= RCC_APB2ENR_ADC1EN | RCC_APB2ENR_IOPAEN | RCC_APB2ENR_AFIOEN;
 
-	//Configure ADC1
+	//Set ADC1 clock to 12MHz
 	RCC->CFGR |= RCC_CFGR_ADCPRE_DIV6;
 
-	//Configure GPIOA
-	GPIOA->CRL |= GPIO_CRL_CNF0_1;
-	GPIOA->CRL &= GPIO_CRL_CNF0_0;
+	//Configure GPIOA as Input Analog Mode
+	GPIOA->CRL &= ~(0x0000000F);
+	GPIOA->CRL |= 0x00000008;
+
+	
 	//User Code initialization...
 	while(1)
 	{
