@@ -2,8 +2,8 @@
 Project Title : LED Blink on PB2
 Author : Aum Dhabalia
 Date : 31/03/2025
-This program is for blinking PB2 LED using timer at time period of 1000 ms.
-A built-in LED is connected to PB2 is blinked at time period of 500 ms.
+This program is for setting up timers for generating time periods rather than using delays in main thread.
+A built-in LED connected to PB2 is blinked with time period of 1000 ms.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer to stm32f10x.h file for macros used.
 */
