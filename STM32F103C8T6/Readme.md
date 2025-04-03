@@ -81,8 +81,8 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 ***Pre Setups and Configurations***
 1. [Blinky](Readme.md#1-blinky)
 2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
-3. Interrupt
-4. Timer
+3. [Interrupt](Readme.md#3-interrupt)
+4. [Timer](Readme.md#4-timer)
 5. PWM
 6. USART
 7. SPI
