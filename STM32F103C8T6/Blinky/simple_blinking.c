@@ -54,15 +54,12 @@ int main(void)
     while(1)
     {
         // Set PB2
-        GPIOB->BSRR = (1 << 2);
-        
+        GPIOB->BSRR |= GPIO_BSRR_BS2;
         // Delay
-        delay_ms(500);
-        
-        // Reset PB2
-        GPIOB->BSRR = (1 << (2 + 16));
-        
-        // Delay
-        delay_ms(500);
+        for(volatile int i = 0;i < 500000;i++);
+        //Reset PB2
+        GPIOB->BSRR |= GPIO_BSRR_BR2;
+        //Delay
+        for(volatile int i = 0;i < 500000;i++);
     }
 }
