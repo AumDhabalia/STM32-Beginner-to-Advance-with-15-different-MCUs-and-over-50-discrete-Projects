@@ -155,7 +155,7 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
    3. ADC channel control using Pushbutton
    4. Sensor based interrupt generation
 ## 4. Timer
-   1. Blinky with Timer
+   1. [Blinky with Timer](Timer/timer_blink.c)
    2. Signal Generation using timer
    3. Input Capture
    4. Multiple sensor reading using timer
