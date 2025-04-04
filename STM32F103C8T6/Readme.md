@@ -118,27 +118,25 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 <br>Goto Target_1 Options and navigate to Debugger select STLINK-Debugger and goto its Settings
 <br>Tick on Sharable STLINK
 <br>Navigate to Flash. Tick on 
-   3. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
+   2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
    
-   4. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
+   3. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
    
-   5. [2-Bit Counter](Blinky/counter2bit.c)<br>
+   4. [2-Bit Counter](Blinky/counter2bit.c)<br>
    
-   6. [N-Bit Counter](Blinky/counterNbit.c)<br>
+   5. [N-Bit Counter](Blinky/counterNbit.c)<br>
    
-   7. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
+   6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
    
-   8. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
+   7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
    
-   9. [Random LED(s) FLashing](Blinky/randomflashing.c)
+   8. [Random LED(s) FLashing](Blinky/randomflashing.c)
    
-   10. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
+   9. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
    
-   11. [Up-Down Counter with Pushbutton]()
+   10. [7-Segment Display]()
    
-   12. [7-Segment Display]()
-   
-   13. [4 digit 7-Segment Display]()
+   11. [4 digit 7-Segment Display]()
 
 ## 2. ADC (Analog to Digital Converter)
    1. Basic ADC setup
