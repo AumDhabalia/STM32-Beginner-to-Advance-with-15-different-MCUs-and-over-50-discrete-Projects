@@ -200,13 +200,14 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
    8. Memory Interfacing
    9. Rotary Encoder and LCD interfacing
 ## 12. Exercise
-   1. Write a program for moving digits unidirectionally using 8 7-segment display module
-   2. Write a program reading 4 ADC inputs. Use multiple channel ADC
-   3. Write a program that for blinking 60 second counter and reading ADC input
-   4. Write a program for generating three different signals using multi-channel timers
-   5. Write a program for controlling voltage ranging from 10v to 220v. Use PWM
-   6. Write a program to transmit messages with time period based on user selection.
-   7. Design a Daisy-Chain setup for SPI communication interface.
-   8. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
-   9. Write a program for data transmission from Bluepill memory to System using USB.
-   10. Write a program for CAN based Memory interfacing with multiple memory ICs.
+   1. Write a progrm for 8-bit updown counter using pushbutton and a counter switch which controls count direction (i.e. up counter = LOW, down counter = HIGH).
+   2. Write a program for moving digits unidirectionally using 8 7-segment display module
+   3. Write a program reading 4 ADC inputs. Use multiple channel ADC
+   4. Write a program that for blinking 60 second counter and reading ADC input
+   5. Write a program for generating three different signals using multi-channel timers
+   6. Write a program for controlling voltage ranging from 10v to 220v. Use PWM
+   7. Write a program to transmit messages with time period based on user selection.
+   8. Design a Daisy-Chain setup for SPI communication interface.
+   9. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
+   10. Write a program for data transmission from Bluepill memory to System using USB.
+   11. Write a program for CAN based Memory interfacing with multiple memory ICs.
