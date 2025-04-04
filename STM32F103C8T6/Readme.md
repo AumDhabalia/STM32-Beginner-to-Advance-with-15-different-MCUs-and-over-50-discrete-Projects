@@ -95,7 +95,7 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 
 <br/>In this readme, individual documentation for each of the tutorial is provided.
 
-### *Pre Setup and Configurations*
+### *Pre Setups and Configurations*
 Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-keil-ide) to install Keil MDK_ARM.
 <br>
 <br>Open Pack Installer.
