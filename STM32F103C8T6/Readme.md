@@ -118,7 +118,8 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
 - PD0 and PD1 for HSE
 - PC13 & PC14
 - 2 pins for ground, 2 pins for supply voltage.
-<br/>
+<br>
+
    1. [Simple Blink](Blinky/simple_blinking.c)
 
 This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms.
