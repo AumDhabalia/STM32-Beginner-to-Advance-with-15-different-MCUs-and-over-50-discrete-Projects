@@ -111,7 +111,7 @@ Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-k
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
    1. [Simple Blink](Blinky/simple_blinking.c)<br>
-This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms. For this firstly create a new &#181;vision project from Project->New &#181;vision project. Select STM32F103C8 Device, select CMSIS->Core, select Device->Startup and click OK.
+<br>This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms. For this firstly create a new &#181;vision project from Project->New &#181;vision project. Select STM32F103C8 Device, select CMSIS->Core, select Device->Startup and click OK.
 <br>
 <br>Create a new text file and save as main.c.
 <br>Add main.c in Source Group 1
