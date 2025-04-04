@@ -17,7 +17,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 ## Index
 [***Block Diagram***](Readme.md#block-diagram)<br>
 [***BluePill Pinout Diagram***](Readme.md#bluepill-pinout-diagram)<br>
-[***STM32F103C8T6 Pin Plannar***](Readme.md#STM32F103C8T6-Pin-Plannar)<br>
+[***STM32F103C8T6 Pin Planner***](Readme.md#STM32F103C8T6-Pin-Planner)<br>
 [***Pre Setups and Configurations***](Readme.md#Pre-Setups-and-Configurations)
 1. [Blinky](Readme.md#1-blinky)
 2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
