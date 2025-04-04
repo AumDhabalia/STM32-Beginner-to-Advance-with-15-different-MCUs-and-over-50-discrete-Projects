@@ -95,13 +95,13 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 ### *Pre Setup and Configurations*
 Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-keil-ide) to install Keil MDK_ARM.
 <br>
-<br/>Open Pack Installer.
-<br/>
+<br>Open Pack Installer.
+<br>
 <br>Search for STM32F103C8.
-<br/>![Screenshot 2025-03-27 193005](https://github.com/user-attachments/assets/2252c3cb-cc2b-43f0-bcc9-1cc7f4d02cc1)
-<br/>
+<br>![Screenshot 2025-03-27 193005](https://github.com/user-attachments/assets/2252c3cb-cc2b-43f0-bcc9-1cc7f4d02cc1)
+<br>
 <br>On the right side specific packages will be displayed. Install DFP, CMSIS
-<br/>![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
+<br>![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
 <br><br>On installation, popup for STLink Debugger will appear. Install it.
 <br>
 <br>**To create project click [here](../Readme.md#project-setup)**
