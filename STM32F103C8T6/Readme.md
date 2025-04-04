@@ -200,7 +200,7 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
    8. Memory Interfacing
    9. Rotary Encoder and LCD interfacing
 ## 12. Exercise
-   1. Write a progrm for 8-bit updown counter using pushbutton and a counter switch which controls count direction (i.e. up counter = LOW, down counter = HIGH).
+   1. Write a progrm for 8-bit up/down counter using pushbutton and a counter switch which controls count direction (i.e. up counter = LOW, down counter = HIGH).
    2. Write a program for moving digits unidirectionally using 8 7-segment display module
    3. Write a program reading 4 ADC inputs. Use multiple channel ADC
    4. Write a program that for blinking 60 second counter and reading ADC input
