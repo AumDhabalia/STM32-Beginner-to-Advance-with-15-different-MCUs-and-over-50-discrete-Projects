@@ -1,4 +1,22 @@
 # STM32F103C8T6 Projects
+## Index
+***Block Diagram***<br>
+***BluePill Pinout***<br>
+***BluePill Pin Plannar***<br>
+***Pre Setups and Configurations***
+1. [Blinky](Readme.md#1-blinky)
+2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
+3. [Interrupt](Readme.md#3-interrupt)
+4. [Timer](Readme.md#4-timer)
+5. PWM
+6. USART
+7. SPI
+8. I2C
+9. CAN
+10. USB
+11. Projects
+12. [Exercise](Readme.md#12-exercise)
+
 STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MCUs.
 <br>
 ### Technical Specification
@@ -76,21 +94,6 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 | 48 | VDD_3 | VDD_3 | - | - |
 
 <br/>In this readme, individual documentation for each of the tutorial is provided.
-
-## Index
-***Pre Setups and Configurations***
-1. [Blinky](Readme.md#1-blinky)
-2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
-3. [Interrupt](Readme.md#3-interrupt)
-4. [Timer](Readme.md#4-timer)
-5. PWM
-6. USART
-7. SPI
-8. I2C
-9. CAN
-10. USB
-11. Projects
-12. [Exercise](Readme.md#12-exercise)
 
 ### *Pre Setup and Configurations*
 Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-keil-ide) to install Keil MDK_ARM.
