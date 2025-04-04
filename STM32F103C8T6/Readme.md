@@ -118,8 +118,7 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Goto Target_1 Options and navigate to Debugger select STLINK-Debugger and goto its Settings
 - Tick on Sharable STLINK, tick on Download to Flash.
 - Navigate to Trace. Change crystal to 8 MHz from 10 MHz.
-- Navigate to Flash Download. Tick on Erase full-chip. Tick on Reset & Run. Select STM32F10x Med-Density Flash. On the right bottom, in start change to 0x00010000.
-<br>
+- Navigate to Flash Download. Tick on Erase full-chip. Tick on Reset & Run. Select STM32F10x Med-Density Flash. On the right bottom, in start change to 0x00010000.<br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
    
