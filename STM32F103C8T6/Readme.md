@@ -113,7 +113,12 @@ Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-k
 <br>
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter. The LED(s) here are nothing but output from the pins. The pins mentioned here are known as General Purpose Input/Output pins. STM32F103 line has total of five GPIO ports from A to E, each having 16 pins.
-<br>BluePill has total of 40 pins, GPIOA and GPIOB ports with PD0 and PD1 for HSE, PC13 PC14 ,2 pins for ground and 2 pins for supply voltage.<br/>
+<br>BluePill has total of 40 pins
+- GPIOA and GPIOB ports
+- PD0 and PD1 for HSE
+- PC13 & PC14
+- 2 pins for ground, 2 pins for supply voltage.
+<br/>
    1. [Simple Blink](Blinky/simple_blinking.c)
 
 This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms.
