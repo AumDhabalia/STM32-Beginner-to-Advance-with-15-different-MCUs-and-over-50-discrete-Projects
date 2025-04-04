@@ -15,10 +15,10 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 - **Nine** communication interfaces (two I2Cs, two SPIs, three USARTs, USB, CAN).
 
 ## Index
-***Block Diagram***<br>
-***BluePill Pinout***<br>
-***BluePill Pin Plannar***<br>
-***Pre Setups and Configurations***
+[***Block Diagram***](Readme.md#block-diagram)<br>
+[***BluePill Pinout***](Readme.md#bluepill-pinout)<br>
+[***BluePill Pin Plannar***](Readme.md#BluePill-Pin-Plannar)<br>
+[***Pre Setups and Configurations***](Readme.md#Pre-Setups-and-Configurations)
 1. [Blinky](Readme.md#1-blinky)
 2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
 3. [Interrupt](Readme.md#3-interrupt)
