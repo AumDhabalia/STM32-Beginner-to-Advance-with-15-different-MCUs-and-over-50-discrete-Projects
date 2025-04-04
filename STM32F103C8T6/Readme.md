@@ -112,12 +112,13 @@ Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-k
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter.<br/>
    1. [Simple Blink](Blinky/simple_blinking.c)
 
-This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms. For this firstly create a new &#181;vision project from Project->New &#181;vision project. Select STM32F103C8 Device, select CMSIS->Core, select Device->Startup and click OK.
+This is the basic introductory project for getting started with STM32F103C8T6 BluePill board. In this project, a built-in LED at PC13 or PB2 is blinked at time interval of 500 ms. For this, first create a new &#181;vision project from Project->New &#181;Vision Project. Select STM32F103C8 Device, select CMSIS->Core, select Device->Startup and click OK.
 <br>Create a new text file and save as main.c.
 <br>Add main.c in Source Group 1
 <br>Goto Target_1 Options and navigate to Debugger select STLINK-Debugger and goto its Settings
-<br>Tick on Sharable STLINK
-<br>Navigate to Flash. Tick on
+<br>Tick on Sharable STLINK, tick on Download to Flash.
+<br>Navigate to Trace. Change crystal to 8 MHz from 10 MHz.
+<br>Bavigate to Flash Download. Tick on Erase full-chip. Tick on Reset & Run. Select STM32F10x Med-Density Flash. On the right bottom, in start change to 0x00010000.
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
    
