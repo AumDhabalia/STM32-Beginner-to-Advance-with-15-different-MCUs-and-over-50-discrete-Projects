@@ -117,7 +117,8 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
 <br>Add main.c in Source Group 1
 <br>Goto Target_1 Options and navigate to Debugger select STLINK-Debugger and goto its Settings
 <br>Tick on Sharable STLINK
-<br>Navigate to Flash. Tick on<br>
+<br>Navigate to Flash. Tick on
+
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
    
    3. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
