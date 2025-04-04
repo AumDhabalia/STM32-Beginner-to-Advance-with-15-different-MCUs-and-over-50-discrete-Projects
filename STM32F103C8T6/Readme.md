@@ -1,4 +1,19 @@
 # STM32F103C8T6 Projects
+STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MCUs.
+<br>
+### Technical Specification
+- ARM 32-Bit Cortex-M3 core with **clock speed** of *72Mhz* max
+- Memory of *64kB* on chip **flash** and ***20KB* SRAM** and **operating voltage of 2.0v to 3.6V**.
+- *Seven channel* DMA controller (with supported peripherals Timer, ADC, I2Cs, SPIs and USARTs).
+- Two 12 bit (upto 16 channels) ADC with conversion range **0 to 3.6v**.
+- Upto *five GPIO ports* from A to E.
+- **Seven** timers
+  - **Three** 16-bit timers
+  - **One** 16-bit motor PWM
+  - **Two** watchdog timers
+  - **One** 24-bit SysTick downcounter timer.
+- **Nine** communication interfaces (two I2Cs, two SPIs, three USARTs, USB, CAN).
+
 ## Index
 ***Block Diagram***<br>
 ***BluePill Pinout***<br>
@@ -16,21 +31,6 @@
 10. USB
 11. Projects
 12. [Exercise](Readme.md#12-exercise)
-
-STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MCUs.
-<br>
-### Technical Specification
-- ARM 32-Bit Cortex-M3 core with **clock speed** of *72Mhz* max
-- Memory of *64kB* on chip **flash** and ***20KB* SRAM** and **operating voltage of 2.0v to 3.6V**.
-- *Seven channel* DMA controller (with supported peripherals Timer, ADC, I2Cs, SPIs and USARTs).
-- Two 12 bit (upto 16 channels) ADC with conversion range **0 to 3.6v**.
-- Upto *five GPIO ports* from A to E.
-- **Seven** timers
-  - **Three** 16-bit timers
-  - **One** 16-bit motor PWM
-  - **Two** watchdog timers
-  - **One** 24-bit SysTick downcounter timer.
-- **Nine** communication interfaces (two I2Cs, two SPIs, three USARTs, USB, CAN).
 
 ### Block Diagram
 ![STM32F103C8 Block Diagram](https://github.com/user-attachments/assets/0e6b4937-05f9-40ae-9498-1def41f2ab82)
