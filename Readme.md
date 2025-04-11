@@ -23,10 +23,11 @@ It includes introductory section of different MCU families to simultaneous opera
    9. Plasma Boosted Drone
    10. Unmanned Marine vehicle
    11. Unmanned Combat Ground Vehicle (RC Battle Tank)
-   12. STM32 Network
-   13. Smart Power Grid System
-   14. Smart Classroom
-   15. Industrial Automation
+   12. STM32 based Client-Server Models
+   13. STM32 Wireless Network
+   14. Smart Power Grid System
+   15. Smart Classroom
+   16. Industrial Automation
 
 # 1. Introduction
 **arm** previously written as **ARM** (*Advanced RISC Machines*), is a family of processors based on RISC (Reduced Intruction Set Computer) architecture which requires less transistors compared to CISC (*Complex Instruction Set Computer*) architecture. This resulted in low cost, reduced power consumption and desirable use of battery-operated devices for the processors.
