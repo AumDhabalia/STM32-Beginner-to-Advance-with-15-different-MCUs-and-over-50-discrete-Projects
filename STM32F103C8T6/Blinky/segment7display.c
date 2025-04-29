@@ -6,23 +6,23 @@ This program is for interfacing 7 Segment display. The display module used here 
 Here, PA0 to PA7 are connected to the display module from Pin A to G with dot at PA7 and CC to GND.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer stm32f10x.h file for macros used.
-| NUM | PA0 | PA1 | PA2 | PA3 | PA4 | PA5 | PA6 | PA7 |
-|     |  A  |  B  |  C  |  D  |  E  |  F  |  G  | Dot |
-|  0  |  1  |  1  |  1  |  1  |  1  |  1  |  0  | 1/0 |
-|  1  |  0  |  1  |  1  |  0  |  0  |  0  |  0  | 1/0 |
-|  2  |  1  |  1  |  0  |  1  |  1  |  0  |  1  | 1/0 |
-|  3  |  1  |  1  |  1  |  1  |  0  |  0  |  1  | 1/0 |
-|  4  |  0  |  1  |  1  |  0  |  0  |  1  |  1  | 1/0 |
-|  5  |  1  |  0  |  1  |  1  |  0  |  1  |  1  | 1/0 |
-|  6  |  1  |  0  |  1  |  1  |  1  |  1  |  1  | 1/0 |
-|  7  |  1  |  1  |  1  |  0  |  0  |  0  |  0  | 1/0 |
-|  8  |  1  |  1  |  1  |  1  |  1  |  1  |  1  | 1/0 |
-|  9  |  1  |  1  |  1  |  1  |  0  |  1  |  1  | 1/0 |
+| NUM | PA7 | PA6 | PA5 | PA4 | PA3 | PA2 | PA1 | PA0 |
+|     | Dot |  G  |  F  |  E  |  D  |  C  |  B  |  A  |
+|  0  | 1/0 |  0  |  1  |  1  |  1  |  1  |  1  |  1  |
+|  1  | 1/0 |  0  |  0  |  0  |  0  |  1  |  1  |  0  |
+|  2  | 1/0 |  1  |  0  |  1  |  1  |  0  |  1  |  1  |
+|  3  | 1/0 |  1  |  0  |  0  |  1  |  1  |  1  |  1  |
+|  4  | 1/0 |  1  |  1  |  0  |  0  |  1  |  1  |  0  |
+|  5  | 1/0 |  1  |  1  |  0  |  1  |  1  |  0  |  1  |
+|  6  | 1/0 |  1  |  1  |  1  |  1  |  1  |  0  |  1  |
+|  7  | 1/0 |  0  |  0  |  0  |  0  |  1  |  1  |  1  |
+|  8  | 1/0 |  1  |  1  |  1  |  1  |  1  |  1  |  1  |
+|  9  | 1/0 |  1  |  1  |  0  |  1  |  1  |  1  |  1  |
 */
 
 #include "stm32f10x.h"
 
-volatile char num[10] = {};
+volatile char num[10] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
 
 int main(void)
 {
@@ -53,10 +53,18 @@ int main(void)
 	
 	//Update System Core Clock variable
 	SystemCoreClock = 72000000;
+
+	//Enable clock for GPIOA
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+
+	//Configure PA0 to PA7 as General-Purpose Ouput Push-Pull (2 MHz)
+	GPIOA->CRL &= ~(0xFFFFFFFF); //Clear bit for PA0 to PA7
+	GPIOA->CRL |=  (0x22222222); //Set as Output (2 MHz, Push-Pull)
 	
-	//User Code initialization...
 	while(1)
 	{
-		
+		for(volatile int j = 0;j < 10;j++)
+			for(volatile int i = 0;i < 1000000;i++)
+				GPIOA->ODR = num[j];
 	}
 }
