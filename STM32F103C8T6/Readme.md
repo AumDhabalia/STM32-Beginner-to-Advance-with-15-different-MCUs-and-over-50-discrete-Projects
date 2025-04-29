@@ -142,7 +142,7 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Download the program to the board by navigating to Flash->Download or by pressing ***F8***.
 - Start debug session by pressing ***Ctrl+F5*** or navigating to Debug->Start Debug.
 This procedure is general for all the upcoming tutorials and projects.
-
+<br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
    
