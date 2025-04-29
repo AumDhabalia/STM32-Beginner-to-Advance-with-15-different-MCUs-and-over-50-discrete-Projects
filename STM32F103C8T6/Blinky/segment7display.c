@@ -6,11 +6,23 @@ This program is for interfacing 7 Segment display. The display module used here 
 Here, PA0 to PA7 are connected to the display module from Pin A to G with dot at PA7 and CC to GND.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer stm32f10x.h file for macros used.
+| NUM | PA0 | PA1 | PA2 | PA3 | PA4 | PA5 | PA6 | PA7 |
+|     |  A  |  B  |  C  |  D  |  E  |  F  |  G  | Dot |
+|  0  |  1  |  1  |  1  |  1  |  1  |  1  |  0  | 1/0 |
+|  1  |  0  |  1  |  1  |  0  |  0  |  0  |  0  | 1/0 |
+|  2  |  1  |  1  |  0  |  1  |  1  |  0  |  1  | 1/0 |
+|  3  |  1  |  1  |  1  |  1  |  0  |  0  |  1  | 1/0 |
+|  4  |  0  |  1  |  1  |  0  |  0  |  1  |  1  | 1/0 |
+|  5  |  1  |  0  |  1  |  1  |  0  |  1  |  1  | 1/0 |
+|  6  |  1  |  0  |  1  |  1  |  1  |  1  |  1  | 1/0 |
+|  7  |  1  |  1  |  1  |  0  |  0  |  0  |  0  | 1/0 |
+|  8  |  1  |  1  |  1  |  1  |  1  |  1  |  1  | 1/0 |
+|  9  |  1  |  1  |  1  |  1  |  0  |  1  |  1  | 1/0 |
 */
 
-
-
 #include "stm32f10x.h"
+
+volatile char num[10] = {};
 
 int main(void)
 {
