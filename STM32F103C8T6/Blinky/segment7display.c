@@ -6,8 +6,11 @@ This program is for interfacing 7 Segment display. The display module used here 
 Here, PA0 to PA7 are connected to the display module from Pin A to G with dot at PA7 and CC to GND.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer stm32f10x.h file for macros used.
+-------------------------------------------------------
 | NUM | PA7 | PA6 | PA5 | PA4 | PA3 | PA2 | PA1 | PA0 |
+-------------------------------------------------------
 |     | Dot |  G  |  F  |  E  |  D  |  C  |  B  |  A  |
+-------------------------------------------------------
 |  0  | 1/0 |  0  |  1  |  1  |  1  |  1  |  1  |  1  |
 |  1  | 1/0 |  0  |  0  |  0  |  0  |  1  |  1  |  0  |
 |  2  | 1/0 |  1  |  0  |  1  |  1  |  0  |  1  |  1  |
@@ -18,6 +21,7 @@ Refer stm32f10x.h file for macros used.
 |  7  | 1/0 |  0  |  0  |  0  |  0  |  1  |  1  |  1  |
 |  8  | 1/0 |  1  |  1  |  1  |  1  |  1  |  1  |  1  |
 |  9  | 1/0 |  1  |  1  |  0  |  1  |  1  |  1  |  1  |
+-------------------------------------------------------
 */
 
 #include "stm32f10x.h"
