@@ -1,5 +1,11 @@
 /*
-Initial steps before starting user code.
+Project Title : 7 Segment Display
+Author : Aum Dhabalia
+Date : 31/03/2025
+This program is for interfacing 7 Segment display. The display module used here is common cathode type. Digital HIGH is sent for flashing diodes of the display.
+Here, PA0 to PA7 are connected to the display module from Pin A to G with dot at PA7 and CC to GND.
+Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
+Refer stm32f10x.h file for macros used.
 */
 
 #include "stm32f10x.h"
