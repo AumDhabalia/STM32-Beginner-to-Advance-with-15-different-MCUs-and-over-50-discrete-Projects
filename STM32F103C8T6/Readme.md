@@ -129,6 +129,17 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Tick on Sharable STLINK, tick on Download to Flash.
 - Navigate to Trace. Change crystal to 8 MHz from 10 MHz.
 - Navigate to Flash Download. Tick on Erase full-chip. Tick on Reset & Run. Select STM32F10x Med-Density Flash. On the right bottom, in start change to 0x00010000.
+- Apply this settings by clicking on **_OK_**.
+<br>
+Once this settings are applied, navigate to main.c. From this point onwards, the simple LED blinking programming starts. Connect the STLink debugger/programmer to _**BluePill**_. Refer to the pinout on the debugger as well as on the mcu. Connect SWDIO pin of the debugger to the SWDIO pin of the board. Connect SWCLK of the debugger to the SWCLK/SWCK pin of the board. Connect **_3.3v_** to the _**Vcc**_ of the board.
+<br>
+Once it is done, connect debugger to the system such that the reset switch is kept pressed. Release the switch after connected. A STLink/V2 dialog box will appear. Click on Update. If the Update is not active then reconnect the debugger and keep the switch pressedand then release it after connected. Do it for two three times if not working.
+<br>
+Now that, BluePill is setup,
+- Build the project. No error should be displayed.
+- Download the program to the board by navigating to Flash->Download or by pressing **_F8_**.
+- Start debug session by pressing ***Ctrl+F5*** or navigating to Debug->Start Debug.
+This procedure is general for all the upcoming tutorials and projects.
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
