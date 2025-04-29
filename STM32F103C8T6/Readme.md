@@ -135,11 +135,11 @@ Once this settings are applied, navigate to main.c. From this point onwards, the
 <br>
 Once it is done, connect debugger to the system such that the reset switch is kept pressed. Release the switch after connected. A STLink/V2 dialog box will appear. Click on Update. If the Update is not active then reconnect the debugger and keep the switch pressedand then release it after connected. Do it for two three times if not working.
 <br>
-Now that, BluePill is setup,
+Now that, BluePill is setup
 - Build the project. No error should be displayed.
 - Download the program to the board by navigating to Flash->Download or by pressing **_F8_**.
 - Start debug session by pressing ***Ctrl+F5*** or navigating to Debug->Start Debug.
-This procedure is general for all the upcoming tutorials and projects.
+<br>This procedure is general for all the upcoming tutorials and projects.
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
