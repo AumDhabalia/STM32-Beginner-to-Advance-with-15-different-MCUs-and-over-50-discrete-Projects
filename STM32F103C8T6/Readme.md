@@ -141,7 +141,19 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Build the project. No error should be displayed.
 - Download the program to the board by navigating to Flash->Download or by pressing ***F8***.
 - Start debug session by pressing ***Ctrl+F5*** or navigating to Debug->Start Debug.
-This procedure is general for all the upcoming tutorials and projects.
+- This procedure is general for all the upcoming tutorials and projects.
+
+<br>Since, the built-in LED is internally connected, no need for external connections. In the main.c,
+- Enable GPIOB clock
+<br>RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;<br>
+- Configure GPIOB PB2 pin as General-Purpose Output Push-Pull (2 MHz) mode
+<br>GPIOB->CRL &= ~(0x00000F00); // Clear bits for PB2
+<br>GPIOB->CRL |=  (0x00000200);  // Set as Output (2 MHz, Push-Pull)
+- In while loop, Set PB2 **_(ON State)_** wait for dely of 500 ms and reset PB12 **_(OFF State)_**.
+<br>GPIOB->BSRR |= GPIO_BSRR_BS2; //Set PB2 (LED ON)
+<br>for(volatile int i = 0;i < 500000;i++); //500 ms = 500,000 us
+<br>GPIOB->BSRR |= GPIO_BSRR_BR2; //Reset PB2 (LED OFF)
+<br>for(volatile int i = 0;i < 500000;i++); //500 ms = 500,000 us
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
