@@ -10,11 +10,6 @@ Refer to stm32f10x.h file for macros used.
 
 #include "stm32f10x.h"
 
-void delay_ms(uint32_t ms)
-{
-    for(uint32_t i = 0; i < ms * 1000; i++);
-}
-
 int main(void)
 {
     // Initialize HSE 8 MHz
