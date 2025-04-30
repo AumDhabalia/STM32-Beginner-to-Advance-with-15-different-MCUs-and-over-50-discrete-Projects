@@ -183,11 +183,14 @@ In this tutorial, the LED is blinked in a pattern of GpFl(2) which a maritime li
 
 In this tutorial, two LEDs are blinked alternately. One LED is digital **HIGH** while other is digital **LOW** with regular interval. In the given circuit diagram pins PB6 and PB7 are taken as general purpose output mode connected to two LEDs. 220 &Omega; rsistance is connected between pin and the diode each respectively.
 <br>
+<br>........Image Pending.........
+<br>
 <br>After enabling GPIOB, configure PB6 & PB7 pins.
 <br>**GPIOB->CRL &= ~(0xFF000000)** _//Clear PB6 & PB7_
 <br>**GPIOB->CRL |=  (0x22000000)** _//Set as Output (2 MHz, Push-Pull)_
 <br>
-<br>Once configured, navigate to while loop and write logic for alternate blinking. It can be done either using **BSRR _(Bit Set Reset Register)_** or by using **ODR _(Output Data Register)_**. For this tutorial, BSRR is used.
+<br>Once configured, navigate to while loop and write logic for alternate blinking. It can be done either using **BSRR _(Bit Set Reset Register)_** or by using **ODR _(Output Data Register)_**.
+<br>For this tutorial, BSRR is used.
 <br>**GPIOB->BSRR |= (GPIO_BSRR_BS6 | GPIO_BSRR_BR7);** _//Set PB6 (LED ON) & Reset PB7 (LED OFF)_
 <br>**for(volatile int i = 0; i < 500000; i++);** _//500 ms = 500,000 us_
 <br>
