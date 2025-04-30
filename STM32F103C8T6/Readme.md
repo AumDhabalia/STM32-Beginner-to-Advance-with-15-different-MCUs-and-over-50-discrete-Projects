@@ -182,6 +182,8 @@ In this tutorial, the LED is blinked in a pattern of GpFl(2) which a maritime li
    3. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
 
 In this tutorial, two LEDs are blinked alternately. One LED is digital **HIGH** while other is digital **LOW** with regular interval. In the given circuit diagram pins PB6 and PB7 are taken as general purpose output mode connected to two LEDs. 220 &Omega; rsistance is connected between pin and the diode each respectively.
+<br>
+
    4. [2-Bit Counter](Blinky/counter2bit.c)<br>
    
    5. [N-Bit Counter](Blinky/counterNbit.c)<br>
