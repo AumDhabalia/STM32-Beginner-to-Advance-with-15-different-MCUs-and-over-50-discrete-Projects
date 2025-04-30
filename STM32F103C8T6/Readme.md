@@ -154,10 +154,14 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 <br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
+<br>Given below figure shows the circuit diagram for the blinky. 
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
-   
+
+In this tutorial, the LED is blinked in a pattern of GpFl(2) which a maritime lighthouse flashing pattern. In this pattern, light signal is flashed in group of two flashesand then remains dark for same period as for flashing period.
+<br>Here, the **ON** state for both flash is taken as 200 ms and **OFF** state as 100 ms and the **wait/dark** state for 400 ms (**OFF** state).
+<br>
    3. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
    
    4. [2-Bit Counter](Blinky/counter2bit.c)<br>
