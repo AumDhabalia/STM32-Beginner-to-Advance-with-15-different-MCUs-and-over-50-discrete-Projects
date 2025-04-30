@@ -154,7 +154,9 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 <br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
-<br>Given below figure shows the circuit diagram for the blinky. 
+<br>Given below figure shows the circuit diagram for the blinky.
+<br>
+<br>..........Image Pending...........
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
@@ -199,7 +201,18 @@ In this tutorial, two LEDs are blinked alternately. One LED is digital **HIGH** 
 <br>
 
    4. [2-Bit Counter](Blinky/counter2bit.c)<br>
-   
+
+In this tutorial, a simple 2 bit counter logic is developed. The connections are same and so is the circuit diagram. In while loop, PB7 is MSB and PB6 is LSB. The truth table for 2 bit counter is shown below.
+|PB7|PB6|
+|:---:|:---:|
+|LOW|LOW|
+|LOW|HIGH|
+|HIGH|LOW|
+|HIGH|HIGH|
+
+<br>Initially set both pins _**HIGH**_.
+<br>
+
    5. [N-Bit Counter](Blinky/counterNbit.c)<br>
    
    6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
