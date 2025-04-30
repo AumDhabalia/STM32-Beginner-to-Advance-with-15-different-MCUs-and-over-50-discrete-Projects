@@ -160,10 +160,28 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
 
 In this tutorial, the LED is blinked in a pattern of GpFl(2) which a maritime lighthouse flashing pattern. In this pattern, light signal is flashed in group of two flashesand then remains dark for same period as for flashing period.
-<br>Here, the **ON** state for both flash is taken as 200 ms and **OFF** state as 100 ms and the **wait/dark** state for 400 ms (**OFF** state).
 <br>
+<br>Here, the **ON** state for both flash is taken as 200 ms and **OFF** state as 100 ms and the **wait/dark** state for 400 ms (**OFF** state). Same procedure for setting up the device. Instead of regular time interval blinking in previous tutorial, pattern blinking is performed.
+<br>
+<br>In main.c, in while loop change the logic to
+<br>**GPIOB->BSRR |= GPIO_BSRR_BS2;** _//Set PB2 (LED ON)_
+<br>**for(volatile int i = 0;i < 200000;i++);** _//200 ms = 200,000 us_
+<br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
+<br>**for(volatile int i = 0;i < 100000;i++);** _//100 ms = 100,000 us_
+
+<br>**GPIOB->BSRR |= GPIO_BSRR_BS2;** _//Set PB2 (LED ON)_
+<br>**for(volatile int i = 0;i < 200000;i++);** _//200 ms = 200,000 us_
+<br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
+<br>**for(volatile int i = 0;i < 100000;i++);** _//100 ms = 100,000 us_
+
+<br>**for(volatile int i = 0;i < 400000;i++);** _//400 ms = 400,000 us_
+
+<br>The circuit diagram is same as of previous tutorial.
+<br>
+
    3. [Alternate Blinking](Blinky/alternate_blinking.c)<br>
-   
+
+In this tutorial, two LEDs are blinked alternately. One LED is digital **HIGH** while other is digital **LOW** with regular interval. In the given circuit diagram pins PB6 and PB7 are taken as general purpose output mode connected to two LEDs. 220 &Omega; rsistance is connected between pin and the diode each respectively.
    4. [2-Bit Counter](Blinky/counter2bit.c)<br>
    
    5. [N-Bit Counter](Blinky/counterNbit.c)<br>
