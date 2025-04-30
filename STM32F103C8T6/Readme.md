@@ -147,13 +147,13 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Enable GPIOB clock
 <br>RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;<br>
 - Configure GPIOB PB2 pin as General-Purpose Output Push-Pull (2 MHz) mode
-<br>GPIOB->CRL &= ~(0x00000F00); // Clear bits for PB2
-<br>GPIOB->CRL |=  (0x00000200);  // Set as Output (2 MHz, Push-Pull)
+<br>**GPIOB->CRL &= ~(0x00000F00);** _//Clear bits for PB2_
+<br>**GPIOB->CRL |=  (0x00000200);**  _//Set as Output (2 MHz, Push-Pull)_
 - In while loop, Set PB2 **_(ON State)_** wait for dely of 500 ms and reset PB12 **_(OFF State)_**.
-<br>GPIOB->BSRR |= GPIO_BSRR_BS2; //Set PB2 (LED ON)
-<br>for(volatile int i = 0;i < 500000;i++); //500 ms = 500,000 us
-<br>GPIOB->BSRR |= GPIO_BSRR_BR2; //Reset PB2 (LED OFF)
-<br>for(volatile int i = 0;i < 500000;i++); //500 ms = 500,000 us
+<br>**GPIOB->BSRR |= GPIO_BSRR_BS2;** _//Set PB2 (LED ON)_
+<br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
+<br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
+<br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
