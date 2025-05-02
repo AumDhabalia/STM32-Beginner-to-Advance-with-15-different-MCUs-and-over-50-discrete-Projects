@@ -1,5 +1,31 @@
 /*
-Initial steps before starting user code.
+Project Title : 7 Segment Display
+Author : Aum Dhabalia
+Date : 10/04/2025
+This program is for interfacing 4 x 7 Segment display. The display module used is common cathode type. Digital HIGH is sent for flashing diodes of the display.
+Here, PA0 to PA7 are connected to the display module from Pin A to G with dot at PA7 and CC to GND. PB4 to PB7 pins are used for digit selection.
+Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
+Refer stm32f10x.h file for macros used.
+-------------------------------------------------------
+| NUM | PA7 | PA6 | PA5 | PA4 | PA3 | PA2 | PA1 | PA0 |
+-------------------------------------------------------
+|     | Dot |  G  |  F  |  E  |  D  |  C  |  B  |  A  |
+-------------------------------------------------------
+|  0  | 1/0 |  0  |  1  |  1  |  1  |  1  |  1  |  1  |
+|  1  | 1/0 |  0  |  0  |  0  |  0  |  1  |  1  |  0  |
+|  2  | 1/0 |  1  |  0  |  1  |  1  |  0  |  1  |  1  |
+|  3  | 1/0 |  1  |  0  |  0  |  1  |  1  |  1  |  1  |
+|  4  | 1/0 |  1  |  1  |  0  |  0  |  1  |  1  |  0  |
+|  5  | 1/0 |  1  |  1  |  0  |  1  |  1  |  0  |  1  |
+|  6  | 1/0 |  1  |  1  |  1  |  1  |  1  |  0  |  1  |
+|  7  | 1/0 |  0  |  0  |  0  |  0  |  1  |  1  |  1  |
+|  8  | 1/0 |  1  |  1  |  1  |  1  |  1  |  1  |  1  |
+|  9  | 1/0 |  1  |  1  |  0  |  1  |  1  |  1  |  1  |
+-------------------------------------------------------
+PB4 -> Digit 0
+PB5 -> Digit 1
+PB6 -> Digit 2
+PB7 -> Digit 3
 */
 
 #include "stm32f10x.h"
@@ -33,6 +59,14 @@ int main(void)
 	
 	//Update System Core Clock variable
 	SystemCoreClock = 72000000;
+
+	//Enable GPIOA & GPIOB
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+	RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;
+
+	//Configure PA0 to PA7 and PB4 to PB7 as Genral-Purpose Output Push-Pull mode (2 MHz)
+	GPIOA->CRL &= ~(0xFFFFFFFF);
+	GPIOB->CRL &= ~(0xFFFF0000);
 	
 	//User Code initialization...
 	while(1)
