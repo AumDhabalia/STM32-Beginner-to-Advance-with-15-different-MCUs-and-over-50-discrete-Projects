@@ -69,6 +69,9 @@ int main(void)
 	//Configure PA0 to PA7 and PB4 to PB7 as Genral-Purpose Output Push-Pull mode (2 MHz)
 	GPIOA->CRL &= ~(0xFFFFFFFF);
 	GPIOB->CRL &= ~(0xFFFF0000);
+
+	GPIOA->CRL |= (0x22222222);
+	GPIOB->CRL |= (0x22220000);
 	
 	//User Code initialization...
 	while(1)
