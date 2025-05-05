@@ -77,35 +77,36 @@ int main(void)
 	while(1)
 	{
 		volatile int count = 0;
-				
+		
+		//Time delay of 1000 ms...
 		for(volatile int j = 0;j < 1000000;j++)
 		{
-			volatile int digit0 = count%10;
-			volatile int digit1 = (count%100)/10;
-			volatile int digit2 = (count%1000)/100;
-			volatile int digit3 = count/1000;
-
-			while(count = 9999)
+			while(count = 10000)
 				count = 0;
-			//Digit 0 (LSB)
+			volatile int digit0 = count%10;         //Units digit at PB4
+			volatile int digit1 = (count%100)/10;   //Tens LS digit at PB5
+			volatile int digit2 = (count%1000)/100; //Hundreds digit at PB6 
+			volatile int digit3 = count/1000;       //Thousands digit at PB7
+
+			//Units Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
 				GPIOB->ODR = 0x00000010;
 				GPIOA->ODR = num[digit0];
 			}
-			//Digit 1
+			//Tens Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
 				GPIOB->ODR = 0x00000020;
 				GPIOA->ODR = num[digit1];
 			}
-			//Digit 2
+			//Hundreds Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
 				GPIOB->ODR = 0x00000040;
 				GPIOA->ODR = num[digit2];
 			}
-			//Digit 3 (MSB)
+			//Thousands Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
 				GPIOB->ODR = 0x00000080;
