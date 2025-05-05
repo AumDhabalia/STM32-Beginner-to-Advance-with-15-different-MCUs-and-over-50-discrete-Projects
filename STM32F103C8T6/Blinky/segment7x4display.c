@@ -34,6 +34,7 @@ volatile char num[10] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
 
 int main(void)
 {
+	volatile int count = 0;
 	//Initialize HSE 8 MHz
 	//Enable HSE
 	RCC->CR |= RCC_CR_HSEON;
@@ -76,36 +77,15 @@ int main(void)
 	//User Code initialization...
 	while(1)
 	{
-		//Digit 0....
+		while(count = 9999)
+			count = 0;
 		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->BSRR |= GPIO_BSRR_BR7;
-			GPIOB->BSRR |= GPIO_BSRR_BS4;
-			GPIOA->ODR = num[0];
-		}
-
-		//Digit 1....
+		{}
 		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->BSRR |= GPIO_BSRR_BR4;
-			GPIOB->BSRR |= GPIO_BSRR_BS5;
-			GPIOA->ODR = num[1];
-		}
-
-		//Digit 2....
+		{}
 		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->BSRR |= GPIO_BSRR_BR5;
-			GPIOB->BSRR |= GPIO_BSRR_BS6;
-			GPIOA->ODR = num[2];
-		}
-
-		//Digit 3....
+		{}
 		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->BSRR |= GPIO_BSRR_BR6;
-			GPIOB->BSRR |= GPIO_BSRR_BS7;
-			GPIOA->ODR = num[3];
-		}
+		{}
 	}
 }
