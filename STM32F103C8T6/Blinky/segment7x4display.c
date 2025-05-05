@@ -34,7 +34,6 @@ volatile char num[10] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
 
 int main(void)
 {
-	volatile int count = 0;
 	//Initialize HSE 8 MHz
 	//Enable HSE
 	RCC->CR |= RCC_CR_HSEON;
@@ -77,31 +76,42 @@ int main(void)
 	//User Code initialization...
 	while(1)
 	{
-		while(count = 9999)
-			count = 0;
-		//Digit 0 (LSB)
-		for(volatile int i = 0;i < 10000;i++)
+		volatile int count = 0;
+				
+		for(volatile int j = 0;j < 1000000;j++)
 		{
-			GPIOB->ODR = 0x00000010;
-			GPIOA->ODR = num[count%10];
-		}
-		//Digit 1
-		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->ODR = 0x00000020;
-			GPIOA->ODR = num[(count%100)/10];
-		}
-		//Digit 2
-		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->ODR = 0x00000040;
-			GPIOA->ODR = num[(count%1000)/100];
-		}
-		//Digit 3 (MSB)
-		for(volatile int i = 0;i < 10000;i++)
-		{
-			GPIOB->ODR = 0x00000080;
-			GPIOA->ODR = num[count/1000];
+			volatile int digit0 = count%10;
+			volatile int digit1 = (count%100)/10;
+			volatile int digit2 = (count%1000)/100;
+			volatile int digit3 = count/1000;
+
+			while(count = 9999)
+				count = 0;
+			//Digit 0 (LSB)
+			for(volatile int i = 0;i < 10000;i++)
+			{
+				GPIOB->ODR = 0x00000010;
+				GPIOA->ODR = num[digit0];
+			}
+			//Digit 1
+			for(volatile int i = 0;i < 10000;i++)
+			{
+				GPIOB->ODR = 0x00000020;
+				GPIOA->ODR = num[digit1];
+			}
+			//Digit 2
+			for(volatile int i = 0;i < 10000;i++)
+			{
+				GPIOB->ODR = 0x00000040;
+				GPIOA->ODR = num[digit2];
+			}
+			//Digit 3 (MSB)
+			for(volatile int i = 0;i < 10000;i++)
+			{
+				GPIOB->ODR = 0x00000080;
+				GPIOA->ODR = num[digit3];
+			}
+			count++;
 		}
 	}
 }
