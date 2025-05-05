@@ -79,13 +79,29 @@ int main(void)
 	{
 		while(count = 9999)
 			count = 0;
+		//Digit 0 (LSB)
 		for(volatile int i = 0;i < 10000;i++)
-		{}
+		{
+			GPIOB->ODR = 0x00000010;
+			GPIOA->ODR = num[count%10];
+		}
+		//Digit 1
 		for(volatile int i = 0;i < 10000;i++)
-		{}
+		{
+			GPIOB->ODR = 0x00000020;
+			GPIOA->ODR = num[(count%100)/10];
+		}
+		//Digit 2
 		for(volatile int i = 0;i < 10000;i++)
-		{}
+		{
+			GPIOB->ODR = 0x00000040;
+			GPIOA->ODR = num[(count%1000)/100];
+		}
+		//Digit 3 (MSB)
 		for(volatile int i = 0;i < 10000;i++)
-		{}
+		{
+			GPIOB->ODR = 0x00000080;
+			GPIOA->ODR = num[count/1000];
+		}
 	}
 }
