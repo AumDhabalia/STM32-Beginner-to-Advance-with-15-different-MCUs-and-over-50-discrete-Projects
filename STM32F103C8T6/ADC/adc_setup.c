@@ -4,8 +4,12 @@ Initial steps before starting user code.
 
 #include "stm32f10x.h"
 
+void ADC1_2_IRQHandler(void);
+
 int main(void)
 {
+	volatile int val;
+	volatile float out;
 	//Initialize HSE 8 MHz
 	//Enable HSE
 	RCC->CR |= RCC_CR_HSEON;
@@ -72,5 +76,14 @@ int main(void)
 	while(1)
 	{
 		
+	}
+}
+
+void ADC1_2_IRQHandler(void)
+{
+	if(ADC1->SR & ADC_SR_EOC)
+	{
+		val = ADC1->DR;
+		out = (float)(val*(3.3f/4096));
 	}
 }
