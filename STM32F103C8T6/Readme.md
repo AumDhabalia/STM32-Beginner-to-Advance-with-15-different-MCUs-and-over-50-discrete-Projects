@@ -243,6 +243,7 @@ In this tutorial, 8 LEDs are connected as the previous one but this time the LED
 <br> **}**
 
 <br>The circuit diagram is same as above one.
+<br>The truth table for this tutorial is as shown.
 |PA7|PA6|PA5|PA4|PA3|PA2|PA1|PA0|
 |---|---|---|---|---|---|---|---|
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -256,7 +257,42 @@ In this tutorial, 8 LEDs are connected as the previous one but this time the LED
 <br>
 
    7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
-   
+
+This is same as previous one with added logic for moving LEDs in both ways i.e from **LSB to MSB** and **MSB to LSB**.
+- Use two for loops one for moving MSB to LSB and another LSB to MSB.
+<br>**for(volatile int count = 0;count < 8;count++)**
+<br> **{**
+<br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 << count);**
+<br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
+<br> **}**
+<br>
+<br>**for(volatile int count = 0;count < 8;count++)**
+<br> **{**
+<br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 >> count);**
+<br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
+<br> **}**
+|PA7|PA6|PA5|PA4|PA3|PA2|PA1|PA0|
+|---|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+|---|---|---|---|---|---|---|---|
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+
+<br>
+
    8. [Random LED(s) FLashing](Blinky/randomflashing.c)
    
    9. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
