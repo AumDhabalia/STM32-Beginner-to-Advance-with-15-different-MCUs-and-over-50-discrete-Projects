@@ -307,7 +307,22 @@ This tutorial is about flashing LEDs in random pattern. For this the setup is sa
 <br>
 
    9. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
-   
+
+In this tutorial, an external input is taken at PC15 and PB2 as output which is built-in LED. A pushbutton is connected at PC15 and set as input mode and PB as output mode. Here, the LED stays in ON state while the button is pressed. When button is released, the LED goes to OFF state.
+- In while loop, use if condition to switch ON and OFF the LED.
+<br>**if((GPIOC->IDR & (1 << 15)) == 0)**  
+<br> **{**
+<br> &emsp;**GPIOB->BSRR |= GPIO_BSRR_BS2; // Turn ON PB2 (LED)**
+<br> **}**
+<br>**else**
+<br> **{**
+<br>&emsp;**GPIOB->BSRR |= GPIO_BSRR_BR2; // Turn OFF PB2 (LED)**
+<br> **}**
+
+<br>The circuit diagram is as shown.
+<br>.......Image Pending.........
+<br>
+
    10. [7-Segment Display]()
    
    11. [4 digit 7-Segment Display]()
