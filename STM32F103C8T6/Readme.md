@@ -291,7 +291,6 @@ This is same as previous one with added logic for moving LEDs in both ways i.e f
 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
-
 <br>
 
    8. [Random LED(s) FLashing](Blinky/randomflashing.c)
