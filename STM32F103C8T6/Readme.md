@@ -226,6 +226,8 @@ This is same as previous one but for N bits. Here N is taken as 8. Therefore, th
 <br>   &emsp;**GPIOA->ODR = i;**
 <br>   &emsp;**for(volatile int j = 0;j < 1000000;j++);**
 <br> **}**
+
+<br>The circuit diagram is shown below.
 <br>
 
    6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
@@ -239,6 +241,18 @@ In this tutorial, 8 LEDs are connected as the previous one but this time the LED
 <br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 << count);**
 <br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
 <br> **}**
+
+<br>The circuit diagram is same as above one.
+|PA7|PA6|PA5|PA4|PA3|PA2|PA1|PA0|
+|---|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 <br>
 
    7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
