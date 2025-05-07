@@ -323,9 +323,9 @@ In this tutorial, an external input is taken at PC15 and PB2 as output which is 
 <br>.......Image Pending.........
 <br>
 
-   10. [7-Segment Display]()
+   10. [7-Segment Display](Blinky/segment7display.c)
    
-   11. [4 digit 7-Segment Display]()
+   11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
 
 ## 2. ADC (Analog to Digital Converter)
    1. Basic ADC setup
