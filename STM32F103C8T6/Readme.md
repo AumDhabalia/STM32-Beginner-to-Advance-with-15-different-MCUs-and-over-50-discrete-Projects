@@ -208,6 +208,7 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 |LOW|HIGH|
 |HIGH|LOW|
 |HIGH|HIGH|
+
 <br>Initially set both pins _**HIGH**_.And then in while use BSRR for counter with regular interval.
 <br>
 
