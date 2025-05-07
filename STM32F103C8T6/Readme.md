@@ -218,9 +218,14 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 This is same as previous one but for N bits. Here N is taken as 8. Therefore, there are 256 states from 0 to 255. For this case use ODR instead of BSRR and use for loop. Take PA7(_MSB_) to PA0(_LSB_) pins as general purpose output mode (2 MHz).
 - Enable GPIOA
 - Configure PA7 to PA0 as general purpose output (2 MHz, Push-Pull)
-- In while loop, set all bits to 0 initially.
+- Initially set all bits to 1.
 - Take a for loop with limit to 256.
 - Increment the ODR value by 1 with delay of 200 ms.
+<br> **for(volatile int i = 0;i < 256;i++)**
+<br> **{**
+<br>   **GPIOA->ODR = i;**
+<br>   **for(volatile int j = 0;j < 1000000;j++);**
+<br> **}**
 <br>
 
    6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
