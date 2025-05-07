@@ -265,12 +265,13 @@ This is same as previous one with added logic for moving LEDs in both ways i.e f
 <br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 << count);**
 <br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
 <br> **}**
-<br>
-<br>**for(volatile int count = 0;count < 8;count++)**
+<br><br>**for(volatile int count = 0;count < 8;count++)**
 <br> **{**
 <br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 >> count);**
 <br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
 <br> **}**
+
+<br>The truth table for the tutoiral is given below.
 |PA7|PA6|PA5|PA4|PA3|PA2|PA1|PA0|
 |---|---|---|---|---|---|---|---|
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -281,7 +282,7 @@ This is same as previous one with added logic for moving LEDs in both ways i.e f
 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -294,7 +295,18 @@ This is same as previous one with added logic for moving LEDs in both ways i.e f
 <br>
 
    8. [Random LED(s) FLashing](Blinky/randomflashing.c)
-   
+
+This tutorial is about flashing LEDs in random pattern. For this the setup is same as the previous one. A random number is generated using SysTick timer. This timer is a 24-bit so, the 8 bit remainder from number generated is taken.
+- Enable Systick Timer
+- Configure Systick->LOAD to 0xFFFFFFFF and Systick->VAL = 0
+- Set Systick->CTRL to enable timer.
+<br>**Systick->CTRL = Systick_CTRL_CLKSOURCE_Msk | Systick_CTRL_ENABLE_Msk;**
+- In while loop, pass the value from Systick->VAL to GPIOA->ODR
+<br>**uint8_t random_value = (SysTick->VAL % 255) + 1;**
+<br>**GPIOA->ODR = (GPIOA->ODR & 0xFF00) | random_value;**
+- Use delay for observing the randomness generated.
+<br>
+
    9. [Pushbutton Blinking](Blinky/pushbutton_blink.c)
    
    10. [7-Segment Display]()
