@@ -223,8 +223,8 @@ This is same as previous one but for N bits. Here N is taken as 8. Therefore, th
 - Increment the ODR value by 1 with delay of 200 ms.
 <br> **for(volatile int i = 0;i < 256;i++)**
 <br> **{**
-<br>   **GPIOA->ODR = i;**
-<br>   **for(volatile int j = 0;j < 1000000;j++);**
+<br>   &emsp;**GPIOA->ODR = i;**
+<br>   &emsp;**for(volatile int j = 0;j < 1000000;j++);**
 <br> **}**
 <br>
 
