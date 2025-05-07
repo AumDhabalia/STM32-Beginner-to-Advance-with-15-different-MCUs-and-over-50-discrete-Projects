@@ -218,7 +218,7 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 This is same as previous one but for N bits. Here N is taken as 8. Therefore, there are 256 states from 0 to 255. For this case use ODR instead of BSRR and use for loop. Take PA7(_MSB_) to PA0(_LSB_) pins as general purpose output mode (2 MHz).
 - Enable GPIOA
 - Configure PA7 to PA0 as general purpose output (2 MHz, Push-Pull)
-- Initially set all bits to 1.
+- Initially set all configured pins to 1.
 - Take a for loop with limit to 256.
 - Increment the ODR value by 1 with delay of 200 ms.
 <br> **for(volatile int i = 0;i < 256;i++)**
@@ -229,7 +229,18 @@ This is same as previous one but for N bits. Here N is taken as 8. Therefore, th
 <br>
 
    6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
-   
+
+In this tutorial, 8 LEDs are connected as the previous one but this time the LEDs are made to move from either **MSB to LSB** or **LSB to MSB**. Here, LEDs are moved from MSB to LSB. Configure GPIOA as the previous one connect LEDs as previous as well. Use Logical Shift Left (<<) for shifting bit from LSB to MSB.
+- Set all configured pins to 0 initially.
+- Use for loop with limit of 8 states.
+- Shift a bit to left with delay of 1000 ms.
+<br>**for(volatile int count = 0;count < 8;count++)**
+<br> **{**
+<br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 << count);**
+<br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
+<br> **}**
+<br>
+
    7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
    
    8. [Random LED(s) FLashing](Blinky/randomflashing.c)
