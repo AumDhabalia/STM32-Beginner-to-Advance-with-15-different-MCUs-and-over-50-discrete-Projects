@@ -154,6 +154,7 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 <br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
+
 <br>Given below figure shows the circuit diagram for the blinky.
 <br>..........Image Pending...........
 <br>
