@@ -208,7 +208,7 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 |LOW|HIGH|
 |HIGH|LOW|
 |HIGH|HIGH|
-Initially set both pins _**HIGH**_.And then in while use BSRR for counter with regular interval.
+<br>Initially set both pins _**HIGH**_.And then in while use BSRR for counter with regular interval.
 <br>
 
    5. [N-Bit Counter](Blinky/counterNbit.c)<br>
