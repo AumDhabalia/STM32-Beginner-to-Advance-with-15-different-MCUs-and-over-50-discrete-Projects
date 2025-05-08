@@ -3,7 +3,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 <br>
 ### Technical Specification
 - ARM 32-Bit Cortex-M3 core with **clock speed** of *72Mhz* max
-- Memory of *64kB* on chip **flash** and ***20KB* SRAM** and **operating voltage of 2.0v to 3.6V**.
+- Memory of *64KB* on chip **flash** and ***20KB* SRAM** and **operating voltage of 2.0v to 3.6V**.
 - *Seven channel* DMA controller (with supported peripherals Timer, ADC, I2Cs, SPIs and USARTs).
 - Two 12 bit (upto 16 channels) ADC with conversion range **0 to 3.6v**.
 - Upto *five GPIO ports* from A to E.
