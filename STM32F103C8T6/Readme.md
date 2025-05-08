@@ -22,14 +22,14 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 1. [Blinky](Readme.md#1-blinky)
 2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
 3. [Interrupt](Readme.md#3-interrupt)
-4. [Timer](Readme.md#4-timer)
-5. PWM
-6. USART
-7. SPI
-8. I2C
-9. CAN
-10. USB
-11. Projects
+4. [Timers & Counters](Readme.md#4-timer)
+5. [PWM]
+6. [USART]
+7. [SPI]
+8. [I2C]
+9. [CAN]
+10. [USB]
+11. [Projects]
 12. [Exercise](Readme.md#12-exercise)
 
 ### Block Diagram
