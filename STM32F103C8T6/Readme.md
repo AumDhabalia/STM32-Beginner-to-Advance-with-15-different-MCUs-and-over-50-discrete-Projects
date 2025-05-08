@@ -241,7 +241,7 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 |HIGH|LOW|
 |HIGH|HIGH|
 
-<br>Initially set both pins _**HIGH**_.And then in while use BSRR for counter with regular interval.
+<br>Initially set both pins _**HIGH**_ and then in while loop use BSRR for counter with regular interval. Circuit diagram is same as above.
 <br>
 
    5. [N-Bit Counter](Blinky/counterNbit.c)<br>
@@ -259,6 +259,7 @@ This is same as previous one but for N bits. Here N is taken as 8. Therefore, th
 <br> **}**
 
 <br>The circuit diagram is shown below.
+<br>.......Image Pending.........
 <br>
 
    6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
@@ -355,7 +356,28 @@ In this tutorial, an external input is taken at PC15 and PB2 as output which is 
 <br>
 
    10. [7-Segment Display](Blinky/segment7display.c)
-   
+
+In this tutorial, a 7-segment display is interfaced with _BluePill_ for displaying numbers from 0 to 9. For this, 0.56 inch single digit 7-segment display is used. The below image is the pinout of the display.
+<br>........Image pending........
+<br>As shown there are ten pins in the module which are A to G and dot (DP) for 8 LEDs connected to these pins and two CC (_**Common Cathode**_) or CA (_**Common Anode**_) pins. CC or CA states how these LEDs are internally connected.
+- Common Cathode (-) = LEDs are commonly connected ground.
+- Common Anode (+) = LEDs are commonly connected to Vcc.
+
+<br> For this tutorial, common cathode based display is used. Now there are 8 LEDs forming a shape of 8 as shown in the image. Each LED is connected to their respective pins. For displaying numbers, the pins of the appropriate LEDs are set. Given below table is the output data bits for respective pins for generating respective numbers from 0 to 9.
+|NUM|Dot| G | F | E | D | C | B | A |
+|---|---|---|---|---|---|---|---|---|
+| 0 |1/0| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 |1/0| 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2 |1/0| 1 | 0 | 1 | 1 | 0 | 1 | 1 |
+| 3 |1/0| 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 4 |1/0| 1 | 1 | 0 | 0 | 1 | 1 | 0 |
+| 5 |1/0| 1 | 0 | 1 | 1 | 1 | 0 | 1 |
+| 6 |1/0| 1 | 1 | 1 | 1 | 1 | 0 | 1 |
+| 7 |1/0| 0 | 0 | 0 | 0 | 1 | 1 | 1 |
+| 8 |1/0| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 9 |1/0| 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+<br>
+
    11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
 
 ## 2. ADC (Analog to Digital Converter)
