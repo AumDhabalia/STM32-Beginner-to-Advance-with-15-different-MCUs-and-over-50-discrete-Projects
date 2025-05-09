@@ -376,6 +376,14 @@ In this tutorial, a 7-segment display is interfaced with _BluePill_ for displayi
 | 7 |1/0| 0 | 0 | 0 | 0 | 1 | 1 | 1 |
 | 8 |1/0| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | 9 |1/0| 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+<br>GPIOA is taken as output mode push-pull configured. The pin mapping is from **PA7->Dot** to **PA0->A** where A is LSb and Dot is MSb. A volatile char array of the above table is taken where each number's 7-segment value is stored. After enabling and setting GPIOA, in while loop display all numbers with delay of 1000 ms.
+<br>**for(volatile _int_ j = 0;j < 10;j++)**
+<br> &emsp;**for(volatile _int_ i = 0;i < 1000000;i++)**
+<br> &emsp;&emsp;**GPIOA->*ODR* = num[j];**
+<br>
+<br>The circuit diagram is as shown.
+<br>.......Image Pending........
 <br>
 
    11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
