@@ -363,7 +363,7 @@ In this tutorial, a 7-segment display is interfaced with _BluePill_ for displayi
 - Common Cathode (-) = LEDs are commonly connected ground.
 - Common Anode (+) = LEDs are commonly connected to Vcc.
 
-<br> For this tutorial, common cathode based display is used. Now there are 8 LEDs forming a shape of 8 as shown in the image. Each LED is connected to their respective pins. For displaying numbers, the pins of the appropriate LEDs are set. Given below table is the output data bits for respective pins for generating respective numbers from 0 to 9.
+<br>For this tutorial, common cathode based display is used. Now there are 8 LEDs forming a shape of 8 as shown in the image. Each LED is connected to their respective pins. For displaying numbers, the pins of the appropriate LEDs are set. Given below table is the output data bits for respective pins for generating respective numbers from 0 to 9.
 |NUM|Dot| G | F | E | D | C | B | A |
 |---|---|---|---|---|---|---|---|---|
 | 0 |1/0| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -390,7 +390,55 @@ In this tutorial, a 7-segment display is interfaced with _BluePill_ for displayi
 
    11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
 
-This tutorial is same as previous one but here a 4 7-segments are used instead of one. For this 
+This tutorial is same as previous one but here a four 7-segments are used instead of one. For this 0.56 inch 4x7-segment common _**cathode display**_ is used. The given below figure shows the display used and its pinout diagram.
+<br>.......Image Pending..........
+<br>
+<br> As shown in image pins D1, D2, D3 and D4 are digit pins used to enable and disable the single digit segment. Note that display used is CC type meaning, to enable the digit the digit pin should be grounded. The data bit representation for their numbers are same as above. The only addition is of the four digit pins. The circuit diagram of the display is observed to have common anode lines for Vcc but different ground lines.
+<br>
+<br>If all four digits are grounded then the output display will have same number on all four digits. To overcome this issue, one digit is turned **_ON_** at a time for certain time period and then the next one and next one and so on. In this tutorial, a counter logic is designed for counting from 0000 to 9999 and display it on 7-segment.
+<br>
+<br>For this PA7 to PA0 is used as data pins and PB4 to PB7 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
+- create a volatile variable count
+- Take a for loop delay of 1000 ms
+  - Create individual variables for each digit
+  - Take a another for loop delay of 10 ms
+    - Derive logic for extracting each digit from count.
+    - Set the GPIOA->ODR to the digit extracted.
+    - Enable the digit by set to digital LOW and other three to digital HIGH.
+<br>
+<br>**for(volatile int j = 0;j < 1000000;j++)**
+<br> **{**
+<br>&emsp;**while(count = 10000)**
+<br>&emsp;&emsp;**count = 0;**
+<br>&emsp;**volatile int digit0 = count%10;**         //Units digit at PB4
+<br>&emsp;**volatile int digit1 = (count%100)/10;**   //Tens LS digit at PB5
+<br>&emsp;**volatile int digit2 = (count%1000)/100;** //Hundreds digit at PB6 
+<br>&emsp;**volatile int digit3 = count/1000;**       //Thousands digit at PB7
+<br>
+<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
+<br>&emsp;**{**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x00000010;**
+<br>&emsp;&emsp;**GPIOA->ODR = num[digit0];**
+<br>&emsp; **}**
+<br>
+<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
+<br>&emsp;**{**
+<br>&emsp;**GPIOB->ODR = 0x00000020;**
+<br>&emsp;**GPIOA->ODR = num[digit1];**
+<br>&emsp;**}**
+<br>
+<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
+<br>&emsp;**{**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x00000040;**
+<br>&emsp;&emsp;**GPIOA->ODR = num[digit2];**
+<br>&emsp;**}**
+<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
+<br>&emsp;**{**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x00000080;**
+<br>&emsp;&emsp;**GPIOA->ODR = num[digit3];**
+<br>&emsp;**}**
+<br>&emsp;**count++;**
+
 ## 2. ADC (Analog to Digital Converter)
    1. Basic ADC setup
    2. Read 10kohm Potentiometer
