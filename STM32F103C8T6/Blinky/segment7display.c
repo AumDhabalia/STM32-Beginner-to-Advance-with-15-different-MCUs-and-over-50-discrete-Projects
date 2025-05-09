@@ -68,7 +68,9 @@ int main(void)
 	while(1)
 	{
 		for(volatile int j = 0;j < 10;j++)
-			for(volatile int i = 0;i < 1000000;i++)
-				GPIOA->ODR = num[j];
+		{
+			GPIOA->ODR = num[j];
+			for(volatile int i = 0;i < 1000000;i++);
+		}
 	}
 }
