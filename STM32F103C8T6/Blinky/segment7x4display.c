@@ -91,25 +91,25 @@ int main(void)
 			//Units Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
-				GPIOB->ODR = 0x00000010;
+				GPIOB->ODR = 0x000000E0;
 				GPIOA->ODR = num[digit0];
 			}
 			//Tens Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
-				GPIOB->ODR = 0x00000020;
+				GPIOB->ODR = 0x000000D0;
 				GPIOA->ODR = num[digit1];
 			}
 			//Hundreds Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
-				GPIOB->ODR = 0x00000040;
+				GPIOB->ODR = 0x000000B0;
 				GPIOA->ODR = num[digit2];
 			}
 			//Thousands Digit for 10 ms
 			for(volatile int i = 0;i < 10000;i++)
 			{
-				GPIOB->ODR = 0x00000080;
+				GPIOB->ODR = 0x00000070;
 				GPIOA->ODR = num[digit3];
 			}
 			count++;
