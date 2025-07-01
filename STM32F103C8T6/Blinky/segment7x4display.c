@@ -77,40 +77,41 @@ int main(void)
 	while(1)
 	{
 		volatile int count = 0;
-		
-		//Time delay of 1000 ms...
-		for(volatile int j = 0;j < 1000000;j++)
-		{
-			while(count = 10000)
-				count = 0;
-			volatile int digit0 = count%10;         //Units digit at PB4
-			volatile int digit1 = (count%100)/10;   //Tens LS digit at PB5
-			volatile int digit2 = (count%1000)/100; //Hundreds digit at PB6 
-			volatile int digit3 = count/1000;       //Thousands digit at PB7
 
-			//Units Digit for 10 ms
-			for(volatile int i = 0;i < 10000;i++)
+		while(count < 10000)
+		{
+			//Time delay of 1000 ms...
+			for(volatile int j = 0;j < 1000000;j++)
 			{
-				GPIOB->ODR = 0x000000E0;
-				GPIOA->ODR = num[digit0];
-			}
-			//Tens Digit for 10 ms
-			for(volatile int i = 0;i < 10000;i++)
-			{
-				GPIOB->ODR = 0x000000D0;
-				GPIOA->ODR = num[digit1];
-			}
-			//Hundreds Digit for 10 ms
-			for(volatile int i = 0;i < 10000;i++)
-			{
-				GPIOB->ODR = 0x000000B0;
-				GPIOA->ODR = num[digit2];
-			}
-			//Thousands Digit for 10 ms
-			for(volatile int i = 0;i < 10000;i++)
-			{
-				GPIOB->ODR = 0x00000070;
-				GPIOA->ODR = num[digit3];
+				volatile int digit0 = count%10;         //Units digit at PB4
+				volatile int digit1 = (count%100)/10;   //Tens LS digit at PB5
+				volatile int digit2 = (count%1000)/100; //Hundreds digit at PB6 
+				volatile int digit3 = count/1000;       //Thousands digit at PB7
+
+				//Units Digit for 10 ms
+				for(volatile int i = 0;i < 10000;i++)
+				{
+					GPIOB->ODR |= 0x000000E0;
+					GPIOA->ODR = num[digit0];
+				}
+				//Tens Digit for 10 ms
+				for(volatile int i = 0;i < 10000;i++)
+				{
+					GPIOB->ODR = (GPIOB->ODR^0x000000E0) | 0x000000D0;
+					GPIOA->ODR = num[digit1];
+				}
+				//Hundreds Digit for 10 ms
+				for(volatile int i = 0;i < 10000;i++)
+				{
+					GPIOB->ODR = (GPIOB->ODR^0x000000D0) | 0x000000B0;
+					GPIOA->ODR = num[digit2];
+				}
+				//Thousands Digit for 10 ms
+				for(volatile int i = 0;i < 10000;i++)
+				{
+					GPIOB->ODR = (GPIOB->ODR^0x000000B0) | 0x00000070;
+					GPIOA->ODR = num[digit3];
+				}
 			}
 			count++;
 		}
