@@ -261,7 +261,8 @@ This is same as previous one but for N bits. Here N is taken as 8. Therefore, th
 <br> **}**
 
 <br>The circuit diagram is shown below.
-<br>.......Image Pending.........
+<br>
+![N Bit Counter](https://github.com/user-attachments/assets/6183cf64-848f-475d-b1ff-6c7d3871f827)
 <br>
 
    6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
