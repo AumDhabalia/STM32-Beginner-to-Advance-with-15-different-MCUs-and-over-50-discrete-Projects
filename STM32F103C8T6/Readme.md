@@ -390,7 +390,8 @@ In this tutorial, a 7-segment display is interfaced with _BluePill_ for displayi
 <br> **}**
 <br>
 <br>The circuit diagram is as shown.
-<br>.......Image Pending........
+<br>
+![Segment 7 Display](https://github.com/user-attachments/assets/ba60a690-75b8-4002-a164-9d14128c5382)
 <br>
 
    11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
