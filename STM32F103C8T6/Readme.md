@@ -354,7 +354,8 @@ In this tutorial, an external input is taken at PC15 and PB2 as output which is 
 <br> **}**
 
 <br>The circuit diagram is as shown.
-<br>.......Image Pending.........
+<br>
+![PushButton Blink](https://github.com/user-attachments/assets/512f96df-2ee7-47e5-bc28-09aec61268a4)
 <br>
 
    10. [7-Segment Display](Blinky/segment7display.c)
