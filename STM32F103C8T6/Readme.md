@@ -187,7 +187,8 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 
 <br>Given below figure shows the circuit diagram for the blinky.
-<br>..........Image Pending...........
+<br>
+![Simple Blink](https://github.com/user-attachments/assets/8d2fc856-bf71-437b-9d1b-d38c8a28a595)
 <br>
 
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
