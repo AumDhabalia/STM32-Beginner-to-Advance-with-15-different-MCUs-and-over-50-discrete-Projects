@@ -397,7 +397,8 @@ In this tutorial, a 7-segment display is interfaced with _BluePill_ for displayi
    11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
 
 This tutorial is same as previous one but here a four 7-segments are used instead of one. For this 0.56 inch 4x7-segment common _**cathode display**_ is used. The given below figure shows the display used and its pinout diagram.
-<br>.......Image Pending..........
+<br>
+![image](https://github.com/user-attachments/assets/c7b36705-786c-45af-b426-b23e7eac2277)
 <br>
 <br> As shown in image pins D1, D2, D3 and D4 are digit pins used to enable and disable the single digit segment. Note that display used is CC type meaning, to enable the digit the digit pin should be grounded. The data bit representation for their numbers are same as above. The only addition is of the four digit pins. The circuit diagram of the display is observed to have common anode lines for Vcc but different ground lines.
 <br>
