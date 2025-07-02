@@ -217,7 +217,8 @@ In this tutorial, the LED is blinked in a pattern of GpFl(2) which a maritime li
 
 In this tutorial, two LEDs are blinked alternately. One LED is digital **HIGH** while other is digital **LOW** with regular interval. In the given circuit diagram pins PB6 and PB7 are taken as general purpose output mode connected to two LEDs. 220 &Omega; rsistance is connected between pin and the diode each respectively.
 <br>
-<br>........Image Pending.........
+<br>
+![Alternate Blink](https://github.com/user-attachments/assets/506d8c24-0e9d-41e2-8f2a-df685054206b)
 <br>
 <br>After enabling GPIOB, configure PB6 & PB7 pins.
 <br>**GPIOB->CRL &= ~(0xFF000000)** _//Clear PB6 & PB7_
