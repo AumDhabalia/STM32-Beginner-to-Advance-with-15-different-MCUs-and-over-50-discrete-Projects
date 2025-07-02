@@ -362,7 +362,8 @@ In this tutorial, an external input is taken at PC15 and PB2 as output which is 
    10. [7-Segment Display](Blinky/segment7display.c)
 
 In this tutorial, a 7-segment display is interfaced with _BluePill_ for displaying numbers from 0 to 9. For this, 0.56 inch single digit 7-segment display is used. The below image is the pinout of the display.
-<br>........Image pending........
+<br>
+![image](https://github.com/user-attachments/assets/9aa45fd8-5dad-4aa0-9ab9-8617b2428381)
 <br>As shown there are ten pins in the module which are A to G and dot (DP) for 8 LEDs connected to these pins and two CC (_**Common Cathode**_) or CA (_**Common Anode**_) pins. CC or CA states how these LEDs are internally connected.
 - Common Cathode (-) = LEDs are commonly connected ground.
 - Common Anode (+) = LEDs are commonly connected to Vcc.
