@@ -80,14 +80,14 @@ int main(void)
 
 		while(count < 10000)
 		{
+			volatile int digit0 = count%10;         //Units digit at PB4
+			volatile int digit1 = (count%100)/10;   //Tens LS digit at PB5
+			volatile int digit2 = (count%1000)/100; //Hundreds digit at PB6 
+			volatile int digit3 = count/1000;       //Thousands digit at PB7
+			
 			//Time delay of 1000 ms...
 			for(volatile int j = 0;j < 1000000;j++)
 			{
-				volatile int digit0 = count%10;         //Units digit at PB4
-				volatile int digit1 = (count%100)/10;   //Tens LS digit at PB5
-				volatile int digit2 = (count%1000)/100; //Hundreds digit at PB6 
-				volatile int digit3 = count/1000;       //Thousands digit at PB7
-
 				//Units Digit for 10 ms
 				for(volatile int i = 0;i < 10000;i++)
 				{
