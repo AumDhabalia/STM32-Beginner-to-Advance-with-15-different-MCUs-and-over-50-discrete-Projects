@@ -426,12 +426,15 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>&emsp;&emsp;**GPIOB->ODR = 0x00007000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit0];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>
 <br>&emsp;&emsp;**GPIOB->ODR = 0x0000B000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit1];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>
 <br>&emsp;&emsp;**GPIOB->ODR = 0x0000D000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit2];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>
 <br>&emsp;&emsp;**GPIOB->ODR = 0x0000E000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit3];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
