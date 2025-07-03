@@ -412,15 +412,15 @@ This tutorial is same as previous one but here a four 7-segments are used instea
     - Derive logic for extracting each digit from count.
     - Set the GPIOA->ODR to the digit extracted.
     - Enable the digit by set to digital LOW and other three to digital HIGH.
-<br>
+
 <br>**for(volatile int j = 0;j < 1000000;j++)**
 <br> **{**
 <br>&emsp;**while(count = 10000)**
 <br>&emsp;&emsp;**count = 0;**
-<br>&emsp;**volatile int digit0 = count%10;**         //Units digit at PB4
-<br>&emsp;**volatile int digit1 = (count%100)/10;**   //Tens LS digit at PB5
-<br>&emsp;**volatile int digit2 = (count%1000)/100;** //Hundreds digit at PB6 
-<br>&emsp;**volatile int digit3 = count/1000;**       //Thousands digit at PB7
+<br>&emsp;**volatile int digit0 = count%10;**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//Units digit at PB15
+<br>&emsp;**volatile int digit1 = (count%100)/10;**&emsp;&emsp;//Tens LS digit at PB14
+<br>&emsp;**volatile int digit2 = (count%1000)/100;**&emsp;&emsp;//Hundreds digit at PB13 
+<br>&emsp;**volatile int digit3 = count/1000;**&emsp;&emsp;&emsp;&emsp;//Thousands digit at PB12
 <br>
 <br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
 <br>&emsp;**{**
@@ -445,6 +445,7 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit3];**
 <br>&emsp;**}**
 <br>&emsp;**count++;**
+<br>
 
 ## 2. ADC (Analog to Digital Converter)
    1. Basic ADC setup
