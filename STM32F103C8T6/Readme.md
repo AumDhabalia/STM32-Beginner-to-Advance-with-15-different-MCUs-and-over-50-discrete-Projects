@@ -406,12 +406,15 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>
 <br>For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
 - create a volatile variable count
-- Take a for loop delay of 1000 ms
+- Take a while loop with limit upto 9999
   - Create individual variables for each digit
-  - Take a another for loop delay of 1 ms
-    - Derive logic for extracting each digit from count.
-    - Set the GPIOA->ODR to the digit extracted.
+  - Derive logic for extracting each digit from count.
+  - Take another for loop for delay of 1000 ms. Here 910 iterations are taken for having synchronous delay with respect to real time clock.
     - Enable the digit by set to digital LOW and other three to digital HIGH.
+    - Set the GPIOA->ODR to the digit extracted.
+    - Delay for 1 ms.
+  - Repeat for next three digits.
+  - Increase value of count by 1. Perform this operation till it reaches max value of 9999.
 
 <br>**volatile uint16_t count = 0;**
 <br>**while(count < 10000)**
@@ -441,6 +444,9 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>&emsp; **}**
 <br>&emsp;**count++;**
 <br> **}**
+<br>
+<br>The circuit diagram for this is given below...
+<br>![Segment 7x4 Display](https://github.com/user-attachments/assets/87ff2bb7-2def-4384-84a7-b23da7ccbae8)
 <br>
 
 ## 2. ADC (Analog to Digital Converter)
