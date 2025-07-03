@@ -86,32 +86,27 @@ int main(void)
 			volatile int digit3 = count/1000;       //Thousands digit at PB7
 			
 			//Time delay of 1000 ms...
-			for(volatile int j = 0;j < 25;j++)
+			for(volatile int j = 0;j < 250;j++)
 			{
-				//Units Digit for 10 ms
-				for(volatile int i = 0;i < 10000;i++)
-				{
-					GPIOB->ODR |= 0x000000E0;
-					GPIOA->ODR = num[digit0];
-				}
-				//Tens Digit for 10 ms
-				for(volatile int i = 0;i < 10000;i++)
-				{
-					GPIOB->ODR = (GPIOB->ODR^0x000000E0) | 0x000000D0;
-					GPIOA->ODR = num[digit1];
-				}
-				//Hundreds Digit for 10 ms
-				for(volatile int i = 0;i < 10000;i++)
-				{
-					GPIOB->ODR = (GPIOB->ODR^0x000000D0) | 0x000000B0;
-					GPIOA->ODR = num[digit2];
-				}
-				//Thousands Digit for 10 ms
-				for(volatile int i = 0;i < 10000;i++)
-				{
-					GPIOB->ODR = (GPIOB->ODR^0x000000B0) | 0x00000070;
-					GPIOA->ODR = num[digit3];
-				}
+				GPIOB->ODR |= 0x000000E0;
+				GPIOA->ODR = num[digit0];
+				//Units Digit for 1 ms
+				for(volatile int i = 0;i < 1000;i++);
+
+				GPIOB->ODR = (GPIOB->ODR^0x000000E0) | 0x000000D0;
+				GPIOA->ODR = num[digit1];
+				//Tens Digit for 1 ms
+				for(volatile int i = 0;i < 1000;i++);
+
+				GPIOB->ODR = (GPIOB->ODR^0x000000D0) | 0x000000B0;
+				GPIOA->ODR = num[digit2];
+				//Hundreds Digit for 1 ms
+				for(volatile int i = 0;i < 1000;i++);
+
+				GPIOB->ODR = (GPIOB->ODR^0x000000B0) | 0x00000070;
+				GPIOA->ODR = num[digit3];
+				//Thousands Digit for 1 ms
+				for(volatile int i = 0;i < 1000;i++)
 			}
 			count++;
 		}
