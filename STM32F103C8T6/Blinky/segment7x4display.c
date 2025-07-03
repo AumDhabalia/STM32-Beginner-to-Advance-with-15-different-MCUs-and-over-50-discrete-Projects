@@ -86,7 +86,7 @@ int main(void)
 			volatile int digit3 = count/1000;       //Thousands digit at PB7
 			
 			//Time delay of 1000 ms...
-			for(volatile int j = 0;j < 1000000;j++)
+			for(volatile int j = 0;j < 25;j++)
 			{
 				//Units Digit for 10 ms
 				for(volatile int i = 0;i < 10000;i++)
