@@ -418,9 +418,9 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>&emsp;**while(count = 10000)**
 <br>&emsp;&emsp;**count = 0;**
 <br>&emsp;**volatile int digit0 = count%10;**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//Units digit at PB15
-<br>&emsp;**volatile int digit1 = (count%100)/10;**&emsp;&emsp;//Tens LS digit at PB14
+<br>&emsp;**volatile int digit1 = (count%100)/10;**&emsp;&emsp;&emsp;//Tens LS digit at PB14
 <br>&emsp;**volatile int digit2 = (count%1000)/100;**&emsp;&emsp;//Hundreds digit at PB13 
-<br>&emsp;**volatile int digit3 = count/1000;**&emsp;&emsp;&emsp;&emsp;//Thousands digit at PB12
+<br>&emsp;**volatile int digit3 = count/1000;**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//Thousands digit at PB12
 <br>
 <br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
 <br>&emsp;**{**
