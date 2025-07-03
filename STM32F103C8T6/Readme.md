@@ -404,47 +404,40 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>
 <br>If all four digits are grounded then the output display will have same number on all four digits. To overcome this issue, one digit is turned **_ON_** at a time for certain time period and then the next one and next one and so on. In this tutorial, a counter logic is designed for counting from 0000 to 9999 and display it on 7-segment.
 <br>
-<br>For this PA7 to PA0 is used as data pins and PB4 to PB7 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
+<br>For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
 - create a volatile variable count
 - Take a for loop delay of 1000 ms
   - Create individual variables for each digit
-  - Take a another for loop delay of 10 ms
+  - Take a another for loop delay of 1 ms
     - Derive logic for extracting each digit from count.
     - Set the GPIOA->ODR to the digit extracted.
     - Enable the digit by set to digital LOW and other three to digital HIGH.
 
-<br>**for(volatile int j = 0;j < 1000000;j++)**
+<br>**volatile uint16_t count = 0;**
+<br>**while(count < 10000)**
 <br> **{**
-<br>&emsp;**while(count = 10000)**
-<br>&emsp;&emsp;**count = 0;**
-<br>&emsp;**volatile int digit0 = count%10;**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//Units digit at PB15
-<br>&emsp;**volatile int digit1 = (count%100)/10;**&emsp;&emsp;&emsp;//Tens LS digit at PB14
-<br>&emsp;**volatile int digit2 = (count%1000)/100;**&emsp;&emsp;//Hundreds digit at PB13 
-<br>&emsp;**volatile int digit3 = count/1000;**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//Thousands digit at PB12
+<br>&emsp;**volatile uint16_t digit0 = count%10;**
+<br>&emsp;**volatile uint16_t digit1 = (count%100)/10;**
+<br>&emsp;**volatile uint16_t digit2 = (count%1000)/100;**
+<br>&emsp;**volatile uint16_t digit3 = count/1000;**
 <br>
-<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
+<br>&emsp;**for(volatile int i = 0;i < 910;i++)**
 <br>&emsp;**{**
-<br>&emsp;&emsp;**GPIOB->ODR = 0x00000010;**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x00007000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit0];**
-<br>&emsp; **}**
-<br>
-<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
-<br>&emsp;**{**
-<br>&emsp;**GPIOB->ODR = 0x00000020;**
-<br>&emsp;**GPIOA->ODR = num[digit1];**
-<br>&emsp;**}**
-<br>
-<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
-<br>&emsp;**{**
-<br>&emsp;&emsp;**GPIOB->ODR = 0x00000040;**
+<br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x0000B000;**
+<br>&emsp;&emsp;**GPIOA->ODR = num[digit1];**
+<br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x0000D000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit2];**
-<br>&emsp;**}**
-<br>&emsp;**for(volatile int i = 0;i < 10000;i++)**
-<br>&emsp;**{**
-<br>&emsp;&emsp;**GPIOB->ODR = 0x00000080;**
+<br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>&emsp;&emsp;**GPIOB->ODR = 0x0000E000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit3];**
-<br>&emsp;**}**
+<br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
+<br>&emsp; **}**
 <br>&emsp;**count++;**
+<br> **}**
 <br>
 
 ## 2. ADC (Analog to Digital Converter)
