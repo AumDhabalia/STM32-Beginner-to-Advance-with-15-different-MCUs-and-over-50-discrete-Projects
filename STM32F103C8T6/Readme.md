@@ -458,10 +458,11 @@ In second chapter, analog signals are converted to digital values of _1's_ and _
    2. Read 10kohm Potentiometer
    3. Dual Axis Potentiometer
    4. Injected Mode ADC
-   5. Temperature & Humidity Sensing
-   6. Voltage Sensing
-   7. Dual Channel ADC
-   8. N-Channel ADC
+   5. Scan Mode ADC
+   6. Temperature & Humidity Sensing
+   7. Discontinuous Mode ADC
+   8. Voltage Sensing
+   9. Dual Channel ADC
 ## 3. Interrupt
    1. LED & Interrupt Pushbutton
    2. N-Bit Counter using Pushbutton
@@ -518,11 +519,12 @@ In second chapter, analog signals are converted to digital values of _1's_ and _
    1. Write a progrm for 8-bit up/down counter using pushbutton and a counter switch which controls count direction (i.e. up counter = LOW, down counter = HIGH).
    2. Write a program for moving digits unidirectionally using eight 7-segment display module.
    3. Write a program reading 4 ADC inputs. Use multiple channel ADC.
-   4. Write a program blinking 60 seconds timer and reading ADC input at every 5 seconds.
-   5. Write a program for generating three different signals using multi-channel timers.
-   6. Write a program for controlling voltage ranging from 10v to 220v. Use PWM.
-   7. Write a program to transmit messages with time period based on user selection. Use USART.
-   8. Design a Daisy-Chain setup for SPI communication interface.
-   9. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
-   10. Write a program for data transmission from Bluepill memory to System using USB.
-   11. Write a program for CAN based Memory interfacing with multiple memory ICs.
+   4. Write a program reading 3 ADC inputs. One channel in injected mode, one regular continuous both in ADC1. The third one in discontinued mode in ADC2.
+   5. Write a program blinking 60 seconds timer and reading ADC input at every 5 seconds.
+   6. Write a program for generating three different signals using multi-channel timers.
+   7. Write a program for controlling voltage ranging from 10v to 220v. Use PWM.
+   8. Write a program to transmit messages with time period based on user selection. Use USART.
+   9. Design a Daisy-Chain setup for SPI communication interface.
+   10. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
+   11. Write a program for data transmission from Bluepill memory to System using USB.
+   12. Write a program for CAN based Memory interfacing with multiple memory ICs.
