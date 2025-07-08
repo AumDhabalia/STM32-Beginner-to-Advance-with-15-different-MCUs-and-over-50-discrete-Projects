@@ -451,7 +451,14 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 
 ## 2. ADC (Analog to Digital Converter)
 In second chapter, analog signals are converted to digital values of _1's_ and _0's_ using built-in **_Analog to Digital Converter (ADC)_**. In BluePill there are two 12-bit ADC's with each upto 18 multiplexed channels. The number 12 here states resolution (quantization levels) in ADC. The ADC in BluePill is **_successive approximation register (SAR - ADC)_**. For BluePill there are 10 ADC channels that can be used for conversion from PA0 to PA7, PB0 and PB1.
-<br>The ADC is used through AFIO register where the alternate functionality of GPIOs is accessed.
+<br>The ADC is used through AFIO register where the alternate functionality of GPIOs is accessed. There are a total of 21 registers for configuring ADC.
+- ADC Status Register
+- ADC Control Register : ADC_CR1, ADC_CR2
+- ADC Sample Time Register : ADC_SMPR1, ADC_SMPR2
+- ADC Sequence Register (Regular) : ADC_SQR1, ADC_SQR2, ADC_SQR3
+- ADC Data Register : ADC_DR
+- ADC Sequence Register (Injected) : ADC_JSQR
+- ADC Data Register (Injected) : ADC_JDR
 <br>
 <br>
    1. [Basic ADC setup](ADC/adc_setup.c)
