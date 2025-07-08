@@ -454,7 +454,7 @@ In second chapter, analog signals are converted to digital values of _1's_ and _
 <br>The ADC is used through AFIO register where the alternate functionality of GPIOs is accessed.
 <br>
 <br>
-   1. Basic ADC setup
+   1. [Basic ADC setup](ADC/adc_setup.c)
    2. Read 10kohm Potentiometer
    3. Dual Axis Potentiometer
    4. Injected Mode ADC
