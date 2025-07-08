@@ -460,7 +460,7 @@ In second chapter, analog signals are converted to digital values of _1's_ and _
 - ADC Sequence Register (Injected) : ADC_JSQR
 - ADC Data Register (Injected) : ADC_JDR
 <br>
-<br>
+
    1. [Basic ADC setup](ADC/adc_setup.c)
    2. Read 10kohm Potentiometer
    3. Dual Axis Potentiometer
