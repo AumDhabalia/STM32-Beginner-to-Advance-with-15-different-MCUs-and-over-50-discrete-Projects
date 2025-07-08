@@ -469,7 +469,7 @@ In second chapter, analog signals are converted to digital values of _1's_ and _
    6. Temperature & Humidity Sensing
    7. Discontinuous Mode ADC
    8. Voltage Sensing
-   9. Dual Channel ADC
+   9. Dual ADC Mode
 ## 3. Interrupt
    1. LED & Interrupt Pushbutton
    2. N-Bit Counter using Pushbutton
