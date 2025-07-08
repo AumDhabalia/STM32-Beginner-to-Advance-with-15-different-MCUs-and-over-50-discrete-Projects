@@ -4,12 +4,13 @@ Initial steps before starting user code.
 
 #include "stm32f10x.h"
 
+static uint16_t val = 0;
+static float out = 0;
+
 void ADC1_2_IRQHandler(void);
 
 int main(void)
 {
-	volatile int val;
-	volatile float out;
 	//Initialize HSE 8 MHz
 	//Enable HSE
 	RCC->CR |= RCC_CR_HSEON;
@@ -74,9 +75,7 @@ int main(void)
 	
 	//User Code initialization...
 	while(1)
-	{
-		
-	}
+	{}
 }
 
 void ADC1_2_IRQHandler(void)
