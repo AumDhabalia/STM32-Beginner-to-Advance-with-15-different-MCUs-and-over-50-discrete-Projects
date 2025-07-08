@@ -470,6 +470,7 @@ This tutorial is same as previous one but here a four 7-segments are used instea
    4. Multiple sensor reading using timer
    5. Real-Time Clock
    6. Multi-channel signal generation
+   7. SysTick Timer
 ## 5. PWM
    1. PWM Setup
    2. LED Intensity Control
