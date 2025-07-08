@@ -450,6 +450,8 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 <br>
 
 ## 2. ADC (Analog to Digital Converter)
+In second chapter, analog signals are converted to digital values of _1's_ and _0's_ using built-in **_Analog to Digital Converter (ADC)_**. In BluePill there are two 12-bit ADC's with each upto 16 channels.
+<br>
    1. Basic ADC setup
    2. Read 10kohm Potentiometer
    3. Dual Axis Potentiometer
