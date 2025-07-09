@@ -157,7 +157,7 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Tick on Sharable STLINK, tick on Download to Flash.
 - Navigate to Trace. Change crystal to 8 MHz from 10 MHz.
 - Navigate to Flash Download. Tick on Erase full-chip. Tick on Reset & Run. Select STM32F10x Med-Density Flash. On the right bottom, in start change to 0x00010000.
-- Apply this settings by clicking on ***OK***.
+- Apply this settings by clicking on _**OK**_.
 
 Once this settings are applied, navigate to main.c.
 
@@ -191,11 +191,11 @@ Given below figure shows the circuit diagram for the blinky.
    2. [Lighthouse Blinking](Blinky/lighthouse_blinking.c)<br>
 
 In this tutorial, the LED is blinked in a pattern of GpFl(2) which a maritime lighthouse flashing pattern. In this pattern, light signal is flashed in group of two flashesand then remains dark for same period as for flashing period.
-<br>
-<br>Here, the **ON** state for both flash is taken as 200 ms and **OFF** state as 100 ms and the **wait/dark** state for 400 ms (**OFF** state). Same procedure for setting up the device. Instead of regular time interval blinking in previous tutorial, pattern blinking is performed.
-<br>
-<br>In main.c, in while loop change the logic to
-<br>**GPIOB->BSRR |= GPIO_BSRR_BS2;** _//Set PB2 (LED ON)_
+
+Here, the **ON** state for both flash is taken as 200 ms and **OFF** state as 100 ms and the **wait/dark** state for 400 ms (**OFF** state). Same procedure for setting up the device. Instead of regular time interval blinking in previous tutorial, pattern blinking is performed.
+
+In main.c, in while loop change the logic to
+**GPIOB->BSRR |= GPIO_BSRR_BS2;** _//Set PB2 (LED ON)_
 <br>**for(volatile int i = 0;i < 200000;i++);** _//200 ms = 200,000 us_
 <br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
 <br>**for(volatile int i = 0;i < 100000;i++);** _//100 ms = 100,000 us_
