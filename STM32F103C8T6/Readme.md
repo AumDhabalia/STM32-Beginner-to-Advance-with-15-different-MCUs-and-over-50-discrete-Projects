@@ -1,12 +1,11 @@
 # STM32F103C8T6 Projects
 STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MCUs.
-<br>
 ### Technical Specification
 - ARM 32-Bit Cortex-M3 core with **clock speed** of *72Mhz* max
 - Memory of *64KB* on chip **flash** and ***20KB* SRAM** and **operating voltage of 2.0v to 3.6V**.
 - *Seven channel* DMA controller (with supported peripherals Timer, ADC, I2Cs, SPIs and USARTs).
 - Two 12 bit (upto 16 channels) ADC with conversion range **0 to 3.6v**.
-- Upto *five GPIO ports* from A to E.
+- Upto _five GPIO ports_ from A to E.
 - **Seven** timers
   - **Three** 16-bit timers
   - **One** 16-bit motor PWM
@@ -93,15 +92,13 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 | 47 | VSS_3 | VSS_3 | - | - |
 | 48 | VDD_3 | VDD_3 | - | - |
 
-<br/>In this readme, individual documentation for each of the tutorial is provided.
-
+In this readme, individual documentation for each of the tutorial is provided.
 ### *Pre Setups and Configurations*
 Before starting, ensure Keil is installed. If not, refer [here](../Readme.md#2-keil-ide) to install Keil MDK_ARM.
-<br>
 <br>Open Pack Installer.
-<br>
 <br>Search for STM32F103C8.
-<br>![Screenshot 2025-03-27 193005](https://github.com/user-attachments/assets/2252c3cb-cc2b-43f0-bcc9-1cc7f4d02cc1)
+
+![Screenshot 2025-03-27 193005](https://github.com/user-attachments/assets/2252c3cb-cc2b-43f0-bcc9-1cc7f4d02cc1)
 <br>
 <br>On the right side specific packages will be displayed. Install DFP, CMSIS
 <br>![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
