@@ -105,11 +105,10 @@ On the right side specific packages will be displayed. Install DFP, CMSIS
 ![Screenshot 2025-03-27 193050](https://github.com/user-attachments/assets/52359909-17b5-4a40-bdb1-a9927e6fd19f)
 
 On installation, popup for STLink Debugger will appear. Install it.
-<br>
-<br>**To create project click [here](../Readme.md#project-setup)**
-<br>Once project is created, copy [main.c](main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
-<br>
-<br>
+
+**To create project click [here](../Readme.md#project-setup)**
+
+Once project is created, copy [main.c](main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
 ## 1. Blinky
 In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter. The LED(s) here are nothing but output from the pins. The pins mentioned here are known as General Purpose Input/Output pins. STM32F103 line has total of five GPIO ports from A to E, each having 16 pins.
 <br>BluePill has total of 40 pins
