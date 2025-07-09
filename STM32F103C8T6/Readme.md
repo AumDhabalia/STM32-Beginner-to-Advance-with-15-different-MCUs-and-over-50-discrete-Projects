@@ -243,7 +243,6 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 |HIGH|LOW|
 |HIGH|HIGH|
 
-<br>
 Initially set both pins _**HIGH**_ and then in while loop use BSRR for counter with regular interval. Circuit diagram is same as above.
 <br>
 
@@ -453,7 +452,27 @@ This tutorial is same as previous one but here a four 7-segments are used instea
 ## 2. ADC (Analog to Digital Converter)
 In second chapter, analog signals are converted to digital values of _1's_ and _0's_ using built-in **_Analog to Digital Converter (ADC)_**. In BluePill there are two 12-bit ADC's with each upto 18 multiplexed channels of which 16 channels are external and two are internal. The number 12 here states resolution (quantization levels) in ADC. The ADC in BluePill is **_successive approximation register (SAR - ADC)_**. For BluePill there are 10 ADC channels that can be used for conversion from PA0 to PA7, PB0 and PB1.
 <br>
-<br>The ADC is used through AFIO register where the alternate functionality of GPIOs is accessed. There are a total of 21 registers for configuring ADC.
+<br>The main features of the ADC are
+- 12 Bit resolution.
+- Interrupt generation at End of Conversion, End of Injected Conversion and Analog Watchdog Event.
+- Single and continuous conversion modes.
+- Scan mode for automatic conversion of channel 0 to channel _**n**_.
+- Self-calibration.
+- Data alignment with in-built data coherency.
+- Channel by channel programmable sampling time.
+- External trigger option for both regular and injected conversion.
+- Discontinuous mode.
+- Dual mode.
+- ADC conversion time:
+  - STM32F103xx performance line devices: 1 µs at 56 MHz (1.17 µs at 72 MHz)
+  - STM32F101xx access line devices: 1 µs at 28 MHz (1.55 µs at 36 MHz)
+  - STM32F102xx USB access line devices: 1.2 µs at 48 MHz
+  - STM32F105xx and STM32F107xx devices: 1 µs at 56 MHz (1.17 µs at 72 MHz)
+- ADC supply requirement: 2.4 V to 3.6 V
+- ADC input range: VREF-  VIN  VREF+
+- DMA request generation during regular channel conversion
+
+The ADC is used through AFIO register where the alternate functionality of GPIOs is accessed. There are a total of 21 registers for configuring ADC.
 - ADC Status Register : **ADC_SR**
 - ADC Control Register : **ADC_CR1, ADC_CR2**
 - ADC Sample Time Register : **ADC_SMPR1, ADC_SMPR2**
