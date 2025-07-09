@@ -291,7 +291,8 @@ The circuit diagram is same as above one. The truth table for this tutorial is a
    7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)
 
 This is same as previous one with added logic for moving LEDs in both ways i.e from **LSB to MSB** and **MSB to LSB**.
-- Use two for loops one for moving MSB to LSB and another LSB to MSB.
+
+Use two for loops one for moving MSB to LSB and another LSB to MSB.
 <br>**for(volatile int count = 0;count < 8;count++)**
 <br> **{**
 <br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 << count);**
@@ -344,13 +345,9 @@ This tutorial is about flashing LEDs in random pattern. For this the setup is sa
 In this tutorial, an external input is taken at PC15 and PB2 as output which is built-in LED. A pushbutton is connected at PC15 and set as input mode and PB as output mode. Here, the LED stays in ON state while the button is pressed. When button is released, the LED goes to OFF state.
 - In while loop, use if condition to switch ON and OFF the LED.
 <br>**if((GPIOC->IDR & (1 << 15)) == 0)**  
-<br> **{**
 <br> &emsp;**GPIOB->BSRR |= GPIO_BSRR_BS2; // Turn ON PB2 (LED)**
-<br> **}**
 <br>**else**
-<br> **{**
 <br>&emsp;**GPIOB->BSRR |= GPIO_BSRR_BR2; // Turn OFF PB2 (LED)**
-<br> **}**
 
 The circuit diagram is as shown.
 
