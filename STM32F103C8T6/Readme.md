@@ -173,7 +173,7 @@ Now that, BluePill is setup
 
 Since, the built-in LED is internally connected, no need for external connections. In the main.c,
 - Enable GPIOB clock
-<br>RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;<br>
+<br>**RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;** <br>
 - Configure GPIOB PB2 pin as General-Purpose Output Push-Pull (2 MHz) mode
 <br>**GPIOB->CRL &= ~(0x00000F00);** _//Clear bits for PB2_
 <br>**GPIOB->CRL |=  (0x00000200);**  _//Set as Output (2 MHz, Push-Pull)_
