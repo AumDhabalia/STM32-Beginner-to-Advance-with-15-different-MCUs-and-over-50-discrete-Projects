@@ -110,8 +110,7 @@ On installation, popup for STLink Debugger will appear. Install it.
 
 Once project is created, copy [main.c](main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
 ## 1. Blinky
-In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter. The LED(s) here are nothing but output from the pins. The pins mentioned here are known as General Purpose Input/Output pins. STM32F103 line has total of five GPIO ports from A to E, each having 16 pins.
-<br>BluePill has total of 40 pins
+In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter. The LED(s) here are nothing but output from the pins. The pins mentioned here are known as General Purpose Input/Output pins. STM32F103 line has total of five GPIO ports from A to E, each having 16 pins. BluePill has total of 40 pins
 - GPIOA and GPIOB ports
 - PD0 and PD1 for HSE
 - PC13 & PC14
@@ -160,19 +159,19 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 - Navigate to Flash Download. Tick on Erase full-chip. Tick on Reset & Run. Select STM32F10x Med-Density Flash. On the right bottom, in start change to 0x00010000.
 - Apply this settings by clicking on ***OK***.
 
-<br>Once this settings are applied, navigate to main.c.
-<br>
-<br>From this point onwards, the simple LED blinking programming starts. Connect the STLink debugger/programmer to ***BluePill***. Refer to the pinout on the debugger as well as on the mcu. Connect SWDIO pin of the debugger to the SWDIO pin of the board. Connect SWCLK of the debugger to the SWCLK/SWCK pin of the board. Connect ***3.3v*** to the ***Vcc*** of the board.
-<br>
-<br>Once it is done, connect debugger to the system such that the reset switch is kept pressed. Release the switch after connected. A STLink/V2 dialog box will appear. Click on Update. If the Update is not active then reconnect the debugger and keep the switch pressed and then release it after connected. Do it for two three times if not working.
-<br>
-<br>Now that, BluePill is setup
+Once this settings are applied, navigate to main.c.
+
+From this point onwards, the simple LED blinking programming starts. Connect the STLink debugger/programmer to ***BluePill***. Refer to the pinout on the debugger as well as on the mcu. Connect SWDIO pin of the debugger to the SWDIO pin of the board. Connect SWCLK of the debugger to the SWCLK/SWCK pin of the board. Connect _**3.3v**_ to the _**Vcc**_ of the board.
+
+Once it is done, connect debugger to the system such that the reset switch is kept pressed. Release the switch after connected. A STLink/V2 dialog box will appear. Click on Update. If the Update is not active then reconnect the debugger and keep the switch pressed and then release it after connected. Do it for two three times if not working.
+
+Now that, BluePill is setup
 - Build the project. No error should be displayed.
-- Download the program to the board by navigating to Flash->Download or by pressing ***F8***.
-- Start debug session by pressing ***Ctrl+F5*** or navigating to Debug->Start Debug.
+- Download the program to the board by navigating to Flash->Download or by pressing _**F8**_.
+- Start debug session by pressing _**Ctrl+F5**_ or navigating to Debug->Start Debug.
 - This procedure is general for all the upcoming tutorials and projects.
 
-<br>Since, the built-in LED is internally connected, no need for external connections. In the main.c,
+Since, the built-in LED is internally connected, no need for external connections. In the main.c,
 - Enable GPIOB clock
 <br>RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;<br>
 - Configure GPIOB PB2 pin as General-Purpose Output Push-Pull (2 MHz) mode
@@ -184,8 +183,8 @@ This is the basic introductory project for getting started with STM32F103C8T6 Bl
 <br>**GPIOB->BSRR |= GPIO_BSRR_BR2;** _//Reset PB2 (LED OFF)_
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 
-<br>Given below figure shows the circuit diagram for the blinky.
-<br>
+Given below figure shows the circuit diagram for the blinky.
+
 ![Simple Blink](https://github.com/user-attachments/assets/8d2fc856-bf71-437b-9d1b-d38c8a28a595)
 <br>
 
