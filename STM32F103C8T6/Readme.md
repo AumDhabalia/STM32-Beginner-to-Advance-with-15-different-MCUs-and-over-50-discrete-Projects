@@ -463,8 +463,8 @@ In second chapter, analog signals are converted to digital values of _1's_ and _
 - ADC Injected Channel Data Offset Register : **ADC_JOFR1, ADC_JOFR2, ADC_JOFR3, ADC_JOFR4**
 - ADC Watchdog High Threshold Register : **ADC_HTR**
 - ADC Watchdog Low Threshold Register : **ADC_LTR**
-<br>
-<br>All these registers are explained along the tutorials in detail.
+
+All these registers are explained along the tutorials in detail.
 <br>
 
    1. [Basic ADC setup](ADC/adc_setup.c)
