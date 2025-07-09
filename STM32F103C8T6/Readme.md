@@ -231,7 +231,7 @@ For this tutorial, BSRR is used.
 <br>**for(volatile int i = 0;i < 500000;i++);** _//500 ms = 500,000 us_
 <br>
 
-   4. [2-Bit Counter](Blinky/counter2bit.c)<br>
+   4. [2-Bit Counter](Blinky/counter2bit.c)
 
 In this tutorial, a simple 2 bit counter logic is developed. The connections are same and so is the circuit diagram. In while loop, PB7 is MSB and PB6 is LSB. The truth table for 2 bit counter is shown below.
 |PB7|PB6|
@@ -244,7 +244,7 @@ In this tutorial, a simple 2 bit counter logic is developed. The connections are
 Initially set both pins _**HIGH**_ and then in while loop use BSRR for counter with regular interval. Circuit diagram is same as above.
 <br>
 
-   5. [N-Bit Counter](Blinky/counterNbit.c)<br>
+   5. [N-Bit Counter](Blinky/counterNbit.c)
 
 This is same as previous one but for N bits. Here N is taken as 8. Therefore, there are 256 states from 0 to 255. For this case use ODR instead of BSRR and use for loop. Take PA7(_MSB_) to PA0(_LSB_) pins as general purpose output mode (2 MHz).
 - Enable GPIOA
@@ -258,12 +258,12 @@ This is same as previous one but for N bits. Here N is taken as 8. Therefore, th
 <br>   &emsp;**for(volatile int j = 0;j < 1000000;j++);**
 <br> **}**
 
-<br>The circuit diagram is shown below.
-<br>
+The circuit diagram is shown below.
+
 ![N Bit Counter](https://github.com/user-attachments/assets/6183cf64-848f-475d-b1ff-6c7d3871f827)
 <br>
 
-   6. [Moving LEDs (One Way)](Blinky/movingled.c)<br>
+   6. [Moving LEDs (One Way)](Blinky/movingled.c)
 
 In this tutorial, 8 LEDs are connected as the previous one but this time the LEDs are made to move from either **MSB to LSB** or **LSB to MSB**. Here, LEDs are moved from MSB to LSB. Configure GPIOA as the previous one connect LEDs as previous as well. Use Logical Shift Left (<<) for shifting bit from LSB to MSB.
 - Set all configured pins to 0 initially.
@@ -275,8 +275,7 @@ In this tutorial, 8 LEDs are connected as the previous one but this time the LED
 <br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
 <br> **}**
 
-<br>The circuit diagram is same as above one.
-<br>The truth table for this tutorial is as shown.
+The circuit diagram is same as above one. The truth table for this tutorial is as shown.
 |PA7|PA6|PA5|PA4|PA3|PA2|PA1|PA0|
 |---|---|---|---|---|---|---|---|
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -289,7 +288,7 @@ In this tutorial, 8 LEDs are connected as the previous one but this time the LED
 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 <br>
 
-   7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)<br>
+   7. [Moving LEDs (Back & Forth)](Blinky/movingled2way.c)
 
 This is same as previous one with added logic for moving LEDs in both ways i.e from **LSB to MSB** and **MSB to LSB**.
 - Use two for loops one for moving MSB to LSB and another LSB to MSB.
@@ -298,13 +297,14 @@ This is same as previous one with added logic for moving LEDs in both ways i.e f
 <br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 << count);**
 <br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
 <br> **}**
-<br><br>**for(volatile int count = 0;count < 8;count++)**
+
+**for(volatile int count = 0;count < 8;count++)**
 <br> **{**
 <br>  &emsp;**(GPIOA->ODR &= 0xFF00) |= (0x01 >> count);**
 <br>  &emsp;**for(volatile int i = 0;i < 1000000;i++);**
 <br> **}**
 
-<br>The truth table for the tutoiral is given below.
+The truth table for the tutoiral is given below.
 |PA7|PA6|PA5|PA4|PA3|PA2|PA1|PA0|
 |---|---|---|---|---|---|---|---|
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -352,21 +352,22 @@ In this tutorial, an external input is taken at PC15 and PB2 as output which is 
 <br>&emsp;**GPIOB->BSRR |= GPIO_BSRR_BR2; // Turn OFF PB2 (LED)**
 <br> **}**
 
-<br>The circuit diagram is as shown.
-<br>
+The circuit diagram is as shown.
+
 ![PushButton Blink](https://github.com/user-attachments/assets/512f96df-2ee7-47e5-bc28-09aec61268a4)
 <br>
 
    10. [7-Segment Display](Blinky/segment7display.c)
 
 In this tutorial, a 7-segment display is interfaced with _BluePill_ for displaying numbers from 0 to 9. For this, 0.56 inch single digit 7-segment display is used. The below image is the pinout of the display.
-<br>
+
 ![image](https://github.com/user-attachments/assets/9aa45fd8-5dad-4aa0-9ab9-8617b2428381)
-<br>As shown there are ten pins in the module which are A to G and dot (DP) for 8 LEDs connected to these pins and two CC (_**Common Cathode**_) or CA (_**Common Anode**_) pins. CC or CA states how these LEDs are internally connected.
+
+As shown there are ten pins in the module which are A to G and dot (DP) for 8 LEDs connected to these pins and two CC (_**Common Cathode**_) or CA (_**Common Anode**_) pins. CC or CA states how these LEDs are internally connected.
 - Common Cathode (-) = LEDs are commonly connected ground.
 - Common Anode (+) = LEDs are commonly connected to Vcc.
 
-<br>For this tutorial, common cathode based display is used. Now there are 8 LEDs forming a shape of 8 as shown in the image. Each LED is connected to their respective pins. For displaying numbers, the pins of the appropriate LEDs are set. Given below table is the output data bits for respective pins for generating respective numbers from 0 to 9.
+For this tutorial, common cathode based display is used. Now there are 8 LEDs forming a shape of 8 as shown in the image. Each LED is connected to their respective pins. For displaying numbers, the pins of the appropriate LEDs are set. Given below table is the output data bits for respective pins for generating respective numbers from 0 to 9.
 |NUM|Dot| G | F | E | D | C | B | A |
 |---|---|---|---|---|---|---|---|---|
 | 0 |1/0| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -380,29 +381,29 @@ In this tutorial, a 7-segment display is interfaced with _BluePill_ for displayi
 | 8 |1/0| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | 9 |1/0| 1 | 1 | 0 | 1 | 1 | 1 | 1 |
 
-<br>GPIOA is taken as output mode push-pull configured. The pin mapping is from **PA7->Dot** to **PA0->A** where A is LSb and Dot is MSb. A volatile char array of the above table is taken where each number's 7-segment value is stored. After enabling and setting GPIOA, in while loop display all numbers with delay of 1000 ms.
+GPIOA is taken as output mode push-pull configured. The pin mapping is from **PA7->Dot** to **PA0->A** where A is LSb and Dot is MSb. A volatile char array of the above table is taken where each number's 7-segment value is stored. After enabling and setting GPIOA, in while loop display all numbers with delay of 1000 ms.
 <br>**for(volatile _int_ j = 0;j < 10;j++)**
 <br> **{**
 <br> &emsp;**GPIOA->*ODR* = num[j];**
 <br> &emsp;**for(volatile _int_ i = 0;i < 1000000;i++);**
 <br> **}**
-<br>
-<br>The circuit diagram is as shown.
-<br>
+
+The circuit diagram is as shown.
+
 ![Segment 7 Display](https://github.com/user-attachments/assets/ba60a690-75b8-4002-a164-9d14128c5382)
 <br>
 
    11. [4 digit 7-Segment Display](Blinky/segment7x4display.c)
 
 This tutorial is same as previous one but here a four 7-segments are used instead of one. For this 0.56 inch 4x7-segment common _**cathode display**_ is used. The given below figure shows the display used and its pinout diagram.
-<br>
+
 ![image](https://github.com/user-attachments/assets/c7b36705-786c-45af-b426-b23e7eac2277)
-<br>
-<br> As shown in image pins D1, D2, D3 and D4 are digit pins used to enable and disable the single digit segment. Note that display used is CC type meaning, to enable the digit the digit pin should be grounded. The data bit representation for their numbers are same as above. The only addition is of the four digit pins. The circuit diagram of the display is observed to have common anode lines for Vcc but different ground lines.
-<br>
-<br>If all four digits are grounded then the output display will have same number on all four digits. To overcome this issue, one digit is turned **_ON_** at a time for certain time period and then the next one and next one and so on. In this tutorial, a counter logic is designed for counting from 0000 to 9999 and display it on 7-segment.
-<br>
-<br>For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
+
+As shown in image pins D1, D2, D3 and D4 are digit pins used to enable and disable the single digit segment. Note that display used is CC type meaning, to enable the digit the digit pin should be grounded. The data bit representation for their numbers are same as above. The only addition is of the four digit pins. The circuit diagram of the display is observed to have common anode lines for Vcc but different ground lines.
+
+If all four digits are grounded then the output display will have same number on all four digits. To overcome this issue, one digit is turned **_ON_** at a time for certain time period and then the next one and next one and so on. In this tutorial, a counter logic is designed for counting from 0000 to 9999 and display it on 7-segment.
+
+For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
 - create a volatile variable count
 - Take a while loop with limit upto 9999
   - Create individual variables for each digit
@@ -414,37 +415,38 @@ This tutorial is same as previous one but here a four 7-segments are used instea
   - Repeat for next three digits.
   - Increase value of count by 1. Perform this operation till it reaches max value of 9999.
 
-<br>**volatile uint16_t count = 0;**
+**volatile uint16_t count = 0;**
 <br>**while(count < 10000)**
 <br> **{**
 <br>&emsp;**volatile uint16_t digit0 = count%10;**
 <br>&emsp;**volatile uint16_t digit1 = (count%100)/10;**
 <br>&emsp;**volatile uint16_t digit2 = (count%1000)/100;**
 <br>&emsp;**volatile uint16_t digit3 = count/1000;**
-<br>
-<br>&emsp;**for(volatile int i = 0;i < 910;i++)**
+
+&emsp;**for(volatile int i = 0;i < 910;i++)**
 <br>&emsp;**{**
 <br>&emsp;&emsp;**GPIOB->ODR = 0x00007000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit0];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
-<br>
-<br>&emsp;&emsp;**GPIOB->ODR = 0x0000B000;**
+
+&emsp;&emsp;**GPIOB->ODR = 0x0000B000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit1];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
-<br>
-<br>&emsp;&emsp;**GPIOB->ODR = 0x0000D000;**
+
+&emsp;&emsp;**GPIOB->ODR = 0x0000D000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit2];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
-<br>
-<br>&emsp;&emsp;**GPIOB->ODR = 0x0000E000;**
+
+&emsp;&emsp;**GPIOB->ODR = 0x0000E000;**
 <br>&emsp;&emsp;**GPIOA->ODR = num[digit3];**
 <br>&emsp;&emsp;**for(volatile int i = 0;i < 1000;i++);**
 <br>&emsp; **}**
 <br>&emsp;**count++;**
 <br> **}**
-<br>
-<br>The circuit diagram for this is given below...
-<br>![Segment 7x4 Display](https://github.com/user-attachments/assets/87ff2bb7-2def-4384-84a7-b23da7ccbae8)
+
+The circuit diagram for this is given below...
+
+![Segment 7x4 Display](https://github.com/user-attachments/assets/87ff2bb7-2def-4384-84a7-b23da7ccbae8)
 <br>
 
 ## 2. ADC (Analog to Digital Converter)
