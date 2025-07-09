@@ -117,7 +117,7 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
 - PC13 & PC14
 - 2 pins for ground, 2 pins for supply voltage.
 
-<br>These GPIOs are handled by their registers. These registers are used to configure and set for desired requirements. For **_BluePill_**, there are total of 7 registers for configuring GPIOs and a set of **AFIO** registers for alternate function modes. They are
+These GPIOs are handled by their registers. These registers are used to configure and set for desired requirements. For **_BluePill_**, there are total of 7 registers for configuring GPIOs and a set of **AFIO** registers for alternate function modes. They are
 - Two Port Configuration Registers _32 bit_ (**CRL** & **CRH**).
   - CRL-> Lower 8 pins
   - CRH-> Upper 8 pins
@@ -128,9 +128,9 @@ In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be 
 - **Bit Reset Register _16 bit_ (_BRR_)**
 - Port Configuration Lock register _32 bit_ (**LCKR**).
 
-<br>AFIO are alternate function I/O pins which are used for functionalities other than digital 1/0's. AFIO is used for ADC, PWM, External Interrupt, USART, timer, SWD/JTAG, CAN, SPI, I2C, etc.
+AFIO are alternate function I/O pins which are used for functionalities other than digital 1/0's. AFIO is used for ADC, PWM, External Interrupt, USART, timer, SWD/JTAG, CAN, SPI, I2C, etc.
 
-<br>The GPIO pins have two modes which are configured into 4 different modes each.
+The GPIO pins have two modes which are configured into 4 different modes each.
 - Mode bits
   - 00 = Input Mode
   - 01 = Output Mode with speed 10 MHz
