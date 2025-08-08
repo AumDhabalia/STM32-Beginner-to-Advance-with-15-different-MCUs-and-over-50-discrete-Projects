@@ -110,7 +110,7 @@ On installation, popup for STLink Debugger will appear. Install it.
 
 Once project is created, copy [main.c](main.c) file and paste it in your main.c file. It is advisable to name it as main.c. This main.c file contains the clock configurations for setting up internal (HSI) or external clocks (HSE). This clock will determine the data rate of the buses (**AHB and APB**)
 ## 1. Blinky
-In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects are be performed. Given below is the list of the projects associated to this chapter. The LED(s) here are nothing but output from the pins. The pins mentioned here are known as General Purpose Input/Output pins. STM32F103 line has total of five GPIO ports from A to E, each having 16 pins. BluePill has total of 40 pins
+In the first chapter, **LED(s)** blinking i.e. LED ON/OFF based projects will be performed. Given below is the list of the projects associated to this chapter. The LED(s) here are nothing but output from the pins. The pins mentioned here are known as General Purpose Input/Output pins. STM32F103 line has total of five GPIO ports from A to E, each having 16 pins. BluePill has total of 40 pins
 - GPIOA and GPIOB ports
 - PD0 and PD1 for HSE
 - PC13 & PC14
@@ -500,6 +500,18 @@ All these registers are explained along the tutorials in detail.
    3. ADC channel control using Pushbutton
    4. Sensor based interrupt generation
 ## 4. Timer
+In this fourth chapter, introduction to timers and how to perform timer based operations will be studied. A timer is an independent running counter circuit that counts pulses from clock source either up or down depending on the counter size. Once counter reaches to 0 (down counter) or overflows (up counter), an interrupt can be set to trigger known as timer interrupt. This interrupt can be used to generate or call an event periodically rather than using software delay, reducing load for counting on the CPU.
+<br>As per STM32 architecture, it provides numerous timers with different applications and specifications. There are five types of timers which are
+- General Purpose timers
+  - 16/32 bit timers with input and output pins and upto four programmable channels.
+- Basic timers
+  - Simplest form of 16 bit timers with no I/O pins generally used for ADC/DAC and DMA applications
+- Advanced timers
+  - Contains all features of General purpose timers but with additional feature for heavy load control and digital power conversion applications with three complimentary outputs with an emergency shut-down input.
+- High Resolution timers
+  - These timers 
+<br>
+
    1. [Blinky with Timer](Timer/timer_blink.c)
    2. Signal Generation using timer
    3. Input Capture
