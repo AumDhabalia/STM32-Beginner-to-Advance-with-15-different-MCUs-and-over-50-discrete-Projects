@@ -500,20 +500,22 @@ All these registers are explained along the tutorials in detail.
    3. ADC channel control using Pushbutton
    4. Sensor based interrupt generation
 ## 4. Timer
-In this fourth chapter, introduction to timers and how to perform timer based operations will be studied. A timer is an independent running counter circuit that counts pulses from clock source either up or down depending on the counter size. Once counter reaches to 0 (down counter) or overflows (up counter), an interrupt can be set to trigger known as timer interrupt. This interrupt can be used to generate or call an event periodically rather than using software delay, reducing load for counting on the CPU.
+In this fourth chapter, timers are introduced and experiments based on timers are performed. A timer is an independent running counter circuit that counts pulses from clock source either up or down depending on the counter size. Once counter reaches to **_0 (down counter)_** or _**overflows (up counter)**_, an interrupt can be set to trigger an event, known as, **timer interrupt**. This interrupt can be used to generate or call an event _periodically_ rather than using software delay, reducing load for counting on the CPU.
 <br>
 As per STM32 architecture, it provides numerous timers with different applications and specifications. There are five types of timers which are
-- General Purpose timers : 16/32 bit timers with input and output pins and upto four programmable channels.
-- Basic timers : Simplest form of 16 bit timers with no I/O pins generally used for ADC/DAC and DMA applications
-- Advanced timers : Contains all features of General purpose timers but with additional feature for heavy load control and digital power conversion applications with three complimentary outputs with an emergency shut-down input.
-- High Resolution timers : These timers are equivalent to the mcu clock frequency i.e. for BluePill the frequency is 72 MHz. These are used for high accuracy and precise timings for PWM and phase-shifted pulses. There are no HRTs in STM32F1 family.
-- Low Power timers : These timers run on low frequency of 32.768 kHz, used for low power applications such as waking up MCU from sleep modes. As for STM32F1 series there are no low power timers as well.
-<br>
-In STM32F103C8T6 BluePill boaard, there are four timers each containing four channels. Each of these channels can be configured upto four different modes which are
-- Input Capture mode : measures time interval between two extenal events.
-- Output Compare mode : triggers an event at precise time intervals
-- Pulse Width Modulation mode : generates square waves with precise duty cycle for controlling motor rpm, light intensity etc.
-- One Pulse mode : generates a pulse of programmable length in response to an event. The event can be either external or internal and the pulse genrated can be either a single programmable length pulse or a pulse train.
+- _**General Purpose timers**_ : 16/32 bit timers with input and output pins and upto four programmable channels.
+- _**Basic timers**_ : Simplest form of 16 bit timers with no I/O pins generally used for ADC/DAC and DMA applications
+- _**Advanced timers**_ : Contains all features of General purpose timers but with additional feature for heavy load control and digital power conversion applications with three complimentary outputs with an emergency shut-down input.
+- _**High Resolution timers**_ : These timers are equivalent to the mcu clock frequency i.e. for BluePill the frequency is 72 MHz. These are used for high accuracy and precise timings for PWM and phase-shifted pulses. There are no HRTs in STM32F1 family.
+- _**Low Power timers**_ : These timers run on low frequency of 32.768 kHz, used for low power applications such as waking up MCU from sleep modes. As for STM32F1 series there are no low power timers as well.
+
+In STM32F103C8T6 _BluePill_ board, there are four timers each containing four channels. Each of these channels can be configured upto four different modes which are
+- **Input Capture mode** : measures time interval between two extenal events.
+- **Output Compare mode** : triggers an event at precise time intervals
+- **Pulse Width Modulation mode** : generates square waves with precise duty cycle for controlling motor rpm, light intensity etc.
+- **One Pulse mode** : generates a pulse of programmable length in response to an event. The event can be either external or internal and the pulse genrated can be either a single programmable length pulse or a pulse train.
+
+Apart from this there are two more timers called **SysTick Timer** and RTCC (**Real Time Clock & Calendar**). SysTick timer is a 24 bit counter used for timekeeping and generating periodic interrupts for RTOS based applications. As for RTCC, it used for timekeeping of _**real world time & date**_.
 <br>
 
    1. [Blinky with Timer](Timer/timer_blink.c)
