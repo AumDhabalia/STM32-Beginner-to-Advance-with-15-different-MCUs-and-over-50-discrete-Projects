@@ -417,7 +417,7 @@ For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit contr
 |PB14| 8 |
 |PB15| 6 |
 
-<br>Enable and configure the pins of GPIOA and GPIOB. In while loop
+Enable and configure the pins of GPIOA and GPIOB. In while loop
 - create a volatile variable count
 - Take a while loop with limit upto 9999
   - Create individual variables for each digit
