@@ -401,7 +401,23 @@ As shown in image pins D1, D2, D3 and D4 are digit pins used to enable and disab
 
 If all four digits are grounded then the output display will have same number on all four digits. To overcome this issue, one digit is turned **_ON_** at a time for certain time period and then the next one and next one and so on. In this tutorial, a counter logic is designed for counting from 0000 to 9999 and display it on 7-segment.
 
-For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit control pins. Enable and configure the pins of GPIOA and GPIOB. In while loop
+For this PA7 to PA0 is used as data pins and PB12 to PB15 is used as digit control pins. Pin assignment is as shown in table following.
+|Pin|IC Pin|
+|---|---|
+|PA0| 11 |
+|PA1| 7 |
+|PA2| 4 |
+|PA3| 2 |
+|PA4| 1 |
+|PA5| 10 |
+|PA6| 5 |
+|PA7| 3 |
+|PB12| 12 |
+|PB13| 9 |
+|PB14| 8 |
+|PB15| 6 |
+
+<br>Enable and configure the pins of GPIOA and GPIOB. In while loop
 - create a volatile variable count
 - Take a while loop with limit upto 9999
   - Create individual variables for each digit
