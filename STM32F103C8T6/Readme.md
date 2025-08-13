@@ -490,10 +490,9 @@ All these registers are explained along the tutorials in detail.
    3. Dual Axis Potentiometer
    4. Injected Mode ADC
    5. Scan Mode ADC
-   6. Temperature & Humidity Sensing
-   7. Discontinuous Mode ADC
-   8. Voltage Sensing
-   9. Dual ADC Mode
+   6. Discontinuous Mode ADC
+   7. Voltage Sensing
+   8. Dual ADC Mode
 ## 3. Interrupt
    1. LED & Interrupt Pushbutton
    2. N-Bit Counter using Pushbutton
