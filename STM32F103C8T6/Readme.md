@@ -21,14 +21,14 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 1. [Blinky](Readme.md#1-blinky)
 2. [ADC](Readme.md#2-adc-analog-to-digital-converter)
 3. [Interrupt](Readme.md#3-interrupt)
-4. [Timers & Counters](Readme.md#4-timer)
+4. [Timer](Readme.md#4-timer)
 5. [PWM]
 6. [USART]
 7. [SPI]
 8. [I2C]
 9. [CAN]
 10. [USB]
-11. [Projects]
+11. [Projects](Readme.md#11-Projects)
 12. [Exercise](Readme.md#12-exercise)
 
 ### Block Diagram
@@ -569,16 +569,17 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
    1. USB Setup
    2. USB HID
    3. USB 2.0 Device Driver
-## 11. Advanced Projects
-   1. Motor Speed Control using user input
-   2. Multiple event execution simultaneously
-   3. Battery Monitoring System
-   4. Solar based battery charger
-   5. Battery Charger
-   6. LED Positioning using Pot
-   7. USB based Xbox Game Controller
-   8. Memory Interfacing
-   9. Rotary Encoder and LCD interfacing
+## 11. Projects
+   1. Temperature Sensing using DHT11
+   2. Motor Speed Control using user input
+   3. Multiple event execution simultaneously
+   4. Battery Monitoring System
+   5. Solar based battery charger
+   6. Battery Charger
+   7. LED Positioning using Pot
+   8. USB based Xbox Game Controller
+   9. Memory Interfacing
+   10. Rotary Encoder and LCD interfacing
 ## 12. Exercise
    1. Write a progrm for 8-bit up/down counter using pushbutton and a counter switch which controls count direction (i.e. up counter = LOW, down counter = HIGH).
    2. Write a program for moving digits unidirectionally using eight 7-segment display module.
