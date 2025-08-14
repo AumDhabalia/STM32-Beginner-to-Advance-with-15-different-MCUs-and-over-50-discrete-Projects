@@ -6,8 +6,17 @@ Date : 14/08/2025
 Components : STM32F103C8T6 BluePill, DHT11 Sensor, 4x7 Common Cathode Segment Display Module
 ==============================================================================
 Description :-
-This project describes how to interface DHT11 temperature and humidity sensor with BluePill board and display the readings on 4x7 Segment display module.
-DHT11 uses single wire data communication where it uses single GPIO Pin to act as input and output sequentially. Refer to the datasheet for details. The program is written in bare-metal with modular blocks for each module.
+This project describes how to interface DHT11 temperature and humidity sensor with BluePill board and display the readings on 4x7 Segment display module. DHT11 uses
+single wire data communication where it uses single GPIO Pin to act as input and output sequentially.
+Refer to the datasheet for details.
+The program is written in bare-metal with modular blocks for each component used.
+
+DHT11 -> dht11.c, dht11.h
+4x7 Segment display module -> segment_display.c, segment_display.h
+BluePill -> main.c, main.h
+BluePill timer -> timer.c, timer.h
+
+All the header files are included in main.h file
 */
 
 #include "main.h"
