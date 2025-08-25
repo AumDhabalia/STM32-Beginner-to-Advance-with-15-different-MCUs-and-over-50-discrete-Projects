@@ -55,7 +55,7 @@ int main(void)
 
 	//Configure GPIO as Input mode
 	GPIOA->CRL &= ~(0x0000FFFF); //PA0 and PA1 as input channel
-	GPIOA->CRL |=  (0x00002288); //PA0 PA1 as analog input, pa2 pa3 as output
+	GPIOA->CRL |=  (0x00002200); //PA0 PA1 as analog input, pa2 pa3 as output
 
 	//Enable ADC1 interrupt
 	ADC1->CR1 |= ADC_CR1_EOCIE;
@@ -83,49 +83,35 @@ int main(void)
 	ADC1->CR2 |= ADC_CR2_ADON;
 	for(volatile int i = 0; i < 10000; i++);
 	
-	//Calibration
+	//Calibrate ADC1
+	//Reset Calibration
+	ADC1->CR2 |= ADC_CR2_RSTCAL;
+	while(ADC1->CR2 & ADC_CR2_RSTCAL); //Wait for calibration to reset
+	//Start Calibration
 	ADC1->CR2 |= ADC_CR2_CAL;
-	while(ADC1->CR2 & ADC_CR2_CAL);  // Wait till calibration completes
+	while(ADC1->CR2 & ADC_CR2_CAL); //Wait for calibration to complete
 
 	//Start conversion
 	ADC1->CR2 |= ADC_CR2_ADON | ADC_CR2_SWSTART;
 	
 	//Set channel index to 0
-	channel_index = 0; //First conversion of CHannel 0 at PA0
+	channel_index = 0; //First conversion of Channel 0 at PA0
 	
 	//User Code initialization...
 	while(1)
 	{
 		if(ADC1->SR & ADC_SR_EOC)
-	{
-		if (channel_index == 0)
 		{
-			adc_ch0_val = ADC1->DR;
-			channel_index = 1;
-		}
-		else
-		{
-			adc_ch1_val = ADC1->DR;
-			channel_index = 0;
-		}
-	}
-	}
-}
-/*
-void ADC1_2_IRQHandler(void)
-{
-	if(ADC1->SR & ADC_SR_EOC)
-	{
-		if (channel_index == 0)
-		{
-			adc_ch0_val = ADC1->DR;
-			channel_index = 1;
-		}
-		else
-		{
-			adc_ch1_val = ADC1->DR;
-			channel_index = 0;
+			if(channel_index == 0)
+			{
+				adc_ch0_val = ADC1->DR;
+				channel_index = 1;
+			}
+			else
+			{
+				adc_ch1_val = ADC1->DR;
+				channel_index = 0;
+			}
 		}
 	}
 }
-*/
