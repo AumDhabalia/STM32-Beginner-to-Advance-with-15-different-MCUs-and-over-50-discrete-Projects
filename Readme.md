@@ -63,7 +63,8 @@ and much more.
 * vv ➡ Line Specification
 * p ➡ Package/Pin Count
 * Y ➡ Flash Specification
-* zz ➡ Other Features
+* q ➡ Packaging type
+* z ➡ Operating temperature
 
 | x | L |
 |:---:|:---:|
