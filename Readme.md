@@ -74,6 +74,10 @@ and much more.
 | H | 5,7 |
 | L | 0,1,4,4+,5 |
 | U | 0,3,5 |
+<br>
+
+| p | Y |
+|:---:|:---:|
 
 ## *List of STM32 Boards*
 
