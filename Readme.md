@@ -61,8 +61,8 @@ and much more.
 * x ➡ Family
 * L ➡ Family Line
 * vv ➡ Line Specification
-* p ➡ Package/Pin Count
-* Y ➡ Flash Specification
+* p ➡ Package/Pin Count : _**32, 48, 64, 100, 128, 200, etc.**_
+* Y ➡ Flash Specification : **_32KB/32KB, 32KB/64KB, 64KB/64KB, 64KB/128KB, etc._**
 * q ➡ Packaging type
 * z ➡ Operating temperature
 
@@ -74,10 +74,6 @@ and much more.
 | H | 5,7 |
 | L | 0,1,4,4+,5 |
 | U | 0,3,5 |
-<br>
-
-| p | Y |
-|:---:|:---:|
 
 ## *List of STM32 Boards*
 
