@@ -76,7 +76,7 @@ Refer [RM0008](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101x
 | 31 | PA10 | PA10 | USART1_Rx / TIM1_CH3 | - |
 | 32 | PA11 | PA11 | USART1_CTS / CANRx / USBDM / TIM1_CH4 | - |
 | 33 | PA12 | PA12 | USART1_RTS / CANtX / USBDP / TIM1_CH5 | - |
-| 34 | PA13 | PA13 | - | PA13 |
+| 34 | PA13 | SWDIO | - | PA13 |
 | 35 | VSS_2 | VSS_2 | - | - |
 | 36 | VDD_2 | VDD_2 | - | - |
 | 37 | PA14 | JTCLK/SWCLK | - | PA14 |
