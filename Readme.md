@@ -77,7 +77,7 @@ and much more.
 
 ## *List of STM32 Boards*
 
-1. STM32C031C6 *NUCLEO-64*...............................**(Pending)**
+1. STM32C071RB *NUCLEO-64*...............................**(Pending)**
 2. STM32F051R8T6 *Discovery*.............................**(Pending)**
 3. [STM32F103C8T6 *BluePill*](STM32F103C8T6).............*(In Progress)* <br>
 4. STM32F207ZG *NUCLEO-144*..................................**(Pending)** <br>
@@ -90,10 +90,12 @@ and much more.
 11. STM32H755ZI-Q *NUCLEO-144*...........................**(Pending)** <br>
 12. STM32L031K6 *NUCLEO-32*..............................**(Pending)** <br>
 13. STM32L152RE *NUCLEO-64*..............................**(Pending)** <br>
-14. STM32L412KB *NUCLEO-32*..............................**(Pending)** <br>
-15. STM32L552ZE-Q *NUCLEO-144*...........................**(Pending)** <br>
-16. STM32U031R8 *NUCLEO-64*..............................**(Pending)** <br>
-17. STM32U385RG-Q *NUCLEO-64*............................**(Pending)** <br>
+14. STM32L432KB *NUCLEO-32*..............................**(Pending)** <br>
+15. STM32L4P5ZG *NUCLEO-144*.............................**(Pending)** <br>
+16. STM32L552ZE-Q *NUCLEO-144*...........................**(Pending)** <br>
+17. STM32U031R8 *NUCLEO-64*..............................**(Pending)** <br>
+18. STM32U385RG-Q *NUCLEO-64*............................**(Pending)** <br>
+19. STM32U5A5ZJ-Q *NUCLEO-144*...........................**(Pending)** <br>
 <br>
 
 # 2. Keil IDE
