@@ -572,7 +572,7 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
 ## 11. Projects
    1. Temperature Sensing using DHT11
    2. Motor Speed Control using user input
-   3. Multiple event execution simultaneously
+   3. 4 Channel Temperature meter
    4. Battery Monitoring System
    5. Solar based battery charger
    6. Battery Charger
