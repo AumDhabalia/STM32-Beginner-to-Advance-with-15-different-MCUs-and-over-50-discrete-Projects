@@ -25,7 +25,7 @@ STM32F103C8T6 *BluePill* is *NUCLEO-32* development board from STM32F1 series MC
 5. [PWM]
 6. [USART]
 7. [SPI]
-8. [I2C]
+8. [I2C](Readme.md#8-i2c)
 9. [CAN]
 10. [USB]
 11. [Projects](Readme.md#11-Projects)
@@ -570,7 +570,7 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
    2. USB HID
    3. USB 2.0 Device Driver
 ## 11. Projects
-   1. Temperature Sensing using DHT11
+   1. [Temperature Sensing using DHT11](Projects/dht11 interfacing)
    2. Motor Speed Control using user input
    3. 4 Channel Temperature meter
    4. Battery Monitoring System
@@ -581,15 +581,15 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
    9. Memory Interfacing
    10. Rotary Encoder and LCD interfacing
 ## 12. Exercise
-   1. Write a progrm for 8-bit up/down counter using pushbutton and a counter switch which controls count direction (i.e. up counter = LOW, down counter = HIGH).
+   1. Write a progrm for 8-bit up/down counter using two pushbuttons : one for counting and other for changing direction.
    2. Write a program for moving digits unidirectionally using eight 7-segment display module.
    3. Write a program reading 4 ADC inputs. Use multiple channel ADC.
-   4. Write a program reading 3 ADC inputs. One channel in injected mode, one regular continuous both in ADC1. The third one in discontinued mode in ADC2.
-   5. Write a program blinking 60 seconds timer and reading ADC input at every 5 seconds.
+   4. Write a program reading 3 ADC inputs. One channel in injected mode, one regular continuous both in ADC1. The third channel in discontinued mode in ADC2.
+   5. Write a program blinking LED 60 seconds and reading ADC input at every 5 seconds.
    6. Write a program for generating three different signals using multi-channel timers.
    7. Write a program for controlling voltage ranging from 10v to 220v. Use PWM.
    8. Write a program to transmit messages with time period based on user selection. Use USART.
    9. Design a Daisy-Chain setup for SPI communication interface.
-   10. Write a program for interfacing two LCD display and two 4 digit 7-Segment display using I2C.
+   10. Write a program for interfacing two LCD displays using IIC.
    11. Write a program for data transmission from Bluepill memory to System using USB.
-   12. Write a program for CAN based Memory interfacing with multiple memory ICs.
+   12. Write a program to control motor speed from MCU through CAN.
