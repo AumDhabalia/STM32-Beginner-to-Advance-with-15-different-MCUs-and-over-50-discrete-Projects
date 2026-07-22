@@ -561,14 +561,17 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
    4. Memory Interfacing
 ## 8. I2C
    1. I2C Setup
-   2. I2C LCD Interfacing
-   3. Multiple LCD Interfacing
-## 9. CAN
-   1. CAN Setup
+   2. I2C Address Identification
+   3. I2C RTC Interfacing
+   4. I2C LCD Interfacing
+   5. I2C Master-Slave Communication
+   6. Multiple I2C module Interfacing
+## 9. CANBUS
+   1. CANBUS Setup
+   2. CAN Ping-Pong
 ## 10. USB
    1. USB Setup
    2. USB HID
-   3. USB 2.0 Device Driver
 ## 11. Projects
    1. [Temperature Sensing using DHT11](Projects/DHT11)
    2. Motor Speed Control using user input
@@ -592,4 +595,4 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
    9. Design a Daisy-Chain setup for SPI communication interface.
    10. Write a program for interfacing two LCD displays using IIC.
    11. Write a program for data transmission from Bluepill memory to System using USB.
-   12. Write a program to control motor speed from MCU through CAN.
+   12. Write a program for sensor reading through CANBUS.
