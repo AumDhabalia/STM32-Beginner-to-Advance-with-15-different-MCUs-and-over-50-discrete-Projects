@@ -570,7 +570,7 @@ Apart from this there are two more timers called **SysTick Timer** and RTCC (**R
    2. USB HID
    3. USB 2.0 Device Driver
 ## 11. Projects
-   1. [Temperature Sensing using DHT11](STM32F103C8T6/Projects/dht11 interfacing)
+   1. [Temperature Sensing using DHT11](STM32F103C8T6/Projects/dht11 interfacing/)
    2. Motor Speed Control using user input
    3. 4 Channel Temperature meter
    4. Battery Monitoring System
