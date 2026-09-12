@@ -4,7 +4,7 @@ Author : Aum Dhabalia
 Date : 31/03/2025
 This program is for setting timers in encoder interface mode to detect direction and position of a rotary sensor.
 A rotory encoder is interfaced in pullup configuration with PA0 PA1 and global variables are used for storing the
-position of the encoder.
+position and direction of the encoder.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer to stm32f10x.h file for macros used.
 ---------------------------------
