@@ -7,6 +7,10 @@ A rotory encoder is interfaced in pullup configuration with PA0 PA1 and global v
 position of the encoder.
 Refer RM0008 reference manual as well as STM32F103C8T6 datasheet.
 Refer to stm32f10x.h file for macros used.
+---------------------------------
+PA0 to Terminal A to PULLUP (1kohm)
+PA1 to Terminal B to PULLUP (1kohm)
+GND to Terminal C
 */
 
 #include "stm32f103xb.h"
